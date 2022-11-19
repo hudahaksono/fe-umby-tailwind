@@ -46,10 +46,48 @@ function data() {
     isPagesMenuOpen: false,
     togglePagesMenu() {
       this.isPagesMenuOpen = !this.isPagesMenuOpen
+      // isKurikulumMenuOpen: false
     },
     isKurikulumMenuOpen: false,
     toggleKurikulumMenu() {
       this.isKurikulumMenuOpen = !this.isKurikulumMenuOpen
+      // isPagesMenuOpen: false
+    },
+    isKelasUjianMenuOpen: false,
+    toggleKelasUjianMenu() {
+      this.isKelasUjianMenuOpen = !this.isKelasUjianMenuOpen
+    },
+    isAdmMenuOpen: false,
+    toggleAdmMenu() {
+      this.isAdmMenuOpen = !this.isAdmMenuOpen
+    },
+    isBlokKRSMenuOpen: false,
+    toggleBlokKRSMenu() {
+      this.isBlokKRSMenuOpen = !this.isBlokKRSMenuOpen
+    },
+    isTAMenuOpen: false,
+    toggleTAMenu() {
+      this.isTAMenuOpen = !this.isTAMenuOpen
+    },
+    isKPMenuOpen: false,
+    toggleKPMenu() {
+      this.isKPMenuOpen = !this.isKPMenuOpen
+    },
+    isRealisasiMenuOpen: false,
+    toggleRealisasiMenu() {
+      this.isRealisasiMenuOpen = !this.isRealisasiMenuOpen
+    },
+    isYudisiumMenuOpen: false,
+    toggleYudisiumMenu() {
+      this.isYudisiumMenuOpen = !this.isYudisiumMenuOpen
+    },
+    isWisudaMenuOpen: false,
+    toggleWisudaMenu() {
+      this.isWisudaMenuOpen = !this.isWisudaMenuOpen
+    },
+    isPDPTMenuOpen: false,
+    togglePDPTMenu() {
+      this.isPDPTMenuOpen = !this.isPDPTMenuOpen
     },
     // Modal
     isModalOpen: false,
