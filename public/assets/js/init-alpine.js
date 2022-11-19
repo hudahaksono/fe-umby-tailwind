@@ -47,6 +47,10 @@ function data() {
     togglePagesMenu() {
       this.isPagesMenuOpen = !this.isPagesMenuOpen
     },
+    isKurikulumMenuOpen: false,
+    toggleKurikulumMenu() {
+      this.isKurikulumMenuOpen = !this.isKurikulumMenuOpen
+    },
     // Modal
     isModalOpen: false,
     trapCleanup: null,
