@@ -89,6 +89,78 @@
         /*bg-indigo-500*/
     }
 </style>
+
+<style>
+    .button {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 2px 1px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    .button1 {
+        background-color: #4CAF50;
+        color: white;
+        border: 2px solid #4CAF50;
+    }
+
+    .button1:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .button2 {
+        background-color: #008CBA;
+        color: white;
+        border: 2px solid #008CBA;
+    }
+
+    .button2:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .button3 {
+        background-color: #f44336;
+        color: white;
+        border: 2px solid #f44336;
+    }
+
+    .button3:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .button4 {
+        background-color: white;
+        color: black;
+        border: 2px solid #e7e7e7;
+    }
+
+    .button4:hover {
+        background-color: #e7e7e7;
+    }
+
+    .button5 {
+        background-color: white;
+        color: black;
+        border: 2px solid #555555;
+    }
+
+    .button5:hover {
+        background-color: #555555;
+        color: white;
+    }
+</style>
 <main class="h-full pb-16 overflow-y-auto">
     <div class="container px-6 mx-auto grid">
         <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
@@ -106,13 +178,29 @@
             </div>
         </div>
         <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <div class="flex flex-row-reverse mb-8 mt-4">
-                <div class="text-right">
+            <div class="flex flex-col flex-wrap mb-8 space-y-4 md:flex-row md:items-end md:space-x-4">
+                <div>
+                    <button class="button button1">
+                        <i class="fas fa-plus"></i>
+                        <span>&nbsp; Tambah</span>
+                    </button>
+                </div>
+                <div>
                     <button class="flex items-center justify-between px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                        <svg class="w-4 h-4 mr-2 -ml-1" fill="currentColor" aria-hidden="true" viewBox="0 0 20 20">
-                            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" fill-rule="evenodd"></path>
-                        </svg>
-                        <span>Icon left</span>
+                        <i class="fa-solid fa-rotate"></i>
+                        <span>&nbsp; Reset</span>
+                    </button>
+                </div>
+                <div>
+                    <button class="flex items-center justify-between px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                        <i class="fa-solid fa-print"></i>
+                        <span>&nbsp; Cetak</span>
+                    </button>
+                </div>
+                <div>
+                    <button class="flex items-center justify-between px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>&nbsp; Tulis Email</span>
                     </button>
                 </div>
             </div>
