@@ -21,6 +21,15 @@ Route::get('/dashboard', function () {
     return view('index');
 });
 
+
+
+/**
+ * Login Pages
+ */
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
 Route::get('/mahasiswa', function () {
     return view('portal.mahasiswa');
 });
