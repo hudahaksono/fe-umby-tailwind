@@ -106,16 +106,16 @@ $data_nav = [
                                         </svg></button>
 
                                     <div id="dropdown-{{ $nav['title'] }}"
-                                        class=" absolute z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44">
+                                        class="absolute z-10 font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 hidden">
                                         <ul class="py-1 text-sm text-gray-700"
                                             aria-labelledby="subMenu-{{ $nav['title'] }}">
                                             @forelse ($nav['sub_menu'] as $submenu)
-                                                <li>
+                                                <li class="relative">
                                                     @if (isset($submenu['sub_menu']))
                                                         <button id="doubleDropdownButton"
                                                             data-dropdown-toggle="doubleDropdown"
                                                             data-dropdown-placement="right-start" type="button"
-                                                            class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dropdown<svg
+                                                            class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100">Dropdown<svg
                                                                 aria-hidden="true" class="w-5 h-5" fill="currentColor"
                                                                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                                 <path fill-rule="evenodd"
@@ -123,13 +123,13 @@ $data_nav = [
                                                                     clip-rule="evenodd"></path>
                                                             </svg></button>
                                                         <div id="doubleDropdown"
-                                                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+                                                            class="absolute z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
                                                             <ul class="py-1 text-sm text-gray-700 dark:text-gray-200"
                                                                 aria-labelledby="doubleDropdownButton">
                                                                 @foreach ($submenu['sub_menu'] as $subsubmenu)
                                                                     <li>
                                                                         <a href="#"
-                                                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Overview</a>
+                                                                            class="block px-4 py-2 hover:bg-gray-100">Overview</a>
                                                                     </li>
                                                                 @endforeach
                                                             </ul>
