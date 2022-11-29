@@ -97,4 +97,6 @@
         /*bg-indigo-500*/
     }
 </style>
+
+@yield('styles')
     
