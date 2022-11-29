@@ -1,4 +1,5 @@
-@vite('resources/js/app.js')
+{{-- @vite('resources/js/app.js') --}}
+<script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
 
 <!-- jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
