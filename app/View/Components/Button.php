@@ -4,21 +4,23 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class Card extends Component
+class Button extends Component
 {
-    public $title;
+    public $asLink;
 
-    public $class;
+    public $color;
 
+    public $size;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($title = null, $class = null)
+    public function __construct($asLink = false, $color = "blue", $size = "md")
     {
-        $this->title = $title;
-        $this->class = $class;
+        $this->asLink = $asLink;
+        $this->color = $color;
+        $this->size = $size;
     }
 
     /**
@@ -28,6 +30,6 @@ class Card extends Component
      */
     public function render()
     {
-        return view('components.card');
+        return view('components.button');
     }
 }

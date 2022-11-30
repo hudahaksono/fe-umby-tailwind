@@ -7,6 +7,7 @@ module.exports = {
     content: [
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
+        "./node_modules/flowbite/**/*.js",
         // remove this if not used
         "./resources/**/*.vue",
     ],
@@ -168,6 +169,7 @@ module.exports = {
     },
     plugins: [
         require("@tailwindcss/forms"),
+        require('flowbite/plugin'),
         // custom plugins template
         plugin(({ addUtilities, e, theme, variants }) => {
             const newUtilities = {};

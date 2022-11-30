@@ -8,6 +8,8 @@
 @vite('resources/css/app.css')
 
 {{-- DATA TABLE CSS --}}
+<link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
 <style>
     /*Form fields*/
     .dataTables_wrapper select,
@@ -60,13 +62,18 @@
         /*font-bold*/
         border-radius: .25rem;
         /*rounded*/
-        background: #667eea !important;
+        background: #3f83f8 !important;
         /*bg-indigo-500*/
         border: 1px solid transparent;
         /*border border-transparent*/
     }
 
     /*Pagination Buttons - Hover */
+    .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+        color: #fff !important;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
     .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
         color: #fff !important;
         /*text-white*/
@@ -76,7 +83,7 @@
         /*font-bold*/
         border-radius: .25rem;
         /*rounded*/
-        background: #667eea !important;
+        background: #3f83f8 !important;
         /*bg-indigo-500*/
         border: 1px solid transparent;
         /*border border-transparent*/
@@ -93,8 +100,9 @@
     /*Change colour of responsive icon*/
     table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
     table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
-        background-color: #667eea !important;
+        background-color: #3f83f8 !important;
         /*bg-indigo-500*/
     }
 </style>
-    
+
+@yield('styles')
