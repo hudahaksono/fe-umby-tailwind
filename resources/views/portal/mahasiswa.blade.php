@@ -2,13 +2,12 @@
 @section('title', 'Portal Mahasiswa')
 
 @section('contents')
-
     <x-card class="mb-6">
         FILTER
     </x-card>
     <x-card title="Mahasiswa" class="display nowrap w-full">
         <div class="flex mb-4">
-            <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2"><i
+            <x-button size="sm" color="blue" as-link={{ true }} href="{{ URL('/mahasiswa/tambah') }}" class="mx-2"><i
                     data-feather="plus" width="16"></i>&nbsp;Tambah</x-button>
             <x-button size="sm" color="green" as-link={{ true }} href="#" class="mx-2"><i
                     data-feather="printer" width="16"></i>&nbsp;Cetak</x-button>
@@ -22,7 +21,7 @@
         <table id="mahasiswa-table" class="hover cell-border stripe  order-column"></table>
 
     </x-card>
-@stop
+@endsection
 
 @section('scripts')
     <script>
