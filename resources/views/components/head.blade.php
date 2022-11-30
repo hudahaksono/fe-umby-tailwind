@@ -4,12 +4,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SIA UMBY - @yield('title')</title>
 
-<!-- TAILWIND CSS -->
-@vite('resources/css/app.css')
-
 {{-- DATA TABLE CSS --}}
 <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
 <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
+
+{{-- GOOGLE INTER FONT --}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+{{-- TOM SELECT --}}
+<link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
+
 <style>
     /*Form fields*/
     .dataTables_wrapper select,
@@ -104,5 +110,9 @@
         /*bg-indigo-500*/
     }
 </style>
+
+
+<!-- TAILWIND CSS -->
+@vite('resources/css/app.css')
 
 @yield('styles')
