@@ -33,3 +33,7 @@ Route::get('/login', function () {
 Route::get('/mahasiswa', function () {
     return view('portal.mahasiswa');
 });
+
+Route::get('/mahasiswa/tambah', function () {
+    return view('portal.mahasiswa.tambah');
+});
