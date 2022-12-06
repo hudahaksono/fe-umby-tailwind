@@ -13,6 +13,7 @@ module.exports = {
     ],
     theme: {
         colors: {
+            umby: '#177196',
             transparent: "transparent",
             white: "#ffffff",
             black: "#000000",

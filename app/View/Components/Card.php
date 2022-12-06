@@ -10,15 +10,18 @@ class Card extends Component
 
     public $class;
 
+    public $button;
+
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($title = null, $class = null)
+    public function __construct($title = null, $class = null, $button = null)
     {
         $this->title = $title;
         $this->class = $class;
+        $this->button = $button;
     }
 
     /**
