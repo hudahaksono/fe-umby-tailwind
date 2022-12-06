@@ -37,3 +37,20 @@ Route::get('/mahasiswa', function () {
 Route::get('/mahasiswa/tambah', function () {
     return view('portal.mahasiswa.tambah');
 });
+
+/**
+ * Perkuliahan
+ */
+Route::get('/perkuliahan/jenis-mata-kuliah', function () {
+    return view('perkuliahan.kurikulum.jenis-mata-kuliah');
+});
+Route::get('/perkuliahan/jenis-mata-kuliah/tambah', function () {
+    return view('perkuliahan.kurikulum.form.jenis-mata-kuliah');
+});
+
+Route::get('/perkuliahan/mata-kuliah', function () {
+    return view('perkuliahan.kurikulum.mata-kuliah');
+});
+Route::get('/perkuliahan/mata-kuliah/tambah', function () {
+    return view('perkuliahan.kurikulum.form.mata-kuliah');
+});
