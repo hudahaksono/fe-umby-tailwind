@@ -38,6 +38,14 @@ Route::get('/mahasiswa/tambah', function () {
     return view('portal.mahasiswa.tambah');
 });
 
+Route::get('/dosen', function () {
+    return view('portal.dosen.index');
+});
+
+Route::get('/dosen/tambah', function () {
+    return view('portal.dosen.form');
+});
+
 /**
  * Perkuliahan
  */
