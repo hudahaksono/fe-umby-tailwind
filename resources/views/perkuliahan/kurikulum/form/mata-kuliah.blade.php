@@ -1,9 +1,9 @@
 @extends('layouts.default')
-@section('title', 'Jenis Mata Kuliah')
+@section('title', 'Mata Kuliah')
 
 {{-- YOUR CONTENT START HERE --}}
 @section('contents')
-    <x-card title="Jenis Mata Kuliah">
+    <x-card title="Mata Kuliah">
         @slot('button')
             <x-button as-link={{ true }} href="#" size="sm"
                 class="bg-teal-500 hover:bg-teal-400 active:bg-teal-400 focus:shadow-outline-teal ml-auto"><i data-feather="info"

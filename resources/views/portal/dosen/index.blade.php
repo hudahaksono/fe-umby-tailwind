@@ -3,7 +3,7 @@
 
 {{-- YOUR CONTENT START HERE --}}
 @section('contents')
-    <x-title class="text-cool-gray-800 mb-5">Mata Kuliah</x-title>
+    <x-title class="text-cool-gray-800 mb-5">Dosen</x-title>
     <x-card>
         <div class="flex flex-row mb-4">
             <div class="flex ml-auto">
