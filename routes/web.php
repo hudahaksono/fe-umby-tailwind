@@ -62,3 +62,22 @@ Route::get('/perkuliahan/mata-kuliah', function () {
 Route::get('/perkuliahan/mata-kuliah/tambah', function () {
     return view('perkuliahan.kurikulum.form.mata-kuliah');
 });
+
+/**
+ * Setting
+ */
+Route::get('/setting/global', function () {
+    return view('setting.setting-global');
+});
+Route::get('/setting/per-kelas', function () {
+    return view('setting.setting-per-kelas');
+});
+Route::get('/setting/per-unit', function () {
+    return view('setting.setting-per-unit');
+});
+Route::get('/setting/krs', function () {
+    return view('setting.setting-krs');
+});
+Route::get('/setting/batal/krs', function () {
+    return view('setting.setting-batal-krs');
+});

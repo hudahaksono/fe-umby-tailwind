@@ -74,6 +74,28 @@ $data_nav = [
     [
         'title' => 'Setting',
         'url' => url('/'),
+        'sub_menu' => [
+            [
+                'title' => 'Setting Global',
+                'url' => url('/setting/global'),
+            ],
+            [
+                'title' => 'Setting Per Kelas',
+                'url' => url('/setting/per-kelas'),
+            ],
+            [
+                'title' => 'Setting Per Unit',
+                'url' => url('/setting/per-unit'),
+            ],
+            [
+                'title' => 'Setting KRS',
+                'url' => url('/setting/krs'),
+            ],
+            [
+                'title' => 'Setting Batal KRS',
+                'url' => url('/setting/batal/krs'),
+            ],
+        ]
     ],
 ];
 
