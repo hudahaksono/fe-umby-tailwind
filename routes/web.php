@@ -30,12 +30,18 @@ Route::get('/login', function () {
     return view('auth.login');
 });
 
+/**
+ * Portal
+ */
 Route::get('/mahasiswa', function () {
     return view('portal.mahasiswa');
 });
 
 Route::get('/mahasiswa/tambah', function () {
     return view('portal.mahasiswa.tambah');
+});
+Route::get('/mahasiswa/detail/{nim}', function () {
+    return view('portal.mahasiswa.detail');
 });
 
 Route::get('/dosen', function () {
@@ -44,6 +50,10 @@ Route::get('/dosen', function () {
 
 Route::get('/dosen/tambah', function () {
     return view('portal.dosen.form');
+});
+
+Route::get('/rekap-status-mahasiswa', function () {
+    return view('portal.rekap-status-mhs');
 });
 
 /**
@@ -61,6 +71,19 @@ Route::get('/perkuliahan/mata-kuliah', function () {
 });
 Route::get('/perkuliahan/mata-kuliah/tambah', function () {
     return view('perkuliahan.kurikulum.form.mata-kuliah');
+});
+
+/**
+ * Referensi
+ */
+Route::get('/referensi/universitas/unit', function () {
+    return view('referensi.universitas.unit');
+});
+Route::get('/referensi/universitas/kampus', function () {
+    return view('referensi.universitas.kampus');
+});
+Route::get('/referensi/universitas/gedung', function () {
+    return view('referensi.universitas.gedung');
 });
 
 /**

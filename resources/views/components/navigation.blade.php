@@ -21,6 +21,18 @@ $data_nav = [
                 'title' => 'Rekap Status Mahasiswa',
                 'url' => url('/rekap-status-mahasiswa'),
             ],
+            [
+                'title' => 'Rekap Status KRS',
+                'url' => url('/rekap-status-mahasiswa'),
+            ],
+            [
+                'title' => 'Log KRS',
+                'url' => url('/rekap-status-mahasiswa'),
+            ],
+            [
+                'title' => 'Laporan Total Mahasiswa',
+                'url' => url('/rekap-status-mahasiswa'),
+            ],
         ],
     ],
     [
@@ -45,17 +57,289 @@ $data_nav = [
                     ],
                     [
                         'title' => 'Tahun Kurikulum',
-                        'url' => url('/perkuliahan/tahun-kurikulum'),
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Kode Kurikulum',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Kurikulum Jurusan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Ekivalensi Mata Kuliah',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Prasyarat Mata Kuliah',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Skala Nilai',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Unsur Penilaian',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Predikat Kelulusan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Aturan Batas SKS',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Aturan Evaluasi',
+                        'url' => '#',
                     ],
                 ],
             ],
             [
                 'title' => 'Kelas Kuliah',
                 'url' => url('/dosen'),
+                'sub_menu' => [
+                    [
+                        'title' => 'Monitoring Kelas',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Kelas Perkuliahan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Penjadwalan Kelas Perkuliahan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Penjadwalan Dosen Kelas',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Monitoring Dosen Pengajar',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Presensi Mahasiswa',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Nilai Kuliah',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Pengesahan Nilai',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Distribusi Peserta Kelas',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Matrix Jadwal Kuliah',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Matrix Ruang Perkuliahan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Pengajuan Soal Ujian',
+                        'url' => '#',
+                    ],
+                ],
             ],
             [
-                'title' => 'Rekap Status Mahasiswa',
+                'title' => 'Kelas Ujian',
                 'url' => url('/rekap-status-mahasiswa'),
+                'sub_menu' => [
+                    [
+                        'title' => 'Kelas Ujian',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Monitoring Ujian',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Presensi Ujian Mahasiswa',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Matrix Ruang Ujian',
+                        'url' => '#',
+                    ],
+                ],
+            ],
+            [
+                'title' => 'Administrasi',
+                'url' => url('/rekap-status-mahasiswa'),
+                'sub_menu' => [
+                    [
+                        'title' => 'Dosen PA',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Periode Akademik',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Aturan Cuti',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'BLOK KRS',
+                        'url' => '#',
+                        'sub_menu' => [
+                            [
+                                'title' => 'Jenis Blok KRS',
+                                'url' => '#',
+                            ],
+                            [
+                                'title' => 'Blok Perpustakaan',
+                                'url' => '#',
+                            ],
+                            [
+                                'title' => 'Blok Keuangan',
+                                'url' => '#',
+                            ],
+                            [
+                                'title' => 'Blok Kemahasiswaan',
+                                'url' => '#',
+                            ],
+                        ],
+                    ],
+                    [
+                        'title' => 'Rekap Status Mahasiswa',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Pengajuan Status Mahasiswa',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Usulan DO',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Evaluasi Mahasiswa',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Ekivalensi Mahasiswa',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Pindah Jurusan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Transfer Nilai',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Pengesahan SKPI',
+                        'url' => '#',
+                    ],
+                ],
+            ],
+            [
+                'title' => 'Tugas Akhir',
+                'url' => url('/rekap-status-mahasiswa'),
+                'sub_menu' => [
+                    [
+                        'title' => 'Tugas Akhir',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Monitoring Tugas Akhir',
+                        'url' => '#',
+                    ],
+                ],
+            ],
+            [
+                'title' => 'Kerja Praktek',
+                'url' => url('/rekap-status-mahasiswa'),
+                'sub_menu' => [
+                    [
+                        'title' => 'Monitoring Kerja Praktek',
+                        'url' => '#',
+                    ],
+                ],
+            ],
+            [
+                'title' => 'Realisasi (Barcode Read)',
+                'url' => url('/rekap-status-mahasiswa'),
+                'sub_menu' => [
+                    [
+                        'title' => 'Realisasi Perkuliahan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Realisasi Ujian',
+                        'url' => '#',
+                    ],
+                ],
+            ],
+            [
+                'title' => 'Yudisium',
+                'url' => url('/rekap-status-mahasiswa'),
+                'sub_menu' => [
+                    [
+                        'title' => 'Periode Yudisium',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Syarat Yudisium',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Syarat Mhs Yudisium',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Peserta Yudisium',
+                        'url' => '#',
+                    ],
+                ],
+            ],
+            [
+                'title' => 'Wisuda',
+                'url' => url('/rekap-status-mahasiswa'),
+                'sub_menu' => [
+                    [
+                        'title' => 'Periode Wisuda',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Syarat Wisuda',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Syarat Mahasiswa',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Peserta Wisuda',
+                        'url' => '#',
+                    ],
+                ],
+            ],
+            [
+                'title' => 'PDPT',
+                'url' => url('/rekap-status-mahasiswa'),
+                'sub_menu' => [
+                    [
+                        'title' => 'Setting',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Target',
+                        'url' => '#',
+                    ],
+                ],
             ],
         ],
     ],
@@ -70,6 +354,84 @@ $data_nav = [
     [
         'title' => 'Referensi',
         'url' => url('/'),
+        'sub_menu' => [
+            [
+                'title' => 'Universitas',
+                'url' => url('/'),
+                'sub_menu' => [
+                    [
+                        'title' => 'Unit',
+                        'url' => url('/referensi/universitas/unit'),
+                    ],
+                    [
+                        'title' => 'Kampus',
+                        'url' => url('/referensi/universitas/kampus'),
+                    ],
+                    [
+                        'title' => 'Gedung',
+                        'url' => url('/referensi/universitas/gedung'),
+                    ],
+                    [
+                        'title' => 'Manajemen Ruang',
+                        'url' => url('/'),
+                        'sub_menu' => [
+                            [
+                                'title' => 'Master Ruang',
+                                'url' => url('#'),
+                            ]
+                        ]
+                    ],
+                    [
+                        'title' => 'Pejabat',
+                        'url' => url('#'),
+                    ],
+                    [
+                        'title' => 'Slot Waktu',
+                        'url' => url('#'),
+                    ],
+                    [
+                        'title' => 'Bidang Studi',
+                        'url' => url('#'),
+                    ],
+                    [
+                        'title' => 'Program Pendidikan',
+                        'url' => url('#'),
+                    ],
+                    [
+                        'title' => 'Jenis Kelas Perkuliahan',
+                        'url' => url('#'),
+                    ],
+                    [
+                        'title' => 'Akreditasi',
+                        'url' => url('#'),
+                    ],
+                    [
+                        'title' => 'Frekuensi Kurikulum',
+                        'url' => url('#'),
+                    ],
+                    [
+                        'title' => 'Kompetensi Jurusan',
+                        'url' => url('#'),
+                    ],
+                ]
+            ],
+            [
+                'title' => 'Akademik',
+                'url' => url('#'),
+            ],
+            [
+                'title' => 'Biodata',
+                'url' => url('#'),
+            ],
+            [
+                'title' => 'Mahasiswa',
+                'url' => url('#'),
+            ],
+            [
+                'title' => 'Pegawai',
+                'url' => url('#'),
+            ],
+        ]
     ],
     [
         'title' => 'Setting',
@@ -150,7 +512,7 @@ $data_nav = [
                                                 <li class="relative">
                                                     @if (isset($submenu['sub_menu']))
                                                         <button id="dropdown-sub-{{ $submenu['title'] }}"
-                                                            data-dropdown-toggle="dropdown-sub-{{ $nav['title'] }}"
+                                                            data-dropdown-toggle="dropdown-sub-{{ $submenu['title'] }}-sub"
                                                             data-dropdown-placement="right-start" type="button"
                                                             class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100">{{ $submenu['title'] }}<svg
                                                                 aria-hidden="true" class="w-5 h-5" fill="currentColor"
@@ -159,15 +521,41 @@ $data_nav = [
                                                                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                                                                     clip-rule="evenodd"></path>
                                                             </svg></button>
-                                                        <div id="dropdown-sub-{{ $nav['title'] }}"
+                                                        <div id="dropdown-sub-{{ $submenu['title'] }}-sub"
                                                             class="absolute z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
                                                             <ul class="py-1 text-sm text-gray-700 dark:text-gray-200"
                                                                 aria-labelledby="dropdown-sub-{{ $submenu['title'] }}">
                                                                 @foreach ($submenu['sub_menu'] as $subsubmenu)
-                                                                    <li>
-                                                                        <a href="{{ $subsubmenu['url'] }}"
-                                                                            class="block px-4 py-2 hover:bg-gray-100">{{ $subsubmenu['title'] }}</a>
-                                                                    </li>
+                                                                    @if (isset($subsubmenu['sub_menu']))
+                                                                        <button id="dropdown-sub-{{ $subsubmenu['title'] }}"
+                                                                            data-dropdown-toggle="dropdown-sub-{{ $subsubmenu['title'] }}-sub"
+                                                                            data-dropdown-placement="right-start" type="button"
+                                                                            class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100">{{ $subsubmenu['title'] }}<svg
+                                                                            aria-hidden="true" class="w-5 h-5" fill="currentColor"
+                                                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path fill-rule="evenodd"
+                                                                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                                                clip-rule="evenodd"></path>
+                                                                            </svg></button>
+                                                                            <div id="dropdown-sub-{{ $subsubmenu['title'] }}-sub"
+                                                                                class="absolute z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+                                                                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200"
+                                                                                    aria-labelledby="dropdown-sub-{{ $subsubmenu['title'] }}">
+                                                                                    @foreach ($subsubmenu['sub_menu'] as $subsubsubmenu)
+                                                                                        <li>
+                                                                                            <a href="{{ $subsubsubmenu['url'] }}"
+                                                                                                class="block px-4 py-2 hover:bg-gray-100">{{ $subsubsubmenu['title'] }}</a>
+                                                                                        </li>
+                                                                                    @endforeach
+                                                                                </ul>
+                                                                            </div>
+                                                                    @else
+                                                                        <li>
+                                                                            <a href="{{ $subsubmenu['url'] }}"
+                                                                                class="block px-4 py-2 hover:bg-gray-100">{{ $subsubmenu['title'] }}</a>
+                                                                        </li>
+                                                                    @endif
+                                                                    
                                                                 @endforeach
                                                             </ul>
                                                         </div>
