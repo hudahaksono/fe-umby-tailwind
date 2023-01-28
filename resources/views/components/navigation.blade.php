@@ -23,7 +23,7 @@ $data_nav = [
             ],
             [
                 'title' => 'Rekap Status KRS',
-                'url' => url('/rekap-status-mahasiswa'),
+                'url' => url('/rekap-status-krs'),
             ],
             [
                 'title' => 'Log KRS',
@@ -346,6 +346,108 @@ $data_nav = [
     [
         'title' => 'Keuangan',
         'url' => url('/'),
+        'sub_menu' => [
+            [
+                'title' => 'Komponen Tarif',
+                'url' => '#',
+                'sub_menu' => [
+                    [
+                        'title' => 'Jenis Tarif',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Tarif Umum',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Formulir',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Kategori Potongan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Potongan Tagihan',
+                        'url' => '#',
+                    ],
+                ],
+            ],
+            [
+                'title' => 'Tarif R1 dan R2',
+                'url' => '#',
+                'sub_menu' => [
+                    [
+                        'title' => 'SPA',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'SPP Tetap',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'SPP Variabel',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'SKS Praktikum',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'BPP SKS SP',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Kemahasiswaan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Ujian Susulan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Sidang TA',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Ijasah dan Wisuda',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Pengajuan Status',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'SKS Default',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'SPP Variabel Praktek',
+                        'url' => '#',
+                    ],
+                ],
+            ],
+            [
+                'title' => 'Tarif UKT',
+                'url' => '#',
+            ],
+            [
+                'title' => 'Tagihan',
+                'url' => '#',
+            ],
+            [
+                'title' => 'Pembayaran',
+                'url' => '#',
+            ],
+            [
+                'title' => 'BANK BNI',
+                'url' => '#',
+            ],
+            [
+                'title' => 'H2H',
+                'url' => '#',
+            ],
+        ],
     ],
     [
         'title' => 'Laporan',

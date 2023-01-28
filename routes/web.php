@@ -56,6 +56,10 @@ Route::get('/rekap-status-mahasiswa', function () {
     return view('portal.rekap-status-mhs');
 });
 
+Route::get('/rekap-status-krs', function () {
+    return view('portal.rekap-status-krs');
+});
+
 /**
  * Perkuliahan
  */
