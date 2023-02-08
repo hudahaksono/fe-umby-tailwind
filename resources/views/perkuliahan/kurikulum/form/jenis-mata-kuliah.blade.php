@@ -5,8 +5,12 @@
 @section('contents')
     <x-card title="Jenis Mata Kuliah">
         @slot('button')
+        <div class="flex ml-auto">
+            <x-button size="sm" color="white" as-link={{ true }} href="/perkuliahan/jenis-mata-kuliah"
+                    class="mx-2  text-cool-gray-800 border-cool-gray-400 ml-auto"><i data-feather="list" width="16"></i>&nbsp;Daftar</x-button>
             <x-button as-link={{true}} href="#" size="sm" class="bg-teal-500 hover:bg-teal-400 active:bg-teal-400 focus:shadow-outline-teal ml-auto"><i
                     data-feather="info" width="14"></i>&nbsp;Bantuan</x-button>
+        </div>
         @endslot
         <form>
             <div class="w-full md:w-1/2">

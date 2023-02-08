@@ -90,6 +90,36 @@
                 mengundurkan_diri: '',
                 total: 197
             },
+            {
+                id: 1,
+                jurusan: 'S1 Informatika',
+                kelas: 'UKT',
+                kampus: 'Kampus Gejayan',
+                angkatan: 2021,
+                aktif: 116,
+                non_aktif: 35,
+                cuti: '',
+                lulus: '',
+                drop_out: '',
+                pindah: '1',
+                mengundurkan_diri: '',
+                total: 152
+            },
+            {
+                id: 1,
+                jurusan: '',
+                kelas: '',
+                kampus: '',
+                angkatan: 2018,
+                aktif: 161,
+                non_aktif: 5,
+                cuti: 1,
+                lulus: 30,
+                drop_out: '1',
+                pindah: '',
+                mengundurkan_diri: 1,
+                total: 198
+            },
         ]
 
         $(document).ready(function() {
@@ -103,9 +133,7 @@
                     {
                         data: 'jurusan',
                         title: 'Jurusan',
-                        render :  function (d) {
-                            return "<a href='/mahasiswa/detail/"+d+"'>"+d+"</a>";
-                        }
+                        
                     },
                     {
                         data: 'kelas',
@@ -121,31 +149,52 @@
                     },
                     {
                         data: 'aktif',
-                        title: 'Aktif'
+                        title: 'Aktif',
+                        render :  function (d) {
+                            return "<a href='/rekap-status-mahasiswa/mhs-aktif/' style='color: #08c'>"+d+"</a>";
+                        }
                     },
                     {
                         data: 'non_aktif',
-                        title: 'Non Aktif'
+                        title: 'Non Aktif',
+                        render :  function (d) {
+                            return "<a href='/rekap-status-mahasiswa/mhs-non-aktif/' style='color: #08c'>"+d+"</a>";
+                        }
                     },
                     {
                         data: 'cuti',
-                        title: 'Cuti'
+                        title: 'Cuti',
+                        render :  function (d) {
+                            return "<a href='/rekap-status-mahasiswa/mhs-cuti/' style='color: #08c'>"+d+"</a>";
+                        }
                     },
                     {
                         data: 'lulus',
-                        title: 'Lulus'
+                        title: 'Lulus',
+                        render :  function (d) {
+                            return "<a href='/rekap-status-mahasiswa/mhs-lulus/' style='color: #08c'>"+d+"</a>";
+                        }
                     },
                     {
                         data: 'drop_out',
-                        title: 'Drop Out'
+                        title: 'Drop Out',
+                        render :  function (d) {
+                            return "<a href='/rekap-status-mahasiswa/mhs-do/' style='color: #08c'>"+d+"</a>";
+                        }
                     },
                     {
                         data: 'pindah',
-                        title: 'Pindah'
+                        title: 'Pindah',
+                        render :  function (d) {
+                            return "<a href='/rekap-status-mahasiswa/mhs-pindah/' style='color: #08c'>"+d+"</a>";
+                        }
                     },
                     {
                         data: 'mengundurkan_diri',
-                        title: 'Mengundurkan Diri'
+                        title: 'Mengundurkan Diri',
+                        render :  function (d) {
+                            return "<a href='/rekap-status-mahasiswa/mhs-undur-diri/' style='color: #08c'>"+d+"</a>";
+                        }
                     },
                     {
                         data: 'total',

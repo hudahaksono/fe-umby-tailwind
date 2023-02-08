@@ -56,8 +56,56 @@ Route::get('/rekap-status-mahasiswa', function () {
     return view('portal.rekap-status-mhs');
 });
 
+Route::get('/rekap-status-mahasiswa/mhs-aktif', function () {
+    return view('portal.mhs-status-aktif');
+});
+
+Route::get('/rekap-status-mahasiswa/mhs-non-aktif', function () {
+    return view('portal.mhs-status-nonaktif');
+});
+
+Route::get('/rekap-status-mahasiswa/mhs-cuti', function () {
+    return view('portal.mhs-status-cuti');
+});
+
+Route::get('/rekap-status-mahasiswa/mhs-lulus', function () {
+    return view('portal.mhs-status-lulus');
+});
+
+Route::get('/rekap-status-mahasiswa/mhs-pindah', function () {
+    return view('portal.mhs-status-pindah');
+});
+
+Route::get('/rekap-status-mahasiswa/mhs-do', function () {
+    return view('portal.mhs-status-do');
+});
+
+Route::get('/rekap-status-mahasiswa/mhs-undur-diri', function () {
+    return view('portal.mhs-status-undur-diri');
+});
+
 Route::get('/rekap-status-krs', function () {
     return view('portal.rekap-status-krs');
+});
+
+Route::get('/rekap-status-krs/bisa-krs', function () {
+    return view('portal.rekap-status-krs-bisa');
+});
+
+Route::get('/rekap-status-krs/diisi', function () {
+    return view('portal.rekap-status-krs-diisi');
+});
+
+Route::get('/log-krs', function () {
+    return view('portal.log-krs');
+});
+
+Route::get('/laporan-total-mhs', function () {
+    return view('portal.laporan-total-mhs');
+});
+
+Route::get('/laporan-total-mhs/baru', function () {
+    return view('portal.laporan-total-mhs-baru');
 });
 
 /**
