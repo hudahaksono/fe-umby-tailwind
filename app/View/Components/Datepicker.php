@@ -10,17 +10,19 @@ class Datepicker extends Component
     public $range;
     public $name;
     public $format;
+    public $val;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($class = null, $range = null, $name = null, $format = 'mm/dd/yyyy')
+    public function __construct($class = null, $range = null, $name = null, $format = 'mm/dd/yyyy', $val = null)
     {
         $this->class = $class;
         $this->range = $range;
         $this->name = $name;
         $this->format = $format;
+        $this->val = $val;
     }
 
     /**

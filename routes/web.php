@@ -153,6 +153,12 @@ Route::get('/setting/per-unit', function () {
 Route::get('/setting/krs', function () {
     return view('setting.setting-krs');
 });
+Route::get('/setting/krs/tambah', function () {
+    return view('setting.setting-krs-tambah');
+});
 Route::get('/setting/batal/krs', function () {
     return view('setting.setting-batal-krs');
+});
+Route::get('/setting/batal/krs-tambah', function () {
+    return view('setting.setting-batal-krs-tambah');
 });

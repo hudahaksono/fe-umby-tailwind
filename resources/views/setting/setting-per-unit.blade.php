@@ -251,8 +251,8 @@
             {
                 jurusan: 'S1 Psikologi',
                 isi_pengajar: 'Ditutup',
-                uts: '14 Agu 2021',
-                uas: '14 Agu 2021',
+                uts: '14/08/2021',
+                uas: '08/14/2021',
                 uts_susulan: '14 Agu 2021',
                 uas_susulan: '14 Agu 2021',
                 lulus: '0',
@@ -298,16 +298,19 @@
         setDataEdit(dataEdit);
         function setDataEdit(data){
             html_edit='';
+            const inputClass = (width = "60px") => `block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4`
             $.each(data, function(key, value) {
+                console.log(new Date(value.uas))
                 html_edit += '<tr>' +
                     '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">' + value.jurusan + '</td>' +
                     '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">' + value.isi_pengajar + '</td>' +
-                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">' + value.uts + '</td>' +
-                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">' + value.uas + '</td>' +
-                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">' + value.uts_susulan + '</td>' +
-                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">' + value.uas_susulan + '</td>' +
-                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">' + value.lulus + '</td>' +
+                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400" ><input datepicker datepicker-autohide type="text" value="' + value.uts + `" name="uts" class="${inputClass()}">` + '</td>' +
+                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400" ><input type="text" value="' + value.uas + `" name="uas" class="${inputClass()}">` + '</td>' +
+                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400" ><input type="text" value="' + value.uts_susulan + `" name="uts_susulan" class="${inputClass()}">` + '</td>' +
+                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400" ><input type="text" value="' + value.uas_susulan + `" name="uas_susulan" class="${inputClass()}">` + '</td>' +
+                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400" style="width:10%;"><input type="text" value="' + value.lulus + `" name="lulus" class="${inputClass()}">` + '</td>' +
                     '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">' + value.mk_pilih + '</td>' +
+                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400" style="width:10%;"><input type="date" value="' + new Date(value.uas) + `" name="lulus" class="${inputClass()}">` + '</td>' +
                     '</tr>'
             })
             $('#edit_data').html(html_edit);
