@@ -57,19 +57,19 @@ $data_nav = [
                     ],
                     [
                         'title' => 'Tahun Kurikulum',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/tahun-kurikulum'),
                     ],
                     [
                         'title' => 'Kode Kurikulum',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/kode-kurikulum'),
                     ],
                     [
                         'title' => 'Kurikulum Jurusan',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/kurikulum-jurusan'),
                     ],
                     [
                         'title' => 'Ekivalensi Mata Kuliah',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/ekivalensi-matakuliah'),
                     ],
                     [
                         'title' => 'Prasyarat Mata Kuliah',

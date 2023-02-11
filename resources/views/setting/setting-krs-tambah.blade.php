@@ -11,7 +11,7 @@
         </div>
 
         @endslot
-        <div class="flex flex-row mb-4">
+        <!-- <div class="flex flex-row mb-4">
             <div class="flex ml-auto">
                 <x-button size="sm" color="white" as-link={{ true }} href="#" class="mx-2 text-cool-gray-800 border-cool-gray-400 ml-auto">
                     <i data-feather="check" width="16"></i>
@@ -20,8 +20,8 @@
                 <x-button size="sm" color="white" as-link={{ true }} href="/setting/krs"
                         class="mx-2  text-cool-gray-800 border-cool-gray-400 ml-auto"><i data-feather="list" width="16"></i>&nbsp;Daftar</x-button>
             </div>
-        </div>
-        <hr>
+        </div> -->
+        <!-- <hr> -->
         <form>
             <div class="w-full md:w-1/2">
                 <div class="flex flex-row justify-between my-2">
@@ -92,15 +92,15 @@
                     </div>
                 </div>
 
-                <!-- <p class="text-gray-400 italic my-4 text-sm">Kolom dengan tanda <span class="text-red-600">*</span> wajib
+                <p class="text-gray-400 italic my-4 text-sm">Kolom dengan tanda <span class="text-red-600">*</span> wajib
                     diisi.</p>
 
 
                 <div class="mt-4">
-                    <x-button as-link={{ true }} href="/perkuliahan/jenis-mata-kuliah"
+                    <x-button as-link={{ true }} href="/setting/krs"
                         class="bg-gray-500 hover:bg-gray-400 active:bg-gray-400">Kembali</x-button>
                     <x-button type="submit">Simpan</x-button>
-                </div> -->
+                </div>
 
 
             </div>

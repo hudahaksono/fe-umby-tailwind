@@ -35,14 +35,14 @@
             keterangan: "Matakuliah Pengembangan Kepribadian",
         },
         {
-            id: 1,
+            id: 2,
             kodemk: '1121',
             nama: 'MKK',
             urutan: 0,
             keterangan: "Matakuliah Keilmuan Ketrampilan",
         },
         {
-            id: 1,
+            id: 3,
             kodemk: '1122',
             nama: 'MKKB',
             urutan: 0,
@@ -84,8 +84,8 @@
                                 `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-600 border border-transparent active:bg-${color}-600 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
                         const btn = `
                         <div class="flex justify-center">
-                        <a href="#" class="${btnClass()}"><i data-feather="edit" width="16"></i></a>
-                        <a href="#" class="${btnClassRed()}"><i data-feather="trash" width="16"></i></a>
+                        <a id='edit_data' href="javascript:void(0)" class="${btnClass()}"><i data-feather="edit" width="16"></i></a>
+                        <a id='hapus_data' href="javascript:void(0)" class="${btnClassRed()}"><i data-feather="trash" width="16"></i></a>
                         </div>
                         `
                         feather.replace()
@@ -95,6 +95,14 @@
                 }
             ]
         })
+
+        $('body').on('click', '#edit_data', function (e) {
+            var $row = $(this).closest("tr");
+            var data = $('#view-table').DataTable().row($row).data();
+            var id = data['id'];
+
+            window.location.href = '/perkuliahan/jenis-mata-kuliah/edit/'+id;
+        });
     })
 </script>
 @endsection

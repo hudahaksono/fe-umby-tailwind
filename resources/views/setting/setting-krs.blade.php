@@ -3,8 +3,8 @@
 
 {{-- YOUR CONTENT START HERE --}}
 @section('contents')
+    <!-- <x-title class="text-cool-gray-800 mb-5">Periode KRS</x-title> -->
     <x-card title="Periode KRS">
-    <x-card>
         <div class="flex flex-row mb-4">
             <div class="w-1/4">
                 <select id="filter" name="filter" multiple

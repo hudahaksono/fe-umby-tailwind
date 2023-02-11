@@ -67,7 +67,7 @@
         
 
         <form id="form-input">
-            <div class="grid justify-items-end my-2 ">
+            <!-- <div class="grid justify-items-end my-2 ">
                 <div class="float-right">
                     <x-button id="btn_simpan" size="sm" color="white" as-link={{ true }} href="#" class="mx-2 text-cool-gray-800 border-cool-gray-400">
                         <i data-feather="check" width="16"></i>
@@ -79,7 +79,7 @@
                     </x-button>
                 </div>
 
-            </div>
+            </div> -->
             <div class="w-full md:w-1/2">
                 <div class="flex flex-row justify-between my-2">
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">Kurikulum Berlaku <span
@@ -204,11 +204,11 @@
                     diisi.</p>
 
 
-                <!-- <div class="mt-4">
+                <div class="mt-4">
                     <x-button id="btn_kembali" as-link={{ true }} href="javascript:;"
                         class="bg-gray-500 hover:bg-gray-400 active:bg-gray-400">Kembali</x-button>
                     <x-button type="submit">Simpan</x-button>
-                </div> -->
+                </div>
 
 
             </div>
@@ -251,7 +251,7 @@
             $('#form-input').show();
         });
 
-        $('#btn_batal').click(function(event) {
+        $('#btn_batal, #btn_kembali').click(function(event) {
             $('#list_data').show();
             $('#form-input').hide();
         });

@@ -11,14 +11,14 @@
         <x-card>
             <div class="grid justify-items-end my-2 ">
                 <div class="float-right">
-                    <x-button id="btn_simpan" size="sm" color="white" as-link={{ true }} href="#" class="mx-2 text-cool-gray-800 border-cool-gray-400" hidden>
+                    <!-- <x-button id="btn_simpan" size="sm" color="white" as-link={{ true }} href="#" class="mx-2 text-cool-gray-800 border-cool-gray-400" hidden>
                         <i data-feather="check" width="16"></i>
                         &nbsp;Simpan
                     </x-button>
                     <x-button id="btn_batal" size="sm" color="white" as-link={{ true }} href="#" class="mx-2 text-cool-gray-800 border-cool-gray-400" hidden>
                         <i data-feather="rotate-cw" width="16"></i>
                         &nbsp;Batal
-                    </x-button>
+                    </x-button> -->
                     <x-button id="btn_ubah" size="sm" color="white" as-link={{ true }} href="#"
                     class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="edit"
                         width="16"></i>&nbsp;Ubah</x-button>
@@ -299,6 +299,11 @@
                 </div>
 
                 <p class="text-gray-400 italic my-4 text-sm">Kolom dengan tanda <span class="text-red-600">*</span> wajib diisi.</p>
+                <div class="mt-4">
+                    <x-button id="btn_kembali" as-link={{ true }} href="javascript:;"
+                        class="bg-gray-500 hover:bg-gray-400 active:bg-gray-400">Kembali</x-button>
+                    <x-button type="submit">Simpan</x-button>
+                </div>
 
             </div>
         </form>
@@ -371,6 +376,13 @@
         $('#btn_batal').click(function(event) {
             $('#btn_simpan').hide();
             $(this).hide();
+            $('#btn_ubah').show();
+
+            $('#list_data').show();
+            $('#form-input').hide();
+        });
+
+        $('#btn_kembali').click(function(event) {
             $('#btn_ubah').show();
 
             $('#list_data').show();
