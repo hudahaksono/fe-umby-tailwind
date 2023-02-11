@@ -190,153 +190,30 @@
         </div>
         
         <form id="form-input">
-            <div class="w-full md:w-1/2">
-                <div class="flex flex-row justify-between my-2">
-                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">PENGAJUAN CUTI <span
-                                class="text-red-600">*</span></span>
-                    </div>
-                    <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="pengajuan_cuti"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="PENGAJUAN CUTI..">
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="flex flex-row justify-between my-2">
-                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">KULIAH <span
-                                class="text-red-600">*</span></span></div>
-                    <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="kuliah"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="KULIAH..">
-                    </div>
-                </div>
-
-                <hr />
-
-
-                <div class="flex flex-row justify-between my-2">
-                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">UTS <span
-                                class="text-red-600">*</span></span></div>
-                    <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="uts"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="UTS..">
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="flex flex-row justify-between my-2">
-                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">UAS <span
-                                class="text-red-600">*</span></span></div>
-                    <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="uas"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="UAS..">
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="flex flex-row justify-between my-2">
-                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">UTS SUSULAN <span
-                                class="text-red-600">*</span></span></div>
-                    <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="uts_susulan"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="UTS SUSULAN..">
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="flex flex-row justify-between my-2">
-                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">UAS SUSULAN <span
-                                class="text-red-600">*</span></span></div>
-                    <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="uas_susulan"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="UAS SUSULAN..">
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="flex flex-row justify-between my-2">
-                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">PENGUMUMAN NILAI UTS <span
-                                class="text-red-600">*</span></span></div>
-                    <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="pengumuman_nilai_uts"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="PENGUMUMAN NILAI UTS..">
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="flex flex-row justify-between my-2">
-                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">PENGUMUMAN NILAI UAS <span
-                                class="text-red-600">*</span></span></div>
-                    <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="pengumuman_nilai_uas"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="PENGUMUMAN NILAI UAS..">
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="flex flex-row justify-between my-2">
-                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">KOREKSI NILAI <span
-                                class="text-red-600">*</span></span></div>
-                    <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="koreksi_nilai"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="KOREKSI NILAI..">
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="flex flex-row justify-between my-2">
-                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">UPLOAD SOAL <span
-                                class="text-red-600">*</span></span></div>
-                    <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="upload_soal"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="UPLOAD SOAL..">
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="flex flex-row justify-between my-2">
-                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">MINIMAL KEHADIRAN <span
-                                class="text-red-600">*</span></span></div>
-                    <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="minimal_kehadiran"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="MINIMAL KEHADIRAN..">
-                    </div>
-                </div>
-
-                <p class="text-gray-400 italic my-4 text-sm">Kolom dengan tanda <span class="text-red-600">*</span> wajib diisi.</p>
-
-            </div>
+            <!-- <div class="w-full "> -->
+                <table class="w-full table-auto">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Jurusan</th>
+                            <th>TU Jurusan</th>
+                            <th colspan="4">Akhir Nilai</th>
+                            <th>SKS</th>
+                            <th>KRS SP</th>
+                        </tr>
+                        <tr>
+                            <th>Isi Pengajar</th>
+                            <th>UTS</th>
+                            <th>UAS</th>
+                            <th>UTS Susulan</th>
+                            <th>UAS Susulan</th>
+                            <th>Lulus</th>
+                            <th>MK Pilih</th>
+                        </tr>
+                    </thead>
+                    <tbody id="edit_data">
+                    </tbody>
+                </table>
+            <!-- </div> -->
         </form>
     </x-card>
 @endsection
@@ -361,24 +238,29 @@
         },
     ]
 
+    const dataEdit = [{
+                jurusan: 'Psikologi',
+                isi_pengajar: '',
+                uts: '',
+                uas: '',
+                uts_susulan: '',
+                uas_susulan: '',
+                lulus: '',
+                mk_pilih: ''
+            },
+            {
+                jurusan: 'S1 Psikologi',
+                isi_pengajar: 'Ditutup',
+                uts: '14/08/2021',
+                uas: '08/14/2021',
+                uts_susulan: '14 Agu 2021',
+                uas_susulan: '14 Agu 2021',
+                lulus: '0',
+                mk_pilih: 'Semua'
+            }]
+
     $(document).ready(function() {
-        // $('#setting-table').DataTable({
-        //     data: dataSet,
-        //     columns: [
-        //         {
-        //             data: 'tanggal',
-        //             title: 'Tanggal'
-        //         },
-        //         {
-        //             data: 'awal',
-        //             title: 'Awal'
-        //         },
-        //         {
-        //             data: 'akhir',
-        //             title: 'Akhir'
-        //         }
-        //     ]
-        // })
+        var html_edit;
         var kelasSelect = {
             options: [{
                     value: "UKT",
@@ -412,6 +294,28 @@
             $('#list_data').show();
             $('#form-input').hide();
         });
+
+        setDataEdit(dataEdit);
+        function setDataEdit(data){
+            html_edit='';
+            const inputClass = (width = "60px") => `block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4`
+            $.each(data, function(key, value) {
+                console.log(new Date(value.uas))
+                html_edit += '<tr>' +
+                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">' + value.jurusan + '</td>' +
+                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">' + value.isi_pengajar + '</td>' +
+                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400" ><input datepicker datepicker-autohide type="text" value="' + value.uts + `" name="uts" class="${inputClass()}">` + '</td>' +
+                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400" ><input type="text" value="' + value.uas + `" name="uas" class="${inputClass()}">` + '</td>' +
+                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400" ><input type="text" value="' + value.uts_susulan + `" name="uts_susulan" class="${inputClass()}">` + '</td>' +
+                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400" ><input type="text" value="' + value.uas_susulan + `" name="uas_susulan" class="${inputClass()}">` + '</td>' +
+                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400" style="width:10%;"><input type="text" value="' + value.lulus + `" name="lulus" class="${inputClass()}">` + '</td>' +
+                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">' + value.mk_pilih + '</td>' +
+                    '<td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400" style="width:10%;"><input type="date" value="' + new Date(value.uas) + `" name="lulus" class="${inputClass()}">` + '</td>' +
+                    '</tr>'
+            })
+            $('#edit_data').html(html_edit);
+        }
+        
     });
 </script>
 @endsection

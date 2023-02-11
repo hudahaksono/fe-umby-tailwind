@@ -56,6 +56,11 @@
                         <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">:</td>
                         <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">B (3.00)</td>
                     </tr>
+                    <tr>
+                        <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">Pesan Pengesahan Nilai</td>
+                        <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">:</td>
+                        <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -82,9 +87,12 @@
                     </div>
                     <div class="basis-1 flex items-center">:</div>
                     <div class="basis-2/3 flex items-center">
-                        <input type="text" name="kurikulum"
+                        <!-- <input type="text" name="kurikulum"
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="Kurikulum Berlaku..">
+                            placeholder="Kurikulum Berlaku.."> -->
+                        <select id="select-kurikulum" name="s_kurikulum"
+                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                        </select>
                     </div>
                 </div>
 
@@ -95,9 +103,15 @@
                                 class="text-red-600">*</span></span></div>
                     <div class="basis-1 flex items-center">:</div>
                     <div class="basis-2/3 flex items-center">
-                        <input type="text" name="periode_semester"
+                        <!-- <input type="text" name="periode_semester"
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="Periode Semester..">
+                            placeholder="Periode Semester.."> -->
+                        <select id="select-semester" name="s_semester"
+                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                        </select>
+                        <select id="select-semester-thn" name="s_semester_thn"
+                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                        </select>
                     </div>
                 </div>
 
@@ -109,9 +123,12 @@
                                 class="text-red-600">*</span></span></div>
                     <div class="basis-1 flex items-center">:</div>
                     <div class="basis-2/3 flex items-center">
-                        <input type="text" name="periode_semester_pendek"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="Periode Semester Pendek..">
+                        <select id="select-smt-pendek" name="s_smt_pendek"
+                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                        </select>
+                        <select id="select-smt-pendek-thn" name="s_smt_pendek_thn"
+                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                        </select>
                     </div>
                 </div>
 
@@ -122,9 +139,12 @@
                                 class="text-red-600">*</span></span></div>
                     <div class="basis-1 flex items-center">:</div>
                     <div class="basis-2/3 flex items-center">
-                        <input type="text" name="periode_krs_ta"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="Periode KRS TA..">
+                        <select id="select-periode-krs" name="s_periode_krs"
+                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                        </select>
+                        <select id="select-periode-krs-thn" name="s_periode_krs_thn"
+                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                        </select>
                     </div>
                 </div>
 
@@ -135,9 +155,12 @@
                                 class="text-red-600">*</span></span></div>
                     <div class="basis-1 flex items-center">:</div>
                     <div class="basis-2/3 flex items-center">
-                        <input type="text" name="periode_nilai"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="Periode Nilai..">
+                        <select id="select-periode-nilai" name="s_periode_nilai"
+                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                        </select>
+                        <select id="select-periode-nilai-thn" name="s_periode_nilai_thn"
+                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                        </select>
                     </div>
                 </div>
 
@@ -161,9 +184,19 @@
                                 class="text-red-600">*</span></span></div>
                     <div class="basis-1 flex items-center">:</div>
                     <div class="basis-2/3 flex items-center">
-                        <input type="text" name="nilai_default"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="Nilai Default..">
+                        <select id="select-nilai-def" name="s_nilai_def"
+                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flex flex-row justify-between my-2">
+                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">Nilai Default <span
+                                class="text-red-600">*</span></span></div>
+                    <div class="basis-1 flex items-center">:</div>
+                    <div class="basis-2/3 flex items-center">
+                        <textarea id="pesan_pengesahan" class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
+                            rows="3"></textarea>
                     </div>
                 </div>
 
@@ -188,6 +221,29 @@
 @section('scripts')
 <script>
     $(document).ready(function() {
+        var KurikulumSelect = {
+            placeholder: "Pilih Kurikulum...",
+            options: [{
+                    value: "2021",
+                    text: "2021"
+                },
+                {
+                    value: "2020",
+                    text: "2022"
+                },
+                {
+                    value: "2019",
+                    text: "2023"
+                },
+                {
+                    value: "2018",
+                    text: "2018"
+                },
+            ],
+        }
+
+        new TomSelect('#select-kurikulum', KurikulumSelect)
+
         $('#form-input').hide();
 
         $('#btn_ubah').click(function(event) {

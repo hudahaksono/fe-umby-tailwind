@@ -27,17 +27,17 @@ $data_nav = [
             ],
             [
                 'title' => 'Log KRS',
-                'url' => url('/rekap-status-mahasiswa'),
+                'url' => url('/log-krs'),
             ],
             [
                 'title' => 'Laporan Total Mahasiswa',
-                'url' => url('/rekap-status-mahasiswa'),
+                'url' => url('/laporan-total-mhs'),
             ],
         ],
     ],
     [
         'title' => 'Perkuliahan',
-        'url' => url('/'),
+        'url' => '#',
         'sub_menu' => [
             [
                 'title' => 'Kurikulum',
@@ -99,7 +99,7 @@ $data_nav = [
             ],
             [
                 'title' => 'Kelas Kuliah',
-                'url' => url('/dosen'),
+                'url' => '#',
                 'sub_menu' => [
                     [
                         'title' => 'Monitoring Kelas',
@@ -153,7 +153,7 @@ $data_nav = [
             ],
             [
                 'title' => 'Kelas Ujian',
-                'url' => url('/rekap-status-mahasiswa'),
+                'url' => '#',
                 'sub_menu' => [
                     [
                         'title' => 'Kelas Ujian',
@@ -175,7 +175,7 @@ $data_nav = [
             ],
             [
                 'title' => 'Administrasi',
-                'url' => url('/rekap-status-mahasiswa'),
+                'url' => '#',
                 'sub_menu' => [
                     [
                         'title' => 'Dosen PA',
@@ -247,7 +247,7 @@ $data_nav = [
             ],
             [
                 'title' => 'Tugas Akhir',
-                'url' => url('/rekap-status-mahasiswa'),
+                'url' => '#',
                 'sub_menu' => [
                     [
                         'title' => 'Tugas Akhir',
@@ -261,7 +261,7 @@ $data_nav = [
             ],
             [
                 'title' => 'Kerja Praktek',
-                'url' => url('/rekap-status-mahasiswa'),
+                'url' => '#',
                 'sub_menu' => [
                     [
                         'title' => 'Monitoring Kerja Praktek',
@@ -271,7 +271,7 @@ $data_nav = [
             ],
             [
                 'title' => 'Realisasi (Barcode Read)',
-                'url' => url('/rekap-status-mahasiswa'),
+                'url' => '#',
                 'sub_menu' => [
                     [
                         'title' => 'Realisasi Perkuliahan',
@@ -285,7 +285,7 @@ $data_nav = [
             ],
             [
                 'title' => 'Yudisium',
-                'url' => url('/rekap-status-mahasiswa'),
+                'url' => '#',
                 'sub_menu' => [
                     [
                         'title' => 'Periode Yudisium',
@@ -307,7 +307,7 @@ $data_nav = [
             ],
             [
                 'title' => 'Wisuda',
-                'url' => url('/rekap-status-mahasiswa'),
+                'url' => '#',
                 'sub_menu' => [
                     [
                         'title' => 'Periode Wisuda',
@@ -329,7 +329,7 @@ $data_nav = [
             ],
             [
                 'title' => 'PDPT',
-                'url' => url('/rekap-status-mahasiswa'),
+                'url' => '#',
                 'sub_menu' => [
                     [
                         'title' => 'Setting',
@@ -345,7 +345,7 @@ $data_nav = [
     ],
     [
         'title' => 'Keuangan',
-        'url' => url('/'),
+        'url' => '#',
         'sub_menu' => [
             [
                 'title' => 'Komponen Tarif',
@@ -425,33 +425,467 @@ $data_nav = [
                         'title' => 'SPP Variabel Praktek',
                         'url' => '#',
                     ],
+                    [
+                        'title' => 'SPP Tetap Angsuran',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Denda SPP Tetap',
+                        'url' => '#',
+                    ],
                 ],
             ],
             [
                 'title' => 'Tarif UKT',
                 'url' => '#',
+                'sub_menu' => [
+                    [
+                        'title' => 'SPA',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Tridarma',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'SKS Kuliah',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Tarif KKN',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Tarif Wisuda',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Tarif LSP',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Tarif PKPP',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Her Registrasi',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Sidang TA',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Denda SKS Kuliah',
+                        'url' => '#',
+                    ],
+                ],
             ],
             [
                 'title' => 'Tagihan',
                 'url' => '#',
+                'sub_menu' => [
+                    [
+                        'title' => 'Cari Tagihan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Buat Tagihan Mahasiswa',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Buat Tagihan Calon Mhs',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Dispensasi Tagihan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Buat Tagihan Denda',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Buat Tagihan Her Registrasi',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Buat Tagihan KKN',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Buat Tagihan Tridarma',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Buat Tagihan Wisuda',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Buat Tagihan LSP',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Buat Tagihan PKPP',
+                        'url' => '#',
+                    ],
+                ],
             ],
             [
                 'title' => 'Pembayaran',
                 'url' => '#',
+                'sub_menu' => [
+                    [
+                        'title' => 'Bayar Tagihan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Beli Formulir',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Cari Pembayaran',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Cari Pembayaran Periode',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Pembayaran Formulir',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Laporan Keuangan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Rekap Keuangan',
+                        'url' => '#',
+                    ],
+                ],
             ],
             [
                 'title' => 'BANK BNI',
                 'url' => '#',
+                'sub_menu' => [
+                    [
+                        'title' => 'VA BNI',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Tagihan VA BNI',
+                        'url' => '#',
+                    ],
+                ]
             ],
             [
                 'title' => 'H2H',
                 'url' => '#',
+                'sub_menu' => [
+                    [
+                        'title' => 'Setting',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Log Transaksi',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Bank',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Rekonsiliasi',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Rekonsiliasi BNI',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Rekanan Bank',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Jenis Tagihan',
+                        'url' => '#',
+                    ],
+                ]
             ],
         ],
     ],
     [
         'title' => 'Laporan',
-        'url' => url('/'),
+        'url' => '#',
+        'sub_menu' => [
+            [
+                'title' => 'Laporan Index',
+                'url' => '#',
+            ],
+            [
+                'title' => 'Mahasiswa',
+                'url' => '#',
+                'sub_menu' => [
+                    [
+                        'title' => 'Status Mahasiswa Per Semester',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'IPK Mahasiswa Per Semester',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'IPS Mahasiswa Per Semester',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Mahasiswa Belum KRS',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Rekapitulasi Mhs Tugas Akhir',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Peserta Yudisium',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Mahasiswa Tidak Hadir 4x Berturutan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Rekap Status Mahasiswa',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Laporan Tes',
+                        'url' => '#',
+                    ],
+                ]
+            ],
+            [
+                'title' => 'Dosen',
+                'url' => '#',
+                'sub_menu' => [
+                    [
+                        'title' => 'Rekap Kehadiran Mengajar',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Kinerja Dosen',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Rekap Ketepatan Masuk Dosen',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Kinerja Jurusan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Pengawas',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Himbauan Pengawas Ujian',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Dosen Pembimbing Akademik',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Tanggal Entry Nilai Dosen',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Dosen Belum Masukkan Nilai',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Rekapitulasi Pembimbing TA',
+                        'url' => '#',
+                    ],
+                ]
+            ],
+            [
+                'title' => 'Perkuliahan',
+                'url' => '#',
+                'sub_menu' => [
+                    [
+                        'title' => 'Rekap Mahasiswa Per Status',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Rekap IPK Mhs Per Semester',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Jadwal Perkuliahan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Jadwal Ujian Per Jurusan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Rekapitulasi Ujian Susulan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Jumlah Peserta Kelas <20 Mhs',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Realisasi dan Kesesuaian SAP',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Realisasi Perkuliahan dan E-Learning',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Matrix Jadwal Kuliah',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Rekap Soal Ujian',
+                        'url' => '#',
+                    ],
+                ]
+            ],
+            [
+                'title' => 'Keuangan',
+                'url' => '#',
+                'sub_menu' => [
+                    [
+                        'title' => 'Transaksi Pembayaran',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Biaya Kuliah',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Jurnal Pendapatan Harian',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Jurnal Penerimaan Harian',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Rekap Kewajiban Pembayaran',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Jurnal Pendapatan Harian Maba',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Jumlah Entry Per Tanggal',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Rekap Jumlah Maba',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Rekap Pembayaran & Jumlah Maba',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Mahasiswa Beasiswa',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Rekap Keuangan Semester',
+                        'url' => '#',
+                    ],
+                ]
+            ],
+            [
+                'title' => 'Kelas',
+                'url' => '#',
+                'sub_menu' => [
+                    [
+                        'title' => 'Presensi Kelas',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Presensi Ujian',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Kelas Barcode',
+                        'url' => '#',
+                    ],
+                ]
+            ],
+            [
+                'title' => 'Kartu Mahasiswa',
+                'url' => '#',
+                'sub_menu' => [
+                    [
+                        'title' => 'KRS',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'KHS',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Transkip',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Ijazah',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Kartu Studi Dan Ujian',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Kartu Ujian',
+                        'url' => '#',
+                    ],
+                ]
+            ],
+            [
+                'title' => 'Perangkat Wisuda',
+                'url' => '#',
+                'sub_menu' => [
+                    [
+                        'title' => 'Buku Alumni',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Buku Induk Ijazah',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Name Tag',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Label Bangku',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Label Undangan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Data Alumni',
+                        'url' => '#',
+                    ],
+                ]
+            ],
+        ]
     ],
     [
         'title' => 'Referensi',
@@ -479,6 +913,10 @@ $data_nav = [
                         'sub_menu' => [
                             [
                                 'title' => 'Master Ruang',
+                                'url' => url('#'),
+                            ],
+                            [
+                                'title' => 'Prioritas Ruang',
                                 'url' => url('#'),
                             ]
                         ]
@@ -520,18 +958,94 @@ $data_nav = [
             [
                 'title' => 'Akademik',
                 'url' => url('#'),
+                'sub_menu' => [
+                    [
+                        'title' => 'Propinsi',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Kota',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Sumber Beasiswa',
+                        'url' => '#',
+                    ],
+                ]
             ],
             [
                 'title' => 'Biodata',
                 'url' => url('#'),
+                'sub_menu' => [
+                    [
+                        'title' => 'Agama',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Kewarganegaraan',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Status Nikah',
+                        'url' => '#',
+                    ],
+                ]
             ],
             [
-                'title' => 'Mahasiswa',
+                'title' => 'Mahasiswa ',
                 'url' => url('#'),
+                'sub_menu' => [
+                    [
+                        'title' => 'Status Mahasiswa',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Pendidikan (ortu)',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Pekerjaan (ortu)',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Pendidikan (ortu)',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Pengalaman',
+                        'url' => '#',
+                    ],
+                ]
             ],
             [
                 'title' => 'Pegawai',
                 'url' => url('#'),
+                'sub_menu' => [
+                    [
+                        'title' => 'Jabatan Akademik',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Jabatan Struktural',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Pendidikan Dosen',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Jenis Honor',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Beban Mengajar',
+                        'url' => '#',
+                    ],
+                    [
+                        'title' => 'Honor Mengajar',
+                        'url' => '#',
+                    ],
+                ]
             ],
         ]
     ],

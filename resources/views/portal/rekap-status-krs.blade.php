@@ -71,9 +71,6 @@
                     {
                         data: 'jurusan',
                         title: 'Jurusan',
-                        render :  function (d) {
-                            return "<a href='/mahasiswa/detail/"+d+"'>"+d+"</a>";
-                        }
                     },
                     {
                         data: 'kelas',
@@ -89,11 +86,17 @@
                     },
                     {
                         data: 'bisa_krs',
-                        title: 'Bisa KRS'
+                        title: 'Bisa KRS',
+                        render :  function (d) {
+                            return "<a href='/rekap-status-krs/bisa-krs/' style='color: #08c'>"+d+"</a>";
+                        }
                     },
                     {
                         data: 'krs_diisi',
-                        title: 'KRS Diisi'
+                        title: 'KRS Diisi',
+                        render :  function (d) {
+                            return "<a href='/rekap-status-krs/diisi/' style='color: #08c'>"+d+"</a>";
+                        }
                     },
                 ]
             })

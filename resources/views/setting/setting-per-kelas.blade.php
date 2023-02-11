@@ -140,11 +140,27 @@
                                 class="text-red-600">*</span></span>
                     </div>
                     <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="pengajuan_cuti"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="PENGAJUAN CUTI..">
+                    
+
+                    <div date-rangepicker datepicker-autohide datepicker-format='dd M yyyy' class="basis-2/3 flex items-center">
+                    <x-datepicker range={{true}} class='ml-4' name="pengajuan_cuti">
+
+                    </x-datepicker>
+                      <!-- <div class="relative ml-4">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                        </div>
+                            <input name="pengajuan_cuti_start" type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date start">
+                        </div>
+                        <span class="mx-4 text-gray-500">to</span>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                            </div>
+                            <input name="pengajuan_cuti_end" type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date end">
+                        </div> -->
                     </div>
+
                 </div>
 
                 <hr />
@@ -153,10 +169,12 @@
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">KULIAH <span
                                 class="text-red-600">*</span></span></div>
                     <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="kuliah"
+                    <div date-rangepicker datepicker-autohide datepicker-format='dd M yyyy' class="basis-2/3 flex items-center">
+                        <x-datepicker range={{true}} class='ml-4' name="kuliah">
+                        </x-datepicker>
+                        <!-- <input type="text" name="kuliah"
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="KULIAH..">
+                            placeholder="KULIAH.."> -->
                     </div>
                 </div>
 
@@ -167,10 +185,12 @@
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">UTS <span
                                 class="text-red-600">*</span></span></div>
                     <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="uts"
+                    <div date-rangepicker datepicker-autohide datepicker-format='dd M yyyy' class="basis-2/3 flex items-center">
+                        <x-datepicker range={{true}} class='ml-4' name="uts">
+                        </x-datepicker>
+                        <!-- <input type="text" name="uts"
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="UTS..">
+                            placeholder="UTS.."> -->
                     </div>
                 </div>
 
@@ -180,10 +200,10 @@
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">UAS <span
                                 class="text-red-600">*</span></span></div>
                     <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="uas"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="UAS..">
+                    <div date-rangepicker datepicker-autohide datepicker-format='dd M yyyy' class="basis-2/3 flex items-center">
+                        <x-datepicker range={{true}} class='ml-4' name="uas">
+                        </x-datepicker>
+                        
                     </div>
                 </div>
 
@@ -193,10 +213,10 @@
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">UTS SUSULAN <span
                                 class="text-red-600">*</span></span></div>
                     <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="uts_susulan"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="UTS SUSULAN..">
+                    <div date-rangepicker datepicker-autohide datepicker-format='dd M yyyy' class="basis-2/3 flex items-center">
+                        <x-datepicker range={{true}} class='ml-4' name="uts_susulan">
+                        </x-datepicker>
+                        
                     </div>
                 </div>
 
@@ -206,10 +226,10 @@
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">UAS SUSULAN <span
                                 class="text-red-600">*</span></span></div>
                     <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="uas_susulan"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="UAS SUSULAN..">
+                    <div date-rangepicker datepicker-autohide datepicker-format='dd M yyyy' class="basis-2/3 flex items-center">
+                        <x-datepicker range={{true}} class='ml-4' name="uas_susulan">
+                        </x-datepicker>
+                        
                     </div>
                 </div>
 
@@ -219,10 +239,10 @@
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">PENGUMUMAN NILAI UTS <span
                                 class="text-red-600">*</span></span></div>
                     <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="pengumuman_nilai_uts"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="PENGUMUMAN NILAI UTS..">
+                    <div date-rangepicker datepicker-autohide datepicker-format='dd M yyyy' class="basis-2/3 flex items-center">
+                        <x-datepicker range={{true}} class='ml-4' name="pengumuman_nilai_uts">
+                        </x-datepicker>
+                        
                     </div>
                 </div>
 
@@ -232,10 +252,10 @@
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">PENGUMUMAN NILAI UAS <span
                                 class="text-red-600">*</span></span></div>
                     <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="pengumuman_nilai_uas"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="PENGUMUMAN NILAI UAS..">
+                    <div date-rangepicker datepicker-autohide datepicker-format='dd M yyyy' class="basis-2/3 flex items-center">
+                        <x-datepicker range={{true}} class='ml-4' name="pengumuman_nilai_uas">
+                        </x-datepicker>
+                        
                     </div>
                 </div>
 
@@ -245,10 +265,10 @@
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">KOREKSI NILAI <span
                                 class="text-red-600">*</span></span></div>
                     <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="koreksi_nilai"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="KOREKSI NILAI..">
+                    <div date-rangepicker datepicker-autohide datepicker-format='dd M yyyy' class="basis-2/3 flex items-center">
+                        <x-datepicker range={{true}} class='ml-4' name="koreksi_nilai">
+                        </x-datepicker>
+                        
                     </div>
                 </div>
 
@@ -258,10 +278,10 @@
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">UPLOAD SOAL <span
                                 class="text-red-600">*</span></span></div>
                     <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <input type="text" name="upload_soal"
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
-                            placeholder="UPLOAD SOAL..">
+                    <div date-rangepicker datepicker-autohide datepicker-format='dd M yyyy' class="basis-2/3 flex items-center">
+                        <x-datepicker range={{true}} class='ml-4' name="upload_soal">
+                        </x-datepicker>
+                        
                     </div>
                 </div>
 
