@@ -125,6 +125,10 @@ Route::get('/perkuliahan/mata-kuliah/tambah', function () {
     return view('perkuliahan.kurikulum.form.mata-kuliah');
 });
 
+Route::get('/perkuliahan/monitoring-kelas', function () {
+    return view('perkuliahan.kelas-kuliah.monitoring-kelas');
+});
+
 /**
  * Referensi
  */

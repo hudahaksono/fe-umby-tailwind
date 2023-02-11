@@ -103,7 +103,7 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Monitoring Kelas',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/monitoring-kelas'),
                     ],
                     [
                         'title' => 'Kelas Perkuliahan',

@@ -3,14 +3,14 @@
 
 {{-- YOUR CONTENT START HERE --}}
 @section('contents')
-    <x-card title="Pegawai">
+    <x-card title="Pegawai" class="w-full mx-auto col-span-3 px-12">
         @slot('button')
             <x-button as-link={{ true }} href="#" size="sm"
                 class="bg-teal-500 hover:bg-teal-400 active:bg-teal-400 focus:shadow-outline-teal ml-auto"><i data-feather="info"
                     width="14"></i>&nbsp;Bantuan</x-button>
         @endslot
         <form>
-            <div class="w-full md:w-1/2">
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-8 pt-5">
                 <div class="flex flex-row justify-between my-2">
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">NIP <span
                                 class="text-red-600">*</span></span>
@@ -132,8 +132,6 @@
                 </div>
 
                 <hr />
-
-
 
                 <div class="mt-8 mb-4 border-b border-gray-200">
                     <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab"
@@ -641,30 +639,297 @@
                                 </div>
                             </div>
                         </div>
-
                         <hr />
-
-
-
-
                     </div>
                     <div class="hidden p-4 bg-gray-50 rounded-lg" id="keluarga" role="tabpanel"
                         aria-labelledby="keluarga-tab">
-                        <p class="text-sm text-gray-500">This is some placeholder content the <strong
-                                class="font-medium text-gray-800">Dashboard tab's associated
-                                content</strong>. Clicking another tab will toggle the visibility of this one for the next.
-                            The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                        <x-title level="5">Keluarga</x-title>
+                        
+                        <div class="flex flex-col md:flex-row justify-between my-2 py-4 md:py-0">
+                            <div class="basis-1/6 flex items-center"><span
+                                    class="text-gray-600 font-semibold md:font-normal">Istri/Suami</span>
+                            </div>
+
+                            <div class="basis-5/6">
+                                <div class="flex flex-row justify-between my-2 ">
+                                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">Nama</span>
+                                    </div>
+                                    <div class="basis-1 flex items-center">:</div>
+                                    <div class="basis-2/3 flex items-center">
+                                        <input type="text" name="nama_ayah"
+                                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-row justify-between my-2">
+                                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">Tanggal Lahir</span>
+                                    </div>
+                                    <div class="basis-1 flex items-center">:</div>
+                                    <div class="basis-2/3 flex items-center">
+                                        <input type="date" name="tanggal_lahir_istri_suami"
+                                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <div class="flex flex-col md:flex-row justify-between my-2 py-4 md:py-0">
+                            <div class="basis-1/6 flex items-center"><span
+                                    class="text-gray-600 font-semibold md:font-normal">Anak 1</span>
+                            </div>
+
+                            <div class="basis-5/6">
+                                <div class="flex flex-row justify-between my-2 ">
+                                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">Nama</span>
+                                    </div>
+                                    <div class="basis-1 flex items-center">:</div>
+                                    <div class="basis-2/3 flex items-center">
+                                        <input type="text" name="nama_anak1"
+                                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-row justify-between my-2">
+                                <div class="basis-1/3 flex items-center"><span class="text-gray-600">Jenis Kelamin</span>
+                                </div>
+                                <div class="basis-1 flex items-center">:</div>
+                                    <div class="basis-2/3 flex items-center pl-4">
+                                        <ul
+                                            class="items-center w-full text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 md:flex">
+                                            <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r">
+                                                <div class="flex items-center pl-3">
+                                                    <input id="horizontal-list-radio-license-anak1" type="radio" value="L"
+                                                        name="list-radio"
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                                                    <label for="horizontal-list-radio-license-anak1"
+                                                        class="py-3 ml-2 w-full text-sm font-medium text-gray-90">Laki-Laki</label>
+                                                </div>
+                                            </li>
+                                            <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r">
+                                                <div class="flex items-center pl-3">
+                                                    <input id="horizontal-list-radio-id-anak1" type="radio" value="P"
+                                                        name="list-radio"
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                                                    <label for="horizontal-list-radio-id-anak1"
+                                                        class="py-3 ml-2 w-full text-sm font-medium text-gray-90">Perempuan</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-row justify-between my-2">
+                                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">Tanggal Lahir</span>
+                                    </div>
+                                    <div class="basis-1 flex items-center">:</div>
+                                    <div class="basis-2/3 flex items-center">
+                                        <input type="date" name="tanggal_lahir_anak1"
+                                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <div class="flex flex-col md:flex-row justify-between my-2 py-4 md:py-0">
+                            <div class="basis-1/6 flex items-center"><span
+                                    class="text-gray-600 font-semibold md:font-normal">Anak 2</span>
+                            </div>
+
+                            <div class="basis-5/6">
+                                <div class="flex flex-row justify-between my-2 ">
+                                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">Nama</span>
+                                    </div>
+                                    <div class="basis-1 flex items-center">:</div>
+                                    <div class="basis-2/3 flex items-center">
+                                        <input type="text" name="nama_anak1"
+                                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-row justify-between my-2">
+                                <div class="basis-1/3 flex items-center"><span class="text-gray-600">Jenis Kelamin</span>
+                                </div>
+                                <div class="basis-1 flex items-center">:</div>
+                                    <div class="basis-2/3 flex items-center pl-4">
+                                        <ul
+                                            class="items-center w-full text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 md:flex">
+                                            <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r">
+                                                <div class="flex items-center pl-3">
+                                                    <input id="horizontal-list-radio-license-anak2" type="radio" value="L"
+                                                        name="list-radio"
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                                                    <label for="horizontal-list-radio-license-anak2"
+                                                        class="py-3 ml-2 w-full text-sm font-medium text-gray-90">Laki-Laki</label>
+                                                </div>
+                                            </li>
+                                            <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r">
+                                                <div class="flex items-center pl-3">
+                                                    <input id="horizontal-list-radio-id-anak2" type="radio" value="P"
+                                                        name="list-radio"
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                                                    <label for="horizontal-list-radio-id-anak2"
+                                                        class="py-3 ml-2 w-full text-sm font-medium text-gray-90">Perempuan</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-row justify-between my-2">
+                                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">Tanggal Lahir</span>
+                                    </div>
+                                    <div class="basis-1 flex items-center">:</div>
+                                    <div class="basis-2/3 flex items-center">
+                                        <input type="date" name="tanggal_lahir_anak2"
+                                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
                     </div>
                     <div class="hidden p-4 bg-gray-50 rounded-lg" id="lain" role="tabpanel"
                         aria-labelledby="lain-tab">
-                        <p class="text-sm text-gray-500">This is some placeholder content the <strong
-                                class="font-medium text-gray-800">Settings tab's associated
-                                content</strong>. Clicking another tab will toggle the visibility of this one for the next.
-                            The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                        
+                        <x-title level="5">Kepegawaian</x-title>
+
+                        <div class="flex flex-row justify-between my-2">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Jabatan Struktural</span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <select id="select-jabatan-struktural" name="jabatan-struktural"
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <div class="flex flex-row justify-between my-2">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Jabatan Akademik</span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <select id="select-jabatan-akademik" name="jabatan-akademik"
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <div class="flex flex-row justify-between my-2">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Pendidikan Terakhir</span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <select id="select-pendidikan-terakhir" name="pendidikan-terakhir"
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <x-title level="5" class="pt-5">Surat Keterangan Berkelakuan Baik</x-title>
+
+                        <div class="flex flex-row justify-between my-2">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Pejabat</span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <input type="text" name="pejabat_kelakuan_baik"
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <div class="flex flex-row justify-between my-2">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Nomor</span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <input type="text" name="nomor_kelakuan_baik"
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <div class="flex flex-row justify-between my-2">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Tanggal</span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <input type="date" name="tanggal_kelakuan_baik"
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <x-title level="5" class="pt-5">Surat Keterangan Berbadan Sehat</x-title>
+
+                        <div class="flex flex-row justify-between my-2">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Pejabat</span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <input type="text" name="pejabat_sehat"
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <div class="flex flex-row justify-between my-2">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Nomor</span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <input type="text" name="nomor_sehat"
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <div class="flex flex-row justify-between my-2">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Tanggal</span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <input type="date" name="tanggal_sehat"
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <x-title level="5" class="pt-5">Keterangan Lain yang Dianggap Perlu</x-title>
+
+
+                        <div class="flex flex-row justify-between my-2">
+                            <div class="basis-1/3 pt-2"><span class="text-gray-600">Keterangan</span>
+                            </div>
+                            <div class="basis-1 pt-2">:</div>
+                            <div class="basis-2/3 pl-4">
+                                <div class="flex flex-col">
+                                    <textarea name="keterangan_lain"
+                                        class="block w-full my-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input"></textarea>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-
 
                 <p class="text-gray-400 italic my-4 text-sm">Kolom dengan tanda <span class="text-red-600">*</span> wajib
                     diisi.</p>
