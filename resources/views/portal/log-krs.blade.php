@@ -8,7 +8,7 @@
     <x-card title="Log Hapus KRS dan Perubahan Nilai">
         <div class="flex flex-row mb-4">
             <div class="flex ml-auto">
-                <x-button size="sm" color="blue" as-link={{ true }} href="{{ URL('/mahasiswa/tambah') }}" class="mx-2"><i
+                <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2"><i
                     data-feather="plus" width="16"></i>&nbsp;Tambah</x-button>
                 <x-button size="sm" color="white" as-link={{ true }} href="#"
                     class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="refresh-cw"

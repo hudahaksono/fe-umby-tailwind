@@ -4,17 +4,28 @@
 {{-- YOUR CONTENT START HERE --}}
 @section('contents')
     <!-- <x-title class="text-cool-gray-800 mb-5">Mata Kuliah</x-title> -->
-    <x-card title="Mata Kuliah">
+    <x-card title="Rancangan Pembelajaran">
         <div class="flex flex-row mb-4">
-            <div class="w-1/4">
-                <select id="filter" name="filter" multiple
-                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                </select>
+            <div class="flex">
+                <div class="flex items-center"><span class="text-gray-600 font-medium">Filter&nbsp; :</span>
+                    </div>
+                <div class="mb-1 inline-flex items-center px-2 py-1">
+                    <select id="select-thn-kurikulum" name="jk" required
+                        class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                    </select>
+                </div>
+                <div class="mb-1 inline-flex items-center px-2 py-1">
+                    <select id="select-jurusan" name="ststus_mhs" required
+                        class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                    </select>
+                </div>
+                <div class="mb-1 inline-flex items-center px-2 py-1">
+                    <select id="select-status-sap" name="ststus_mhs" required
+                        class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                    </select>
+                </div>
             </div>
             <div class="flex ml-auto">
-                <x-button size="sm" color="blue" as-link={{ true }}
-                    href="{{ URL('/perkuliahan/mata-kuliah/tambah') }}" class="mx-2"><i data-feather="plus"
-                        width="16"></i>&nbsp;Tambah</x-button>
                 <x-button size="sm" color="white" as-link={{ true }} href="#"
                     class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="refresh-cw"
                         width="16"></i>&nbsp;Reset</x-button>
@@ -34,28 +45,22 @@
                 id: 1,
                 kodemk: 'ILK53',
                 nama: 'Manajemen Periklanan',
-                nama_en: 'Advertising Management',
-                jenis: 1411,
                 sks: 3,
-                nip_dosen: '212417',
+                sap: 'Belum Ada',
             },
             {
                 id: 2,
                 kodemk: 'PET110P',
                 nama: 'Aplikasi Komputer Lanjut',
-                nama_en: 'Advanced Computer Application',
-                jenis: 1411,
                 sks: 1,
-                nip_dosen: '027',
+                sap: 'Belum Ada',
             },
             {
                 id: 3,
                 kodemk: 'PET103',
                 nama: 'Statistika',
-                nama_en: 'Statistics',
-                jenis: 1411,
                 sks: 2,
-                nip_dosen: '0029126301',
+                sap: 'Belum Ada',
             },
         ]
 
@@ -73,23 +78,15 @@
                     },
                     {
                         data: 'nama',
-                        title: 'Nama Matakuliah'
-                    },
-                    {
-                        data: 'nama_en',
-                        title: 'Nama Matakuliah (EN)'
-                    },
-                    {
-                        data: 'jenis',
-                        title: 'Jenis'
+                        title: 'Nama MK'
                     },
                     {
                         data: 'sks',
                         title: 'SKS'
                     },
                     {
-                        data: 'nip_dosen',
-                        title: 'NIP Dosen Pengampu'
+                        data: 'sap',
+                        title: 'SAP'
                     },
                     {
                         data: 'id',
@@ -119,26 +116,56 @@
                 var data = $('#view-table').DataTable().row($row).data();
                 var id = data['id'];
 
-                window.location.href = '/perkuliahan/mata-kuliah/edit/'+id;
+                window.location.href = '/perkuliahan/rancangan-pembelajaran/edit/'+id;
             });
 
-            var jenisMkSelect = {
-                placeholder: "Jenis",
+            var thnKurikulumSelect = {
+                placeholder: "Tahun Kurikulum",
                 options: [{
-                        value: "1111",
-                        text: "Matakuliah Pengembangan Kepribadian - 1111"
+                        value: "2021",
+                        text: "2021"
                     },
                     {
-                        value: "1121",
-                        text: "Matakuliah Keilmuan Ketrampilan - 1121"
+                        value: "2017",
+                        text: "2017"
                     },
                     {
-                        value: "1122",
-                        text: "Matakuliah Keilmuan KB - 1122"
+                        value: "2016",
+                        text: "2016"
                     },
                 ],
             }
-            new TomSelect('#filter', jenisMkSelect)
+            var jurusanSelect = {
+                placeholder: "Jurusan",
+                options: [{
+                        value: "1",
+                        text: "S1 Psikologi"
+                    },
+                    {
+                        value: "2",
+                        text: "S2 Magister Psikologi"
+                    },
+                    {
+                        value: "3",
+                        text: "S2 Magister Psikologi Profesi"
+                    },
+                ],
+            }
+            var statusSAPSelect = {
+                placeholder: "Jenis",
+                options: [{
+                        value: "1",
+                        text: "Ada SAP"
+                    },
+                    {
+                        value: "2",
+                        text: "Belum Ada SAP"
+                    },
+                ],
+            }
+            new TomSelect('#select-thn-kurikulum', thnKurikulumSelect)
+            new TomSelect('#select-jurusan', jurusanSelect)
+            new TomSelect('#select-status-sap', statusSAPSelect)
 
         })
     </script>

@@ -117,12 +117,25 @@ Route::get('/perkuliahan/jenis-mata-kuliah', function () {
 Route::get('/perkuliahan/jenis-mata-kuliah/tambah', function () {
     return view('perkuliahan.kurikulum.form.jenis-mata-kuliah');
 });
+Route::get('/perkuliahan/jenis-mata-kuliah/edit/{id}', function () {
+    return view('perkuliahan.kurikulum.edit.jenis-mata-kuliah');
+});
 
 Route::get('/perkuliahan/mata-kuliah', function () {
     return view('perkuliahan.kurikulum.mata-kuliah');
 });
 Route::get('/perkuliahan/mata-kuliah/tambah', function () {
     return view('perkuliahan.kurikulum.form.mata-kuliah');
+});
+Route::get('/perkuliahan/mata-kuliah/edit/{id}', function () {
+    return view('perkuliahan.kurikulum.edit.mata-kuliah');
+});
+
+Route::get('/perkuliahan/rancangan-pembelajaran', function () {
+    return view('perkuliahan.kurikulum.rancangan-pembelajaran');
+});
+Route::get('/perkuliahan/rancangan-pembelajaran/edit/{id}', function () {
+    return view('perkuliahan.kurikulum.edit.rancangan-pembelajaran');
 });
 
 /**
