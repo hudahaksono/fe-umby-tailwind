@@ -3,6 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SIA UMBY - @yield('title')</title>
+<link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.5.4/dist/flowbite.min.css" />
 
 {{-- DATA TABLE CSS --}}
 <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
@@ -15,6 +16,8 @@
 
 {{-- TOM SELECT --}}
 <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
+
+
 
 <style>
     /*Form fields*/

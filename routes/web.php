@@ -138,6 +138,22 @@ Route::get('/perkuliahan/rancangan-pembelajaran/edit/{id}', function () {
     return view('perkuliahan.kurikulum.edit.rancangan-pembelajaran');
 });
 
+Route::get('/perkuliahan/tahun-kurikulum', function () {
+    return view('perkuliahan.kurikulum.tahun-kurikulum');
+});
+
+Route::get('/perkuliahan/kode-kurikulum', function () {
+    return view('perkuliahan.kurikulum.kode-kurikulum');
+});
+
+Route::get('/perkuliahan/kurikulum-jurusan', function () {
+    return view('perkuliahan.kurikulum.kurikulum-jurusan');
+});
+
+Route::get('/perkuliahan/ekivalensi-matakuliah', function () {
+    return view('perkuliahan.kurikulum.ekivalensi-matakuliah');
+});
+
 /**
  * Referensi
  */

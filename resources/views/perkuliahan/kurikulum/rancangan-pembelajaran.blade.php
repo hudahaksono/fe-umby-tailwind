@@ -116,7 +116,8 @@
                 var data = $('#view-table').DataTable().row($row).data();
                 var id = data['id'];
 
-                window.location.href = '/perkuliahan/rancangan-pembelajaran/edit/'+id;
+                // window.location.href = '/perkuliahan/rancangan-pembelajaran/edit/'+id;
+                return false;
             });
 
             var thnKurikulumSelect = {
