@@ -28,8 +28,8 @@
                 
             </div>
             <div class="flex ml-auto">
-                <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2"><i
-                    data-feather="plus" width="16"></i>&nbsp;Tambah</x-button>
+                <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2 text-white"><i data-feather="plus"
+                        width="16"></i>&nbsp;Tambah</x-button>
                 <x-button size="sm" color="white" as-link={{ true }} href="#"
                     class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="refresh-cw"
                         width="16"></i>&nbsp;Reset</x-button>
@@ -160,7 +160,7 @@
                         </tr>
                         <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
                             <th colspan="3">
-                                <x-button size="md" color="blue" as-link={{ true }} href="#" class="mx-2"><i width="16"></i>&nbsp;Salin
+                                <x-button size="md" color="blue" as-link={{ true }} href="#" class="mx-2 text-white"><i width="16"></i>&nbsp;Salin
                                 </x-button>
                             </th>
                         </tr>

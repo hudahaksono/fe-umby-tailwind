@@ -169,6 +169,9 @@ Route::get('/perkuliahan/unsur-penilaian', function () {
 Route::get('/perkuliahan/predikat-kelulusan', function () {
     return view('perkuliahan.kurikulum.predikat-kelulusan');
 });
+Route::get('/perkuliahan/monitoring-kelas', function () {
+    return view('perkuliahan.kelas-kuliah.monitoring-kelas');
+});
 
 /**
  * Referensi
