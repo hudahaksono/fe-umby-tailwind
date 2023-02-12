@@ -1,5 +1,6 @@
 {{-- @vite('resources/js/app.js') --}}
 <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script> -->
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>

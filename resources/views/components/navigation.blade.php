@@ -73,19 +73,19 @@ $data_nav = [
                     ],
                     [
                         'title' => 'Prasyarat Mata Kuliah',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/prasyarat-matkul'),
                     ],
                     [
                         'title' => 'Skala Nilai',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/skala-nilai'),
                     ],
                     [
                         'title' => 'Unsur Penilaian',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/unsur-penilaian'),
                     ],
                     [
                         'title' => 'Predikat Kelulusan',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/predikat-kelulusan'),
                     ],
                     [
                         'title' => 'Aturan Batas SKS',

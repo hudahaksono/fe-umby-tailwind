@@ -5,7 +5,7 @@
     <!-- <x-card class="mb-6">
         FILTER
     </x-card> -->
-    <x-card title="Ekivalensi MataKuliah">
+    <x-card title="Prasyarat Mata Kuliah">
         <div class="flex flex-row mb-2">
             <div class="flex ml-auto">
                 <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2"><i
@@ -21,6 +21,21 @@
 
         <div class="flex flex-row mb-2">
             <div class="w-full md:w-1/2">
+                
+
+                <div class="flex flex-row justify-between my-2">
+                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">Thn. Kur.</span>
+                    </div>
+                    <div class="basis-1 flex items-center">:</div>
+                    <div class="basis-2/3 flex items-center">
+                        <select id="select-thn-kur" name="ststus_mhs" required
+                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                        </select>
+                    </div>
+                </div>
+
+                <hr />
+
                 <div class="flex flex-row justify-between my-2">
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">Jurusan&nbsp;<span
                             class="text-red-600">*</span></span>
@@ -36,20 +51,7 @@
                 <hr />
 
                 <div class="flex flex-row justify-between my-2">
-                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">Kurikulum Lama</span>
-                    </div>
-                    <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
-                        <select id="select-kur-lama" name="ststus_mhs" required
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
-                        </select>
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="flex flex-row justify-between my-2">
-                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">Kurikulum Baru</span>
+                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">Kurikulum</span>
                     </div>
                     <div class="basis-1 flex items-center">:</div>
                     <div class="basis-2/3 flex items-center">
@@ -62,26 +64,54 @@
                 
             </div>
             <div class="w-full md:w-1/2 ml-4 items-end">
-                <div class="flex flex-row justify-between my-2 ">
-                <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2"><i width="16"></i>&nbsp;Ambil Matakuliah Sama</x-button>
-                </div>
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                            <th colspan="3">Salin Prasyarat Ke Kurikulum Lain</th>
+                        </tr>
+                        <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                            <td style="width: 150px;">Dari Kurikulum</td>
+                            <td style="width: 10px">:</td>
+                            <td>
+                                <select id="select-kur-dari" name="ststus_mhs" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="border-b bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                            <td style="width: 150px;">Ke Kurikulum</td>
+                            <td style="width: 10px">:</td>
+                            <td>
+                                <select id="select-kur-ke" name="ststus_mhs" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                            <th colspan="3">
+                                <x-button size="md" color="blue" as-link={{ true }} href="#" class="mx-2"><i width="16"></i>&nbsp;Salin
+                                </x-button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
         <table id="mahasiswa-table" class="hover cell-border stripe  order-column">
             <thead>
                 <tr>
-                    <th colspan="4">Silahkan Pilih Kurikulum Lama</th>
-                    <th colspan="4">Silahkan Pilih Kurikulum Baru</th>
+                    <th colspan="3">Mata Kuliah</th>
+                    <th colspan="5">Prasyarat</th>
                 </tr>
                 <tr>
                     <th>No.</th>
-                    <th>Kode Kur.</th>
+                    <th>Kurikulum</th>
                     <th>Kode MK</th>
                     <th>Nama MK</th>
-                    <th>Kode Kur.</th>
                     <th>Kode MK</th>
                     <th>Nama MK</th>
+                    <th>Nilai</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -129,6 +159,7 @@
         //         rapem: 'Ada',
         //     },
         // ]
+
         const dataSet = []
 
         $(document).ready(function() {
@@ -141,7 +172,7 @@
                     },
                     {
                         data: 'nama',
-                        title: 'Kode Kur.'
+                        title: 'Kurikulum'
                     },
                     {
                         data: 'nim',
@@ -156,18 +187,18 @@
                     },
                     {
                         data: 'nama',
-                        title: 'Kode Kur.'
+                        title: 'Kode MK'
                     },
                     {
                         data: 'nim',
-                        title: 'Kode MK',
+                        title: 'Nama MK',
                         // render :  function (d) {
                         //     return "<a href='/mahasiswa/detail/"+d+"'>"+d+"</a>";
                         // }
                     },
                     {
                         data: 'stat',
-                        title: 'Nama MK'
+                        title: 'Nilai'
                     },
                     {
                         data: 'id',
@@ -191,6 +222,23 @@
                 ]
             })
         })
+
+        var thnKurikulumSelect = {
+            placeholder: "tahun...",
+            options: [{
+                    value: "2021",
+                    text: "2021"
+                },
+                {
+                    value: "2017",
+                    text: "2017"
+                },
+                {
+                    value: "2016",
+                    text: "2016"
+                },
+            ],
+        }
 
         var StatusMHSSelect = {
             placeholder: "Kurikulum...",
@@ -229,7 +277,10 @@
 
         new TomSelect('#select-jk', JKSelect)
 
-        new TomSelect('#select-kur-lama', StatusMHSSelect)
+        new TomSelect('#select-thn-kur', thnKurikulumSelect)
         new TomSelect('#select-kur-baru', StatusMHSSelect)
+
+        new TomSelect('#select-kur-dari', StatusMHSSelect)
+        new TomSelect('#select-kur-ke', StatusMHSSelect)
     </script>
 @endsection

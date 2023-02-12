@@ -154,6 +154,22 @@ Route::get('/perkuliahan/ekivalensi-matakuliah', function () {
     return view('perkuliahan.kurikulum.ekivalensi-matakuliah');
 });
 
+Route::get('/perkuliahan/prasyarat-matkul', function () {
+    return view('perkuliahan.kurikulum.prasyarat-matkul');
+});
+
+Route::get('/perkuliahan/skala-nilai', function () {
+    return view('perkuliahan.kurikulum.skala-nilai');
+});
+
+Route::get('/perkuliahan/unsur-penilaian', function () {
+    return view('perkuliahan.kurikulum.unsur-penilaian');
+});
+
+Route::get('/perkuliahan/predikat-kelulusan', function () {
+    return view('perkuliahan.kurikulum.predikat-kelulusan');
+});
+
 /**
  * Referensi
  */
