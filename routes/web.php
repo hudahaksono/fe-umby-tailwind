@@ -190,6 +190,10 @@ Route::get('/perkuliahan/presensi-ujian-mahasiswa', function () {
     return view('perkuliahan.kelasujian.presensi-ujian-mahasiswa');
 });
 
+Route::get('/perkuliahan/monitoring-kelas', function () {
+    return view('perkuliahan.kelas-kuliah.monitoring-kelas');
+});
+
 /**
  * Referensi
  */

@@ -1,10 +1,10 @@
 @extends('layouts.default')
-@section('title', 'Portal Dosen')
+@section('title', 'Monitoring Kelas')
 
 {{-- YOUR CONTENT START HERE --}}
 @section('contents')
     <!-- <x-title class="text-cool-gray-800 mb-5">Dosen</x-title> -->
-    <x-card title="Dosen">
+    <x-card title="Monitoring Kelas">
         <div class="flex flex-row mb-4">
             <div class="flex">
                 <div class="flex items-center"><span class="text-gray-600 font-medium">Filter&nbsp; :</span>
@@ -22,7 +22,7 @@
             </div>
             <div class="flex ml-auto">
                 <x-button size="sm" color="blue" as-link={{ true }}
-                    href="{{ URL('/dosen/tambah') }}" class="mx-2 text-white"><i data-feather="plus"
+                    href="{{ URL('/dosen/tambah') }}" class="mx-2"><i data-feather="plus"
                         width="16"></i>&nbsp;Tambah</x-button>
                 <x-button size="sm" color="white" as-link={{ true }} href="#"
                     class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="refresh-cw"

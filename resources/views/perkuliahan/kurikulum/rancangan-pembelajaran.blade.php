@@ -45,22 +45,28 @@
                 id: 1,
                 kodemk: 'ILK53',
                 nama: 'Manajemen Periklanan',
+                nama_en: 'Advertising Management',
+                jenis: 1411,
                 sks: 3,
-                sap: 'Belum Ada',
+                nip_dosen: '212417',
             },
             {
                 id: 2,
                 kodemk: 'PET110P',
                 nama: 'Aplikasi Komputer Lanjut',
+                nama_en: 'Advanced Computer Application',
+                jenis: 1411,
                 sks: 1,
-                sap: 'Belum Ada',
+                nip_dosen: '027',
             },
             {
                 id: 3,
                 kodemk: 'PET103',
                 nama: 'Statistika',
+                nama_en: 'Statistics',
+                jenis: 1411,
                 sks: 2,
-                sap: 'Belum Ada',
+                nip_dosen: '0029126301',
             },
         ]
 
@@ -78,15 +84,23 @@
                     },
                     {
                         data: 'nama',
-                        title: 'Nama MK'
+                        title: 'Nama Matakuliah'
+                    },
+                    {
+                        data: 'nama_en',
+                        title: 'Nama Matakuliah (EN)'
+                    },
+                    {
+                        data: 'jenis',
+                        title: 'Jenis'
                     },
                     {
                         data: 'sks',
                         title: 'SKS'
                     },
                     {
-                        data: 'sap',
-                        title: 'SAP'
+                        data: 'nip_dosen',
+                        title: 'NIP Dosen Pengampu'
                     },
                     {
                         data: 'id',
@@ -95,12 +109,10 @@
                         render: (data) => {
                             const btnClass = (color = "gray") =>
                                 `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-500 border border-transparent active:bg-${color}-500 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
-                            const btnClassRed = (color = "red") =>
-                                `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-600 border border-transparent active:bg-${color}-600 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
                             const btn = `
                         <div class="flex justify-center">
-                        <a id='edit_data' href="javascript:void(0)" class="${btnClass()}"><i data-feather="edit" width="16"></i></a>
-                        <a id='hapus_data' href="javascript:void(0)" class="${btnClassRed()}"><i data-feather="trash" width="16"></i></a>
+                        <a href="#" class="${btnClass()}"><i data-feather="edit" width="16"></i></a>
+                        <a href="#" class="${btnClass("red")}"><i data-feather="trash" width="16"></i></a>
                         </div>
                         `
                             feather.replace()
@@ -111,17 +123,21 @@
                 ]
             })
 
-            $('body').on('click', '#edit_data', function (e) {
-                var $row = $(this).closest("tr");
-                var data = $('#view-table').DataTable().row($row).data();
-                var id = data['id'];
+            var sapSelect = {
+                placeholder: "Jenis",
+                options: [{
+                        value: "1111",
+                        text: "Ada SAP"
+                    },
+                    {
+                        value: "1121",
+                        text: "Belum ada SAP"
+                    },
+                ],
+            }
 
-                // window.location.href = '/perkuliahan/rancangan-pembelajaran/edit/'+id;
-                return false;
-            });
-
-            var thnKurikulumSelect = {
-                placeholder: "Tahun Kurikulum",
+            var thnKurSelect = {
+                placeholder: "Tahun Kurikulum...",
                 options: [{
                         value: "2021",
                         text: "2021"
@@ -136,37 +152,28 @@
                     },
                 ],
             }
-            var jurusanSelect = {
-                placeholder: "Jurusan",
-                options: [{
-                        value: "1",
+
+            var jurSelect = {
+                placeholder: "Jurusan...",
+                options: [
+                    {
+                        value: "111",
                         text: "S1 Psikologi"
                     },
                     {
-                        value: "2",
-                        text: "S2 Magister Psikologi"
+                        value: "112",
+                        text: "S1 Magister Psikologi"
                     },
                     {
-                        value: "3",
-                        text: "S2 Magister Psikologi Profesi"
+                        value: "113",
+                        text: "S1 Magister Psikologi Profesi"
                     },
                 ],
             }
-            var statusSAPSelect = {
-                placeholder: "Jenis",
-                options: [{
-                        value: "1",
-                        text: "Ada SAP"
-                    },
-                    {
-                        value: "2",
-                        text: "Belum Ada SAP"
-                    },
-                ],
-            }
-            new TomSelect('#select-thn-kurikulum', thnKurikulumSelect)
-            new TomSelect('#select-jurusan', jurusanSelect)
-            new TomSelect('#select-status-sap', statusSAPSelect)
+
+            new TomSelect('#select-thn-kurikulum', thnKurSelect)
+            new TomSelect('#select-jurusan', jurSelect)
+            new TomSelect('#select-status-sap', sapSelect)
 
         })
     </script>

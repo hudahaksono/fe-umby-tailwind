@@ -51,9 +51,9 @@
                 
             </div>
             <div class="flex ml-auto">
-                <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2"><i
+                <x-button size="sm" color="white" as-link={{ true }} href="#" class="mx-2"><i
                     data-feather="search" width="16"></i>&nbsp;Filter Data Kelas</x-button>
-                <x-button size="sm" color="blue" as-link={{ true }} href="#"
+                <x-button size="sm" color="white" as-link={{ true }} href="#"
                     class="mx-2 text-cool-black-800 border-cool-black-400"><i data-feather="refresh-cw"
                         width="16"></i>&nbsp;Reset</x-button>
                 {{-- <x-button size="sm" color="gray" as-link={{ true }} href="#"
@@ -65,12 +65,9 @@
      
 
         <div class="flex flex-row mb-2">
-            <div class="flex ml-auto">
+            <div class="w-full">
                 <table id="mahasiswa-table" class="hover cell-border stripe  order-column">
                 </table>
-            </div>
-            <div class="flex ml-auto">
-                
             </div>
         </div>
 

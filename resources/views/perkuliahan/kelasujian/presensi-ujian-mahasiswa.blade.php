@@ -26,7 +26,7 @@
             <div class="flex ml-auto">
                 {{-- <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2"><i
                     data-feather="plus" width="16"></i>&nbsp;Tambah</x-button> --}}
-                <x-button size="sm" color="blue" as-link={{ true }} href="#"
+                <x-button size="sm" color="white" as-link={{ true }} href="#"
                     class="mx-2 text-cool-black-800 border-cool-gray-400"><i data-feather="refresh-cw"
                         width="16"></i>&nbsp;Reset</x-button>
                 {{-- <x-button size="sm" color="gray" as-link={{ true }} href="#"
@@ -260,8 +260,31 @@
             ],
         }
 
+var gasalSelect = {
+ placeholder: "Gasal...",
+ options:[
+    {
+                    value: "111",
+                    text: "Gasal Genap"
+                },
+ ]
+}
+
+var tahunSelect = {
+ placeholder: "Tahun...",
+ options:[
+    {
+                    value: "111",
+                    text: "2021/2022"
+                },
+ ]
+}
+
+
         new TomSelect('#jurusan', jurusanSelect)
         new TomSelect('#jenis-ujian', jenis_ujianSelect)
-    
+        new TomSelect('#gasal', gasalSelect)
+        new TomSelect('#tahun', tahunSelect)
+
     </script>
 @endsection
