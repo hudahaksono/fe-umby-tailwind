@@ -154,6 +154,42 @@ Route::get('/perkuliahan/ekivalensi-matakuliah', function () {
     return view('perkuliahan.kurikulum.ekivalensi-matakuliah');
 });
 
+Route::get('/perkuliahan/prasyarat-matkul', function () {
+    return view('perkuliahan.kurikulum.prasyarat-matkul');
+});
+
+Route::get('/perkuliahan/skala-nilai', function () {
+    return view('perkuliahan.kurikulum.skala-nilai');
+});
+
+Route::get('/perkuliahan/unsur-penilaian', function () {
+    return view('perkuliahan.kurikulum.unsur-penilaian');
+});
+
+Route::get('/perkuliahan/predikat-kelulusan', function () {
+    return view('perkuliahan.kurikulum.predikat-kelulusan');
+});
+
+Route::get('/perkuliahan/aturan-batas-sks', function () {
+    return view('perkuliahan.kurikulum.aturan-batas-sks');
+});
+
+Route::get('/perkuliahan/aturan-evaluasi', function () {
+    return view('perkuliahan.kurikulum.aturan-evaluasi');
+});
+
+Route::get('/perkuliahan/kelas-ujian', function () {
+    return view('perkuliahan.kelasujian.kelas-ujian');
+});
+
+Route::get('/perkuliahan/monitoring-ujian', function () {
+    return view('perkuliahan.kelasujian.monitoring-ujian');
+});
+
+Route::get('/perkuliahan/presensi-ujian-mahasiswa', function () {
+    return view('perkuliahan.kelasujian.presensi-ujian-mahasiswa');
+});
+
 /**
  * Referensi
  */

@@ -73,27 +73,27 @@ $data_nav = [
                     ],
                     [
                         'title' => 'Prasyarat Mata Kuliah',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/prasyarat-matkul'),
                     ],
                     [
                         'title' => 'Skala Nilai',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/skala-nilai'),
                     ],
                     [
                         'title' => 'Unsur Penilaian',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/unsur-penilaian'),
                     ],
                     [
                         'title' => 'Predikat Kelulusan',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/predikat-kelulusan'),
                     ],
                     [
                         'title' => 'Aturan Batas SKS',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/aturan-batas-sks'),
                     ],
                     [
                         'title' => 'Aturan Evaluasi',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/aturan-evaluasi'),
                     ],
                 ],
             ],
@@ -157,15 +157,15 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Kelas Ujian',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/kelas-ujian'),
                     ],
                     [
                         'title' => 'Monitoring Ujian',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/monitoring-ujian'),
                     ],
                     [
                         'title' => 'Presensi Ujian Mahasiswa',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/presensi-ujian-mahasiswa'),
                     ],
                     [
                         'title' => 'Matrix Ruang Ujian',
