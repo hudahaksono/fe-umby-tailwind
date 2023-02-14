@@ -5,16 +5,31 @@
     <!-- <x-card class="mb-6">
         FILTER
     </x-card> -->
-    <x-card title="Prasyarat Mata Kuliah">
+    <x-card title="Aturan Batas SKS">
         <div class="flex flex-row mb-2">
+            <div class="flex">
+                <div class="flex items-center"><span class="text-gray-600 font-medium">Filter&nbsp; :</span>
+                    </div>
+                    <div class="mb-1 inline-flex items-center px-2 py-1">
+                        <select id="sistem-perkuliahan" name="sistem_perkuliahan" required
+                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                        </select>
+                    </div>
+                <div class="mb-1 inline-flex items-center px-2 py-1">
+                    <select id="select-kur" name="jk" required
+                        class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                    </select>
+                </div>
+                <div class="mb-1 inline-flex items-center px-2 py-1">
+                    <select id="select-pro-pend" name="ststus_mhs" required
+                        class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                    </select>
+                </div>
+                
+            </div>
             <div class="flex ml-auto">
-<<<<<<< HEAD
-                <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2"><i
+                <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2 text-white"><i
                     data-feather="plus" width="16"></i>&nbsp;Tambah</x-button>
-=======
-                <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2 text-white"><i data-feather="plus"
-                        width="16"></i>&nbsp;Tambah</x-button>
->>>>>>> b241210c65979a9a7716ef5010c764e0441853b0
                 <x-button size="sm" color="white" as-link={{ true }} href="#"
                     class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="refresh-cw"
                         width="16"></i>&nbsp;Reset</x-button>
@@ -24,7 +39,7 @@
             </div>
         </div>
 
-        <div class="flex flex-row mb-2">
+        <!-- <div class="flex flex-row mb-2">
             <div class="w-full md:w-1/2">
                 
 
@@ -84,7 +99,47 @@
                             </td>
                         </tr>
                         <tr class="border-b bg-white border-b dark:bg-gray-900 dark:border-gray-700">
-                            <td style="width: 150px;">Ke Kurikulum</td>
+                            <td style="width: 150px;">ke Kurikulum</td>
+                            <td style="width: 10px">:</td>
+                            <td>
+                                <select id="select-kur-ke" name="ststus_mhs" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                            <th colspan="3">
+                                <x-button size="md" color="blue" as-link={{ true }} href="#" class="mx-2"><i width="16"></i>&nbsp;Salin
+                                </x-button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> -->
+
+        <div class="flex flex-row mb-2">
+            <div class="w-full md:w-2/3">
+                <table id="mahasiswa-table" class="hover cell-border stripe  order-column">
+                </table>
+            </div>
+            <div class="w-full md:w-1/3 ml-4">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400" style="margin-top: 106px;">
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                            <th colspan="3">Salin Ke Tahun Kurikulum</th>
+                        </tr>
+                        <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                            <td style="width: 150px;">Dari Tahun Kurikulum</td>
+                            <td style="width: 10px">:</td>
+                            <td>
+                                <select id="select-kur-dari" name="ststus_mhs" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="border-b bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                            <td style="width: 150px;">Ke Tahun Kurikulum</td>
                             <td style="width: 10px">:</td>
                             <td>
                                 <select id="select-kur-ke" name="ststus_mhs" required
@@ -103,69 +158,39 @@
             </div>
         </div>
 
-        <table id="mahasiswa-table" class="hover cell-border stripe  order-column">
-            <thead>
-                <tr>
-                    <th colspan="3">Mata Kuliah</th>
-                    <th colspan="5">Prasyarat</th>
-                </tr>
-                <tr>
-                    <th>No.</th>
-                    <th>Kurikulum</th>
-                    <th>Kode MK</th>
-                    <th>Nama MK</th>
-                    <th>Kode MK</th>
-                    <th>Nama MK</th>
-                    <th>Nilai</th>
-                    <th>Aksi</th>
-                </tr>
-            </thead>
-        </table>
-
     </x-card>
 @endsection
 
 @section('scripts')
     <script>
-        // const dataSet = [{
-        //         id: 1,
-        //         nim: 'MBY01',
-        //         nama: '21-73201',
-        //         stat: 'Pendidikan Agama Islam',
-        //         angkatan: '2',
-        //         asal: '1',
-        //         wajib: 'Ya',
-        //         paket: '',
-        //         mkcu: '',
-        //         rapem: 'Ada',
-        //     },
-        //     {
-        //         id: 2,
-        //         nim: 'MBY07',
-        //         nama: '21-73201',
-        //         stat: 'Pancasila',
-        //         angkatan: '2',
-        //         asal: '1',
-        //         wajib: 'Ya',
-        //         paket: 'Ya',
-        //         mkcu: '',
-        //         rapem: 'Ada',
-        //     },
-        //     {
-        //         id: 3,
-        //         nim: 'MBY06',
-        //         nama: '21-73201',
-        //         stat: 'Pendidikan Agama Khonghucu',
-        //         angkatan: '2',
-        //         asal: '1',
-        //         wajib: 'Ya',
-        //         paket: '',
-        //         mkcu: '',
-        //         rapem: 'Ada',
-        //     },
-        // ]
-
-        const dataSet = []
+        const dataSet = [{
+                id: 1,
+                program: 'S1',
+                kurikulum: '2015',
+                sistem: 'KY',
+                sks_max: '12',
+                ips_bawah: '0.00',
+                ips_atas: '1.49',
+            },
+            {
+                id: 2,
+                program: 'S1',
+                kurikulum: '2015',
+                sistem: 'KY',
+                sks_max: '15',
+                ips_bawah: '1.50',
+                ips_atas: '1.99',
+            },
+            {
+                id: 3,
+                program: 'S1',
+                kurikulum: '2015',
+                sistem: 'KY',
+                sks_max: '18',
+                ips_bawah: '2.00',
+                ips_atas:'2.49',
+            },
+        ]
 
         $(document).ready(function() {
             $('#mahasiswa-table').DataTable({
@@ -176,34 +201,31 @@
                         title: "No."
                     },
                     {
-                        data: 'nama',
-                        title: 'Kurikulum'
+                        data: 'program',
+                        title: 'Program'
                     },
                     {
-                        data: 'nim',
-                        title: 'Kode MK',
+                        data: 'kurikulum',
+                        title: 'Kurikulum',
                         // render :  function (d) {
                         //     return "<a href='/mahasiswa/detail/"+d+"'>"+d+"</a>";
                         // }
                     },
                     {
-                        data: 'stat',
-                        title: 'Nama MK'
+                        data: 'sistem',
+                        title: 'Sistem'
                     },
                     {
-                        data: 'nama',
-                        title: 'Kode MK'
+                        data: 'sks_max',
+                        title: 'SKS Max'
                     },
                     {
-                        data: 'nim',
-                        title: 'Nama MK',
-                        // render :  function (d) {
-                        //     return "<a href='/mahasiswa/detail/"+d+"'>"+d+"</a>";
-                        // }
+                        data: 'ips_bawah',
+                        title: 'IPS Bawah',
                     },
                     {
-                        data: 'stat',
-                        title: 'Nilai'
+                        data: 'ips_atas',
+                        title: 'IPS Atas',
                     },
                     {
                         data: 'id',
@@ -227,9 +249,21 @@
                 ]
             })
         })
+        var sistemperkuliahanSelect = {
+            placeholder: "sistem perkuliahan...",
+            options: [{
+                    value: "1",
+                    text: "UKT"
+                },
+                {
+                    value: "2",
+                    text: "SPP tetap"
+                },
+            ],
+        }
 
         var thnKurikulumSelect = {
-            placeholder: "tahun...",
+            placeholder: "Kurikulum...",
             options: [{
                     value: "2021",
                     text: "2021"
@@ -280,12 +314,60 @@
             ],
         }
 
-        new TomSelect('#select-jk', JKSelect)
+        var ProgSelect = {
+            placeholder: "Program Pendidikan...",
+            options: [
+                {
+                    value: "111",
+                    text: "Diploma"
+                },
+                {
+                    value: "112",
+                    text: "Profesi"
+                },
+                {
+                    value: "113",
+                    text: "Sarjana"
+                },
+                {
+                    value: "114",
+                    text: "Pasca Sarjana"
+                },
+                {
+                    value: "115",
+                    text: "Doktor"
+                },
+            ],
+        }
 
-        new TomSelect('#select-thn-kur', thnKurikulumSelect)
-        new TomSelect('#select-kur-baru', StatusMHSSelect)
+        var tipeKulSelect = {
+            placeholder: "Tipe Kuliah...",
+            options: [
+                {
+                    value: "111",
+                    text: "Kuliah"
+                },
+                {
+                    value: "112",
+                    text: "Praktikum"
+                },
+                {
+                    value: "113",
+                    text: "KKN"
+                },
+                {
+                    value: "114",
+                    text: "TA/Skripsi"
+                },
+            ],
+        }
 
-        new TomSelect('#select-kur-dari', StatusMHSSelect)
-        new TomSelect('#select-kur-ke', StatusMHSSelect)
+        new TomSelect('#select-pro-pend', ProgSelect)
+
+        new TomSelect('#sistem-perkuliahan', sistemperkuliahanSelect)
+        new TomSelect('#select-kur-dari', thnKurikulumSelect)
+        new TomSelect('#select-kur-ke', thnKurikulumSelect)
+
+        new TomSelect('#select-kur', thnKurikulumSelect)
     </script>
 @endsection

@@ -89,11 +89,11 @@ $data_nav = [
                     ],
                     [
                         'title' => 'Aturan Batas SKS',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/aturan-batas-sks'),
                     ],
                     [
                         'title' => 'Aturan Evaluasi',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/aturan-evaluasi'),
                     ],
                 ],
             ],
@@ -157,15 +157,15 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Kelas Ujian',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/kelas-ujian'),
                     ],
                     [
                         'title' => 'Monitoring Ujian',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/monitoring-ujian'),
                     ],
                     [
                         'title' => 'Presensi Ujian Mahasiswa',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/presensi-ujian-mahasiswa'),
                     ],
                     [
                         'title' => 'Matrix Ruang Ujian',

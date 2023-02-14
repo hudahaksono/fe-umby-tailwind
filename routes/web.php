@@ -169,6 +169,27 @@ Route::get('/perkuliahan/unsur-penilaian', function () {
 Route::get('/perkuliahan/predikat-kelulusan', function () {
     return view('perkuliahan.kurikulum.predikat-kelulusan');
 });
+
+Route::get('/perkuliahan/aturan-batas-sks', function () {
+    return view('perkuliahan.kurikulum.aturan-batas-sks');
+});
+
+Route::get('/perkuliahan/aturan-evaluasi', function () {
+    return view('perkuliahan.kurikulum.aturan-evaluasi');
+});
+
+Route::get('/perkuliahan/kelas-ujian', function () {
+    return view('perkuliahan.kelasujian.kelas-ujian');
+});
+
+Route::get('/perkuliahan/monitoring-ujian', function () {
+    return view('perkuliahan.kelasujian.monitoring-ujian');
+});
+
+Route::get('/perkuliahan/presensi-ujian-mahasiswa', function () {
+    return view('perkuliahan.kelasujian.presensi-ujian-mahasiswa');
+});
+
 Route::get('/perkuliahan/monitoring-kelas', function () {
     return view('perkuliahan.kelas-kuliah.monitoring-kelas');
 });
