@@ -261,7 +261,7 @@
                         title: 'Tahap',
                         render: (data) => {
                             if(data){
-                                return '<span class="inline-flex items-center text-center bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400">'+data+'</span>';
+                                return '<div class="flex justify-center"><span class="inline-flex items-center text-center bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400">'+data+'</span></div>';
                             }else{
                                 return data;
                             }
@@ -272,7 +272,7 @@
                         title: 'Ujian',
                         render: (data) => {
                             if(data){
-                                return '<span class="inline-flex items-center text-center bg-orange-100 text-orange-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-orange-400 border border-orange-400">'+data+'</span>';
+                                return '<div class="flex justify-center"><span class="inline-flex items-center text-center bg-orange-100 text-orange-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-orange-400 border border-orange-400">'+data+'</span></div>';
                             }else{
                                 return data;
                             }
@@ -283,7 +283,7 @@
                         title: 'Unsur',
                         render: (data) => {
                             if(data){
-                                return '<span class="inline-flex items-center text-center bg-orange-100 text-orange-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-orange-400 border border-orange-400">'+data+'</span>';
+                                return '<div class="flex justify-center"><span class="inline-flex items-center text-center bg-orange-100 text-orange-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-orange-400 border border-orange-400">'+data+'</span></div>';
                             }else{
                                 return data;
                             }

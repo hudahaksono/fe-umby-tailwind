@@ -43,32 +43,32 @@
         const dataSet = [{
                 id: 1,
                 nim: '15-54211',
-                nama: 'Agroteknologi',
-                stat: '2015',
-                angkatan: 'Kurikulum Agroteknologi 2015',
-                asal: '2000-01-01',
-                jurusan: '',
-                jenis: '100',
+                jurusan: 'Agroteknologi',
+                thn_kurikulum: '2015',
+                nama_kurikulum: 'Kurikulum Agroteknologi 2015',
+                tgl_berlaku: '2000-01-01',
+                aktif: 1,
+                jumlah_matkul: '100',
             },
             {
                 id: 2,
                 nim: '17-54211',
-                nama: 'Agroteknologi',
-                stat: '2017',
-                angkatan: 'Kurikulum Agroteknologi 2017',
-                asal: '2000-01-01',
-                jurusan: '',
-                jenis: '92',
+                jurusan: 'Agroteknologi',
+                thn_kurikulum: '2017',
+                nama_kurikulum: 'Kurikulum Agroteknologi 2017',
+                tgl_berlaku: '2000-01-01',
+                aktif: 1,
+                jumlah_matkul: '92',
             },
             {
                 id: 3,
                 nim: '21-54211',
-                nama: 'Agroteknologi',
-                stat: '2021',
-                angkatan: 'Kurikulum Agroteknologi 2021',
-                asal: '2021-09-01',
-                jurusan: '',
-                jenis: '97',
+                jurusan: 'Agroteknologi',
+                thn_kurikulum: '2021',
+                nama_kurikulum: 'Kurikulum Agroteknologi 2021',
+                tgl_berlaku: '2021-09-01',
+                aktif: 1,
+                jumlah_matkul: '97',
             },
         ]
 
@@ -88,28 +88,38 @@
                         }
                     },
                     {
-                        data: 'nama',
+                        data: 'jurusan',
                         title: 'Jurusan / Unit'
                     },
                     {
-                        data: 'stat',
+                        data: 'thn_kurikulum',
                         title: 'Tahun Kurikulum'
                     },
                     {
-                        data: 'angkatan',
+                        data: 'nama_kurikulum',
                         title: 'Nama Kurikulum'
                     },
                     {
-                        data: 'asal',
+                        data: 'tgl_berlaku',
                         title: 'Tanggal Berlaku'
                     },
                     {
-                        data: 'jurusan',
-                        title: 'Aktif'
+                        data: 'aktif',
+                        title: 'Aktif',
+                        render: (data) => {
+                            if(data == 1){
+                                return `<div class="flex justify-center"><img src="{{ URL('assets/img/check.png') }}"></div>`
+                            }else{
+                                return '';
+                            }
+                        }
                     },
                     {
-                        data: 'jenis',
-                        title: 'JUMLAH MataKuliah'
+                        data: 'jumlah_matkul',
+                        title: 'JUMLAH MataKuliah',
+                        render: (data) => {
+                            return "<a href='#' style='color: #08c'>"+data+"</a>";
+                        }
                     },
                     {
                         data: 'id',

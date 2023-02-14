@@ -113,19 +113,47 @@
                     },
                     {
                         data: 'wajib',
-                        title: 'Wajib'
+                        title: 'Wajib',
+                        render: (data) => {
+                            if(data){
+                                return '<div class="flex justify-center"><span class="inline-flex items-center text-center bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400">'+data+'</span></div>';
+                            }else{
+                                return data;
+                            }
+                        }
                     },
                     {
                         data: 'paket',
-                        title: 'Paket'
+                        title: 'Paket',
+                        render: (data) => {
+                            if(data){
+                                return '<div class="flex justify-center"><span class="inline-flex items-center text-center bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400">'+data+'</span></div>';
+                            }else{
+                                return data;
+                            }
+                        }
                     },
                     {
                         data: 'mkcu',
-                        title: 'MKCU'
+                        title: 'MKCU',
+                        render: (data) => {
+                            if(data){
+                                return '<div class="flex justify-center"><span class="inline-flex items-center text-center bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400">'+data+'</span></div>';
+                            }else{
+                                return data;
+                            }
+                        }
                     },
                     {
                         data: 'rapem',
-                        title: 'RAPEM'
+                        title: 'RAPEM',
+                        render: (data) => {
+                            if(data){
+                                return '<div class="flex justify-center"><span class="inline-flex items-center text-center bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400">'+data+'</span></div>';
+                            }else{
+                                return data;
+                            }
+                        }
                     },
                     {
                         data: 'id',

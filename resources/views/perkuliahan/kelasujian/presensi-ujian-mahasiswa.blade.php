@@ -134,8 +134,7 @@
                                 `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-600 border border-transparent active:bg-${color}-600 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
                             const btn = `
                             <div class="flex justify-center">
-                            <a href="#" class="${btnClass()}"><i data-feather="edit" width="16"></i></a>
-                            <a href="#" class="${btnClassRed()}"><i data-feather="trash" width="16"></i></a>
+                            <a href="#" class="${btnClass()}"><i data-feather="user" width="16"></i></a>
                             </div>
                             `
                             feather.replace()
