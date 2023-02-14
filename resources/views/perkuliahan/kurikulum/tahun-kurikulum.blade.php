@@ -7,7 +7,7 @@
     <x-card title="Tahun Kurikulum">
         @slot('button')
         <x-button as-link={{ true }} href="#" size="sm"
-                class="bg-teal-500 hover:bg-teal-400 active:bg-teal-400 focus:shadow-outline-teal ml-auto"><i data-feather="info"
+                class="bg-teal-500 hover:bg-teal-400 active:bg-teal-400 focus:shadow-outline-teal ml-auto text-white"><i data-feather="info"
                     width="14"></i>&nbsp;Bantuan</x-button>
         @endslot
         <div class="flex items-center justify-center">

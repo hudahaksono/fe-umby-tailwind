@@ -6,11 +6,11 @@
     <x-card title="Mata Kuliah">
         @slot('button')
             <x-button as-link={{ true }} href="#" size="sm"
-                class="bg-teal-500 hover:bg-teal-400 active:bg-teal-400 focus:shadow-outline-teal ml-auto"><i data-feather="info"
+                class="bg-teal-500 hover:bg-teal-400 active:bg-teal-400 focus:shadow-outline-teal ml-auto text-white"><i data-feather="info"
                     width="14"></i>&nbsp;Bantuan</x-button>
         @endslot
         <form>
-            <div class="w-full md:w-1/2">
+            <div class="w-full">
                 <div class="flex flex-row justify-between my-2">
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">Kode Mata Kuliah <span
                                 class="text-red-600">*</span></span>
@@ -307,8 +307,8 @@
 
                 <div class="mt-4">
                     <x-button as-link={{ true }} href="/perkuliahan/mata-kuliah"
-                        class="bg-gray-500 hover:bg-gray-400 active:bg-gray-400">Kembali</x-button>
-                    <x-button type="submit">Simpan</x-button>
+                        class="bg-gray-500 hover:bg-gray-400 active:bg-gray-400 text-white">Kembali</x-button>
+                    <x-button type="submit" class="text-white">Simpan</x-button>
                 </div>
 
 

@@ -173,6 +173,14 @@ Route::get('/perkuliahan/monitoring-kelas', function () {
     return view('perkuliahan.kelas-kuliah.monitoring-kelas');
 });
 
+Route::get('/perkuliahan/tugas-akhir', function () {
+    return view('perkuliahan.tugas-akhir.tugas-akhir');
+});
+
+Route::get('/perkuliahan/monitoring-tugas-akhir', function () {
+    return view('perkuliahan.tugas-akhir.monitoring-tugas-akhir');
+});
+
 /**
  * Referensi
  */
