@@ -179,15 +179,15 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Dosen PA',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/dosen-pa'),
                     ],
                     [
                         'title' => 'Periode Akademik',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/periode-akademik'),
                     ],
                     [
                         'title' => 'Aturan Cuti',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/aturan-cuti'),
                     ],
                     [
                         'title' => 'BLOK KRS',
@@ -195,53 +195,53 @@ $data_nav = [
                         'sub_menu' => [
                             [
                                 'title' => 'Jenis Blok KRS',
-                                'url' => '#',
+                                'url' => url('/perkuliahan/blok-krs/jenis-blok-krs'),
                             ],
                             [
                                 'title' => 'Blok Perpustakaan',
-                                'url' => '#',
+                                'url' => url('/perkuliahan/blok-krs/blok-perpustakaan'),
                             ],
                             [
                                 'title' => 'Blok Keuangan',
-                                'url' => '#',
+                                'url' => url('/perkuliahan/blok-krs/blok-keuangan'),
                             ],
                             [
                                 'title' => 'Blok Kemahasiswaan',
-                                'url' => '#',
+                                'url' => url('/perkuliahan/blok-krs/blok-kemahasiswaan'),
                             ],
                         ],
                     ],
                     [
                         'title' => 'Rekap Status Mahasiswa',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/rekap-status-mahasiswa'),
                     ],
                     [
                         'title' => 'Pengajuan Status Mahasiswa',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/pengajuan-status-mahasiswa'),
                     ],
                     [
                         'title' => 'Usulan DO',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/usulan-do'),
                     ],
                     [
                         'title' => 'Evaluasi Mahasiswa',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/evaluasi-mahasiswa'),
                     ],
                     [
                         'title' => 'Ekivalensi Mahasiswa',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/ekivalensi-mahasiswa'),
                     ],
                     [
                         'title' => 'Pindah Jurusan',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/pindah-jurusan'),
                     ],
                     [
                         'title' => 'Transfer Nilai',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/transfer-nilai'),
                     ],
                     [
                         'title' => 'Pengesahan SKPI',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/pengesahan-skpi'),
                     ],
                 ],
             ],

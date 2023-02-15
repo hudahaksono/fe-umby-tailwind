@@ -194,6 +194,66 @@ Route::get('/perkuliahan/monitoring-kelas', function () {
     return view('perkuliahan.kelas-kuliah.monitoring-kelas');
 });
 
+Route::get('/perkuliahan/dosen-pa', function () {
+    return view('perkuliahan.administrasi.dosen-pa');
+});
+
+Route::get('/perkuliahan/periode-akademik', function () {
+    return view('perkuliahan.administrasi.periode-akademik');
+});
+
+Route::get('/perkuliahan/aturan-cuti', function () {
+    return view('perkuliahan.administrasi.aturan-cuti');
+});
+
+Route::get('/perkuliahan/blok-krs/jenis-blok-krs', function () {
+    return view('perkuliahan.administrasi.blok-krs.jenis-blok-krs');
+});
+
+Route::get('/perkuliahan/blok-krs/blok-perpustakaan', function () {
+    return view('perkuliahan.administrasi.blok-krs.blok-perpustakaan');
+});
+
+Route::get('/perkuliahan/blok-krs/blok-keuangan', function () {
+    return view('perkuliahan.administrasi.blok-krs.blok-keuangan');
+});
+
+Route::get('/perkuliahan/blok-krs/blok-kemahasiswaan', function () {
+    return view('perkuliahan.administrasi.blok-krs.blok-kemahasiswaan');
+});
+
+Route::get('/perkuliahan/rekap-status-mahasiswa', function () {
+    return view('perkuliahan.administrasi.rekap-status-mahasiswa');
+});
+
+Route::get('/perkuliahan/pengajuan-status-mahasiswa', function () {
+    return view('perkuliahan.administrasi.pengajuan-status-mahasiswa');
+});
+
+Route::get('/perkuliahan/usulan-do', function () {
+    return view('perkuliahan.administrasi.usulan-do');
+});
+
+Route::get('/perkuliahan/evaluasi-mahasiswa', function () {
+    return view('perkuliahan.administrasi.evaluasi-mahasiswa');
+});
+
+Route::get('/perkuliahan/ekivalensi-mahasiswa', function () {
+    return view('perkuliahan.administrasi.ekivalensi-mahasiswa');
+});
+
+Route::get('/perkuliahan/pindah-jurusan', function () {
+    return view('perkuliahan.administrasi.pindah-jurusan');
+});
+
+Route::get('/perkuliahan/transfer-nilai', function () {
+    return view('perkuliahan.administrasi.transfer-nilai');
+});
+
+Route::get('/perkuliahan/pengesahan-skpi', function () {
+    return view('perkuliahan.administrasi.pengesahan-skpi');
+});
+
 /**
  * Referensi
  */
