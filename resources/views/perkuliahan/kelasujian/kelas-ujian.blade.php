@@ -20,9 +20,6 @@
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                         </select>
                     </div>
-               
-              
-                
             </div>
             <div class="flex ml-auto">
                 {{-- <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2"><i
@@ -35,7 +32,22 @@
                         width="16"></i>&nbsp;Cetak</x-button> --}}
             </div>
         </div>
-
+        <div class="flex flex-row mb-2">
+            <div class="flex">
+                <div class="flex items-center"><span class="text-gray-600 font-medium">Periode&nbsp; :</span>
+                    </div>
+                    <div class="mb-1 inline-flex items-center px-2 py-1">
+                        <select id="periode" name="periode" required
+                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                        </select>
+                    </div>
+                    <div class="mb-1 inline-flex items-center px-2 py-1">
+                        <select id="periode_thn" name="periode_thn" required
+                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                        </select>
+                    </div>
+            </div>
+        </div>
         
 
         <div class="flex flex-row mb-2">
@@ -161,8 +173,8 @@
                                 `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-600 border border-transparent active:bg-${color}-600 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
                             const btn = `
                             <div class="flex justify-center">
-                            <a href="#" class="${btnClass()}"><i data-feather="edit" width="16"></i></a>
-                            <a href="#" class="${btnClassRed()}"><i data-feather="trash" width="16"></i></a>
+                            <a href="#" class="${btnClass()}"><i data-feather="list" width="16"></i></a>
+                            <a href="#" class="${btnClassRed('green')}"><i data-feather="plus" width="16"></i></a>
                             </div>
                             `
                             feather.replace()
@@ -281,11 +293,49 @@
                     text: "Ada Ujian"
                 },
             ],
-            }
+        }
+
+        var periodeSelect = {
+            placeholder: "Periode...",
+            options: [
+                {
+                    value: "1",
+                    text: "Gasal"
+                },
+                {
+                    value: "2",
+                    text: "Gasal Pendek"
+                },
+                {
+                    value: "3",
+                    text: "Genap"
+                },
+                {
+                    value: "4",
+                    text: "Genap Pendek"
+                },
+            ],
+        }
+        var periodethnSelect = {
+            placeholder: "Tahun...",
+            options: [
+                {
+                    value: "1",
+                    text: "2024/2025"
+                },
+                {
+                    value: "2",
+                    text: "2023/2024"
+                },
+            ],
+        }
       
 
         new TomSelect('#jurusan', JurusanSelect)
         new TomSelect('#ada-ujian', ada_ujianSelect)
+
+        new TomSelect('#periode', periodeSelect)
+        new TomSelect('#periode_thn', periodethnSelect)
         
     </script>
 @endsection

@@ -194,6 +194,7 @@ Route::get('/perkuliahan/monitoring-kelas', function () {
     return view('perkuliahan.kelas-kuliah.monitoring-kelas');
 });
 
+<<<<<<< HEAD
 Route::get('/perkuliahan/dosen-pa', function () {
     return view('perkuliahan.administrasi.dosen-pa');
 });
@@ -252,6 +253,14 @@ Route::get('/perkuliahan/transfer-nilai', function () {
 
 Route::get('/perkuliahan/pengesahan-skpi', function () {
     return view('perkuliahan.administrasi.pengesahan-skpi');
+=======
+Route::get('/perkuliahan/tugas-akhir', function () {
+    return view('perkuliahan.tugas-akhir.tugas-akhir');
+});
+
+Route::get('/perkuliahan/monitoring-tugas-akhir', function () {
+    return view('perkuliahan.tugas-akhir.monitoring-tugas-akhir');
+>>>>>>> 170bfd3cc30a22755eaa6453bae3249cc10bc028
 });
 
 /**

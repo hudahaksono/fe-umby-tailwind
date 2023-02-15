@@ -251,11 +251,11 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Tugas Akhir',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/tugas-akhir'),
                     ],
                     [
                         'title' => 'Monitoring Tugas Akhir',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/monitoring-tugas-akhir'),
                     ],
                 ],
             ],

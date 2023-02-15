@@ -45,27 +45,24 @@
                 id: 1,
                 kodemk: 'ILK53',
                 nama: 'Manajemen Periklanan',
-                nama_en: 'Advertising Management',
-                jenis: 1411,
+                sap: 'Belum Ada',
                 sks: 3,
                 nip_dosen: '212417',
             },
             {
                 id: 2,
-                kodemk: 'PET110P',
-                nama: 'Aplikasi Komputer Lanjut',
-                nama_en: 'Advanced Computer Application',
-                jenis: 1411,
-                sks: 1,
+                kodemk: 'IP 3103',
+                nama: '-',
+                sap: 'Belum Ada',
+                sks: 0,
                 nip_dosen: '027',
             },
             {
                 id: 3,
-                kodemk: 'PET103',
-                nama: 'Statistika',
-                nama_en: 'Statistics',
-                jenis: 1411,
-                sks: 2,
+                kodemk: 'IP 3105',
+                nama: '-',
+                sap: 'Belum Ada',
+                sks: 0,
                 nip_dosen: '0029126301',
             },
         ]
@@ -80,27 +77,25 @@
                     },
                     {
                         data: 'kodemk',
-                        title: 'Kode MK'
+                        title: 'Kode MK',
+                        render: (data) => {
+                            return "<a href='#' style='color: #08c'>"+data+"</a>";
+                        }
                     },
                     {
                         data: 'nama',
-                        title: 'Nama Matakuliah'
-                    },
-                    {
-                        data: 'nama_en',
-                        title: 'Nama Matakuliah (EN)'
-                    },
-                    {
-                        data: 'jenis',
-                        title: 'Jenis'
+                        title: 'Nama MK'
                     },
                     {
                         data: 'sks',
                         title: 'SKS'
                     },
                     {
-                        data: 'nip_dosen',
-                        title: 'NIP Dosen Pengampu'
+                        data: 'sap',
+                        title: 'SAP',
+                        render: (data) => {
+                            return '<div class="flex justify-center"><span class="inline-flex items-center text-center bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400">'+data+'</span></div>';
+                        }
                     },
                     {
                         data: 'id',
@@ -109,10 +104,12 @@
                         render: (data) => {
                             const btnClass = (color = "gray") =>
                                 `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-500 border border-transparent active:bg-${color}-500 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
+                            const btnClassRed = (color = "red") =>
+                                `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-600 border border-transparent active:bg-${color}-600 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
                             const btn = `
                         <div class="flex justify-center">
                         <a href="#" class="${btnClass()}"><i data-feather="edit" width="16"></i></a>
-                        <a href="#" class="${btnClass("red")}"><i data-feather="trash" width="16"></i></a>
+                        <a href="#" class="${btnClassRed()}"><i data-feather="trash" width="16"></i></a>
                         </div>
                         `
                             feather.replace()

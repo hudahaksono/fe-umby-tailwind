@@ -7,14 +7,23 @@
     </x-card> -->
     <x-card title="Prasyarat Mata Kuliah">
         <div class="flex flex-row mb-2">
+            <div class="flex">
+                <div class="flex items-center"><span class="text-gray-600 font-medium">Filter&nbsp; :</span>
+                    </div>
+                <div class="mb-1 inline-flex items-center px-2 py-1">
+                    <select id="select-thn-kurikulum" name="jk" required
+                        class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                    </select>
+                </div>
+                <div class="mb-1 inline-flex items-center px-2 py-1">
+                    <select id="select-jurusan" name="ststus_mhs" required
+                        class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                    </select>
+                </div>
+            </div>
             <div class="flex ml-auto">
-<<<<<<< HEAD
-                <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2"><i
-                    data-feather="plus" width="16"></i>&nbsp;Tambah</x-button>
-=======
                 <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2 text-white"><i data-feather="plus"
                         width="16"></i>&nbsp;Tambah</x-button>
->>>>>>> b241210c65979a9a7716ef5010c764e0441853b0
                 <x-button size="sm" color="white" as-link={{ true }} href="#"
                     class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="refresh-cw"
                         width="16"></i>&nbsp;Reset</x-button>
@@ -32,7 +41,7 @@
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">Thn. Kur.</span>
                     </div>
                     <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
+                    <div class="basis-2/3 flex items-center ml-2">
                         <select id="select-thn-kur" name="ststus_mhs" required
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                         </select>
@@ -46,7 +55,7 @@
                             class="text-red-600">*</span></span>
                     </div>
                     <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
+                    <div class="basis-2/3 flex items-center ml-2">
                         <select id="select-jk" name="jk" required
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                         </select>
@@ -59,7 +68,7 @@
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">Kurikulum</span>
                     </div>
                     <div class="basis-1 flex items-center">:</div>
-                    <div class="basis-2/3 flex items-center">
+                    <div class="basis-2/3 flex items-center ml-2">
                         <select id="select-kur-baru" name="ststus_mhs" required
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                         </select>
@@ -287,5 +296,43 @@
 
         new TomSelect('#select-kur-dari', StatusMHSSelect)
         new TomSelect('#select-kur-ke', StatusMHSSelect)
+
+        var thnKurSelect = {
+            placeholder: "Tahun Kurikulum...",
+            options: [{
+                    value: "2021",
+                    text: "2021"
+                },
+                {
+                    value: "2017",
+                    text: "2017"
+                },
+                {
+                    value: "2016",
+                    text: "2016"
+                },
+            ],
+        }
+
+        var jurSelect = {
+            placeholder: "Jurusan...",
+            options: [
+                {
+                    value: "111",
+                    text: "S1 Psikologi"
+                },
+                {
+                    value: "112",
+                    text: "S1 Magister Psikologi"
+                },
+                {
+                    value: "113",
+                    text: "S1 Magister Psikologi Profesi"
+                },
+            ],
+        }
+
+        new TomSelect('#select-thn-kurikulum', thnKurSelect)
+        new TomSelect('#select-jurusan', jurSelect)
     </script>
 @endsection

@@ -8,12 +8,12 @@
         <div class="flex ml-auto">
             <x-button size="sm" color="white" as-link={{ true }} href="/perkuliahan/jenis-mata-kuliah"
                     class="mx-2  text-cool-gray-800 border-cool-gray-400 ml-auto"><i data-feather="list" width="16"></i>&nbsp;Daftar</x-button>
-            <x-button as-link={{true}} href="#" size="sm" class="bg-teal-500 hover:bg-teal-400 active:bg-teal-400 focus:shadow-outline-teal ml-auto"><i
+            <x-button as-link={{true}} href="#" size="sm" class="bg-teal-500 hover:bg-teal-400 active:bg-teal-400 focus:shadow-outline-teal ml-auto text-white"><i
                     data-feather="info" width="14"></i>&nbsp;Bantuan</x-button>
         </div>
         @endslot
         <form>
-            <div class="w-full md:w-1/2">
+            <div class="w-full">
                 <div class="flex flex-row justify-between my-2">
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">Kode Jenis MK <span
                                 class="text-red-600">*</span></span>
@@ -72,8 +72,8 @@
 
                 <div class="mt-4">
                     <x-button as-link={{ true }} href="/perkuliahan/jenis-mata-kuliah"
-                        class="bg-gray-500 hover:bg-gray-400 active:bg-gray-400">Kembali</x-button>
-                    <x-button type="submit">Simpan</x-button>
+                        class="bg-gray-500 hover:bg-gray-400 active:bg-gray-400 text-white">Kembali</x-button>
+                    <x-button type="submit" class="text-white">Simpan</x-button>
                 </div>
 
 

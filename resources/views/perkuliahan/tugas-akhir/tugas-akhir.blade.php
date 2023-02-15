@@ -5,7 +5,35 @@
     <!-- <x-card class="mb-6">
         FILTER
     </x-card> -->
-    <x-card title="Mahasiswa">
+    <x-card title="Tugas Akhir">
+        <div class="flex flex-row">
+            <div class="flex">
+                <div class="flex items-center"><span class="text-gray-600 font-medium">Periode&nbsp; :</span>
+                    </div>
+                <div class="mb-1 inline-flex items-center px-2 py-1">
+                    <select id="select-semester" name="ststus_mhs" required
+                        class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                    </select>
+                </div>
+                <div class="mb-1 inline-flex items-center px-2 py-1">
+                    <select id="select-tahun" name="ststus_mhs" required
+                        class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                    </select>
+                </div>
+                
+            </div>
+            
+            <div class="flex ml-auto">
+                <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2 text-white"><i data-feather="plus"
+                        width="16"></i>&nbsp;Tambah</x-button>
+                <x-button size="sm" color="white" as-link={{ true }} href="#"
+                    class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="refresh-cw"
+                        width="16"></i>&nbsp;Reset</x-button>
+                <x-button size="sm" color="white" as-link={{ true }} href="#"
+                    class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="printer"
+                        width="16"></i>&nbsp;Cetak</x-button>
+            </div>
+        </div>
         <div class="flex flex-row mb-4">
             <div class="flex">
                 <div class="flex items-center"><span class="text-gray-600 font-medium">Filter&nbsp; :</span>
@@ -15,24 +43,7 @@
                         class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                     </select>
                 </div>
-                <div class="mb-1 inline-flex items-center px-2 py-1">
-                    <select id="select-statusmhs" name="ststus_mhs" required
-                        class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
-                    </select>
-                </div>
-            </div>
-            <div class="flex ml-auto">
-                <x-button size="sm" color="blue" as-link={{ true }} href="{{ URL('/mahasiswa/tambah') }}" class="mx-2 text-white"><i
-                    data-feather="plus" width="16"></i>&nbsp;Tambah</x-button>
-                <x-button size="sm" color="white" as-link={{ true }} href="#"
-                    class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="refresh-cw"
-                        width="16"></i>&nbsp;Reset</x-button>
-                <x-button size="sm" color="white" as-link={{ true }} href="#"
-                    class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="printer"
-                        width="16"></i>&nbsp;Cetak</x-button>
-                <x-button size="sm" color="white" as-link={{ true }} href="#"
-                    class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="mail" width="16"></i>&nbsp;Tulis
-                    Email</x-button>
+                
             </div>
         </div>
         <table id="mahasiswa-table" class="hover cell-border stripe  order-column"></table>
@@ -46,34 +57,31 @@
                 id: 1,
                 nim: '16011124',
                 nama: 'RONI PARTAMA',
-                stat: 'A',
-                angkatan: 2016,
-                asal: 'SMU -- GEL. 2',
-                jurusan: 'Agroteknologi',
-                jenis: 'R2',
-                kampus: 'Kampus Pusat'
+                jur: '',
+                semester: '',
+                topik_ta: '',
+                dospem: '',
+                status: '',
             },
             {
-                id: 1,
-                nim: '16031003',
-                nama: 'MUGIONO',
-                stat: 'A',
-                angkatan: 2016,
-                asal: 'SMU -- GEL. 2',
-                jurusan: 'Agroteknologi',
-                jenis: 'R2',
-                kampus: 'Kampus Pusat'
+                id: 2,
+                nim: '16021023',
+                nama: 'WILHELMUS DENILSON WEU WODHE',
+                jur: '',
+                semester: '',
+                topik_ta: '',
+                dospem: '',
+                status: '',
             },
             {
-                id: 1,
-                nim: '16031089',
-                nama: 'SARPANDI',
-                stat: 'A',
-                angkatan: 2016,
-                asal: 'SMU -- GEL. 2',
-                jurusan: 'Agroteknologi',
-                jenis: 'R2',
-                kampus: 'Kampus Pusat'
+                id: 3,
+                nim: '16021051',
+                nama: 'MIFTAHUDIN ARIF',
+                jur: '',
+                semester: '',
+                topik_ta: '',
+                dospem: '',
+                status: '',
             },
         ]
 
@@ -94,31 +102,27 @@
                     },
                     {
                         data: 'nama',
-                        title: 'Nama Mahasiswa'
+                        title: 'Nama'
                     },
                     {
-                        data: 'stat',
-                        title: 'Stat.'
+                        data: 'jur',
+                        title: 'Jur'
                     },
                     {
-                        data: 'angkatan',
-                        title: 'Angk.'
+                        data: 'semester',
+                        title: 'Smt'
                     },
                     {
-                        data: 'asal',
-                        title: 'Asal'
+                        data: 'topik_ta',
+                        title: 'Topik TA'
                     },
                     {
-                        data: 'jurusan',
-                        title: 'Jurusan'
+                        data: 'dospem',
+                        title: 'Dosen Pembimbing'
                     },
                     {
-                        data: 'jenis',
-                        title: 'Jenis'
-                    },
-                    {
-                        data: 'kampus',
-                        title: 'Kampus'
+                        data: 'status',
+                        title: 'Status'
                     },
                     {
                         data: 'id',
@@ -130,7 +134,6 @@
                                 `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-600 border border-transparent active:bg-${color}-600 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
                             const btn = `
                             <div class="flex justify-center">
-                            <a href="#" class="${btnClass()}"><i data-feather="mail" width="16"></i></a>
                             <a href="#" class="${btnClass()}"><i data-feather="edit" width="16"></i></a>
                             <a href="#" class="${btnClassRed()}"><i data-feather="trash" width="16"></i></a>
                             </div>
@@ -145,37 +148,64 @@
         })
 
         var StatusMHSSelect = {
-            placeholder: "Pilih Unit kerja...",
+            placeholder: "Tahun Kurikulum...",
             options: [{
-                    value: "1111",
-                    text: "S1 Psikologi"
+                    value: "2021",
+                    text: "2021"
                 },
                 {
-                    value: "1121",
-                    text: "S2 Magister Psikologi"
+                    value: "2017",
+                    text: "2017"
                 },
                 {
-                    value: "1122",
-                    text: "S2 Magister Psikologi Profesi"
+                    value: "2016",
+                    text: "2016"
                 },
             ],
         }
 
         var JKSelect = {
-            placeholder: "Pilih Jenis Kelamin...",
+            placeholder: "Jurusan...",
             options: [
                 {
-                    value: "L",
-                    text: "Laki-laki"
+                    value: "111",
+                    text: "S1 Psikologi"
                 },
                 {
-                    value: "P",
-                    text: "Perempuan"
+                    value: "112",
+                    text: "S1 Magister Psikologi"
+                },
+                {
+                    value: "113",
+                    text: "S1 Magister Psikologi Profesi"
                 },
             ],
         }
 
-        new TomSelect('#select-statusmhs', StatusMHSSelect)
+        var semesterSelect = {
+            placeholder: "Semester...",
+            options: [
+                {
+                    value: "111",
+                    text: "Semester Gasal"
+                },
+                {
+                    value: "112",
+                    text: "Semester Gasal Pendek"
+                },
+                {
+                    value: "113",
+                    text: "Semester Genap"
+                },
+                {
+                    value: "114",
+                    text: "Semester Genap Pendek"
+                },
+            ],
+        }
+
+        new TomSelect('#select-semester', semesterSelect)
+        new TomSelect('#select-tahun', StatusMHSSelect)
 
         new TomSelect('#select-jk', JKSelect)
     </script>

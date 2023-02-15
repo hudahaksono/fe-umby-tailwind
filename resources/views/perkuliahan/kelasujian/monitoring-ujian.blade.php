@@ -7,52 +7,7 @@
     </x-card> -->
     <x-card title="Monitoring Ujian">
         <div class="flex flex-row mb-2">
-            <div class="flex">
-                <div class="flex items-center"><span class="text-gray-600 font-medium">Filter&nbsp; :</span>
-                    </div>
-                    <div class="mb-1 inline-flex items-center px-2 py-1">
-                        <select id="jurusan" name="Jurusan" required
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
-                        </select>
-                    </div>
-                    <div class="mb-1 inline-flex items-center px-2 py-1">
-                        <select id="kampus" name="Kampus" required
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
-                        </select>
-                    </div>
-                    <div class="mb-1 inline-flex items-center px-2 py-1">
-                        <select id="mata-kuliah" name="mata_kuliah" required
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
-                        </select>
-                    </div>
-                    <div class="mb-1 inline-flex items-center px-2 py-1">
-                        <select id="kelas-mahasiswa" name="kelas_mahasiswa" required
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
-                        </select>
-                    </div>
-                    <div class="mb-1 inline-flex items-center px-2 py-1">
-                        <select id="hari" name="hari" required
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
-                        </select>
-                    </div>
-                    <div class="mb-1 inline-flex items-center px-2 py-1">
-                        <select id="priode" name="priode" required
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
-                        </select>
-                    </div>
-                    <div class="mb-1 inline-flex items-center px-2 py-1">
-                        <select id="ruang-jam" name="ruang_jam" required
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
-                        </select>
-                    </div>
-                    
-                    
-              
-                
-            </div>
             <div class="flex ml-auto">
-                <x-button size="sm" color="white" as-link={{ true }} href="#" class="mx-2"><i
-                    data-feather="search" width="16"></i>&nbsp;Filter Data Kelas</x-button>
                 <x-button size="sm" color="white" as-link={{ true }} href="#"
                     class="mx-2 text-cool-black-800 border-cool-black-400"><i data-feather="refresh-cw"
                         width="16"></i>&nbsp;Reset</x-button>
@@ -61,9 +16,116 @@
                         width="16"></i>&nbsp;Cetak</x-button> --}}
             </div>
         </div>
+        <x-card class="w-full mx-auto col-span-3">
+            <form>
+                <div class="flex flex-col md:flex-row justify-between my-2 py-4 md:py-0">
+                    <div class="basis-5/6">
+                        <div class="flex flex-row justify-between my-2 ">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Jurusan</span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <select id="select-jurusan" name="ststus_mhs" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </div>
+                        </div>
 
+                        <hr />
+
+                        <div class="flex flex-row justify-between my-2 ">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Kelas Mhs</span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <select id="select-kelas-mhs" name="ststus_mhs" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <div class="flex flex-row justify-between my-2 ">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Periode </span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <select id="select-periode" name="ststus_mhs" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                                <select id="select-periode-thn" name="ststus_mhs" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-1">
+                                </select>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <div class="basis-5/6 ml-2">
+                        <div class="flex flex-row justify-between my-2 ">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Kampus </span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <select id="select-kampus" name="ststus_mhs" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="flex flex-row justify-between my-2 ">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Hari</span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <select id="select-status" name="ststus_mhs" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </div>
+                        </div>
+
+                        <hr />
+                        <div class="flex flex-row justify-between my-2 ">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Ruang/Jam</span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <select id="select-status" name="ststus_mhs" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                                <select id="select-periode-thn" name="ststus_mhs" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-1">
+                                </select>
+                                <select id="select-periode-thn" name="ststus_mhs" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-1">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basis-5/6 ml-2">
+                        
+
+                        <div class="flex flex-row justify-between my-2 ">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Mata Kuliah </span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <select id="select-tahap" name="ststus_mhs" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <x-button size="sm" color="white" as-link={{ true }} href="#"
+                    class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="filter"
+                        width="16"></i>&nbsp;Filter Data Kelas</x-button>
+                </div>
+            </form>
+        </x-card>
      
-
+        <br>
         <div class="flex flex-row mb-2">
             <div class="w-full">
                 <table id="mahasiswa-table" class="hover cell-border stripe  order-column">
@@ -169,35 +231,49 @@
                     {
                         data: 'lb',
                         title: 'Lb',
-                    },
-                      {
-                        data: 'ba',
-                        title: 'BA',
-                    },
-                      {
-                        data: 'pr',
-                        title: 'Pr',
-                    },
-                    {
-                        data: 'id',
-                        title: 'Aksi',
-                        
-                        // TODO: FIX THIS
                         render: (data) => {
                             const btnClass = (color = "gray")  => `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-500 border border-transparent active:bg-${color}-500 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
-                            const btnClassRed = (color = "red") =>
-                                `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-600 border border-transparent active:bg-${color}-600 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
                             const btn = `
                             <div class="flex justify-center">
-                            <a href="#" class="${btnClass()}"><i data-feather="edit" width="16"></i></a>
-                            <a href="#" class="${btnClassRed()}"><i data-feather="trash" width="16"></i></a>
+                            <a href="#" class="${btnClass()}"><i data-feather="printer" width="16"></i></a>
                             </div>
                             `
                             feather.replace()
 
                             return btn
                         }
-                    }
+                    },
+                      {
+                        data: 'ba',
+                        title: 'BA',
+                        render: (data) => {
+                            const btnClass = (color = "gray")  => `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-500 border border-transparent active:bg-${color}-500 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
+                            const btn = `
+                            <div class="flex justify-center">
+                            <a href="#" class="${btnClass()}"><i data-feather="printer" width="16"></i></a>
+                            </div>
+                            `
+                            feather.replace()
+
+                            return btn
+                        }
+                    },
+                      {
+                        data: 'pr',
+                        title: 'Pr',
+                        render: (data) => {
+                            const btnClass = (color = "gray")  => `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-500 border border-transparent active:bg-${color}-500 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
+                            const btn = `
+                            <div class="flex justify-center">
+                            <a href="#" class="${btnClass()}"><i data-feather="printer" width="16"></i></a>
+                            </div>
+                            `
+                            feather.replace()
+
+                            return btn
+                        }
+                    },
+                    
                 ]
             })
         })
