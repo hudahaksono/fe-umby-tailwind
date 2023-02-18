@@ -265,7 +265,7 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Monitoring Kerja Praktek',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/monitoring-kerja-praktek'),
                     ],
                 ],
             ],
@@ -275,11 +275,11 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Realisasi Perkuliahan',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/realisasi-perkuliahan'),
                     ],
                     [
                         'title' => 'Realisasi Ujian',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/realisasi-ujian'),
                     ],
                 ],
             ],
@@ -289,19 +289,19 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Periode Yudisium',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/periode-yudisium'),
                     ],
                     [
                         'title' => 'Syarat Yudisium',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/syarat-yudisium'),
                     ],
                     [
                         'title' => 'Syarat Mhs Yudisium',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/syarat-mhs-yudisium'),
                     ],
                     [
                         'title' => 'Peserta Yudisium',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/peserta-yudisium')
                     ],
                 ],
             ],
@@ -311,19 +311,19 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Periode Wisuda',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/periode-wisuda')
                     ],
                     [
                         'title' => 'Syarat Wisuda',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/syarat-wisuda')
                     ],
                     [
                         'title' => 'Syarat Mahasiswa',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/syarat-mahasiswa')
                     ],
                     [
                         'title' => 'Peserta Wisuda',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/peserta-wisuda')
                     ],
                 ],
             ],
@@ -333,11 +333,11 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Setting',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/setting')
                     ],
                     [
                         'title' => 'Target',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/target')
                     ],
                 ],
             ],
