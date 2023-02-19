@@ -1,5 +1,5 @@
 @extends('layouts.default')
-@section('title', 'Jenis Mata Kuliah')
+@section('title', 'Tahun Kurikulum')
 
 {{-- YOUR CONTENT START HERE --}}
 @section('contents')

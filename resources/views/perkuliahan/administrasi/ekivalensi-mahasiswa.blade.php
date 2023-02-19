@@ -7,7 +7,7 @@
     </x-card> -->
     <x-card title="Ekivalensi Mahasiswa">
         <div class="flex flex-row mb-2">
-            <div class="flex">
+            <!-- <div class="flex">
                 <div class="flex items-center"><span class="text-gray-600 font-medium">Pilih Mhs&nbsp; :</span>
                     </div>
                     {{-- <div class="mb-1 inline-flex items-center px-2 py-1">
@@ -24,6 +24,19 @@
             <div class="flex ml-auto">
                 <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2 text-white"><i
                     data-feather="plus" width="16"></i>&nbsp;pilih</x-button>
+            </div> -->
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-8 pt-5">
+                <div class="flex flex-row justify-between my-2">
+                    <div class="basis-1/3 flex items-center"><span class="text-gray-600">Pilih Mhs </span>
+                    </div>
+                    <div class="basis-1 flex items-center">:</div>
+                    <div class="basis-2/3 flex items-center">
+                        <input type="text" name="kodemk"
+                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
+                    </div>
+                    <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2 text-white"><i
+                    data-feather="check-square" width="16"></i>&nbsp;pilih</x-button>
+                </div>
             </div>
         </div>
 

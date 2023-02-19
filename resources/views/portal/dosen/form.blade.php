@@ -9,7 +9,7 @@
                 class="bg-teal-500 hover:bg-teal-400 active:bg-teal-400 focus:shadow-outline-teal ml-auto"><i data-feather="info"
                     width="14"></i>&nbsp;Bantuan</x-button>
         @endslot
-        <form>
+        <form id="form_input">
             <div class="grid grid-cols-1 md:grid-cols-1 gap-8 pt-5">
                 <div class="flex flex-row justify-between my-2">
                     <div class="basis-1/3 flex items-center"><span class="text-gray-600">NIP <span
@@ -17,7 +17,7 @@
                     </div>
                     <div class="basis-1 flex items-center">:</div>
                     <div class="basis-2/3 flex items-center">
-                        <input type="text" name="kodemk"
+                        <input type="text" name="nip"
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4"
                             placeholder="111.." required>
                     </div>
@@ -50,7 +50,7 @@
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
                                 <input type="text" name="nama" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4" required>
                             </div>
                         </div>
 
@@ -77,7 +77,7 @@
                     </div>
                     <div class="basis-1 flex items-center">:</div>
                     <div class="basis-2/3 flex items-center">
-                        <select id="select-jenismk" name="jenis_mk" required
+                        <select id="select-jenismk" name="kodeunit" required
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                         </select>
                     </div>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="basis-1 flex items-center">:</div>
                     <div class="basis-2/3 flex items-center">
-                        <input type="text" name="kodemk"
+                        <input type="text" name="nik"
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                     </div>
                 </div>
@@ -102,7 +102,7 @@
                     </div>
                     <div class="basis-1 flex items-center">:</div>
                     <div class="basis-2/3 flex items-center">
-                        <input type="text" name="kodemk"
+                        <input type="text" name="nidn"
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                     </div>
                     <div class="basis-1 flex items-center">:</div>
                     <div class="basis-2/3 flex items-center">
-                        <input type="text" name="kodemk"
+                        <input type="text" name="noktp"
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                     </div>
                 </div>
@@ -126,7 +126,7 @@
                     </div>
                     <div class="basis-1 flex items-center">:</div>
                     <div class="basis-2/3 flex items-center">
-                        <input type="text" name="kodemk"
+                        <input type="text" name="npwp"
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                     </div>
                 </div>
@@ -169,7 +169,7 @@
                                     <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r">
                                         <div class="flex items-center pl-3">
                                             <input id="horizontal-list-radio-license" type="radio" value="L"
-                                                name="list-radio"
+                                                name="sex"
                                                 class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
                                             <label for="horizontal-list-radio-license"
                                                 class="py-3 ml-2 w-full text-sm font-medium text-gray-90">Laki-Laki</label>
@@ -178,7 +178,7 @@
                                     <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r">
                                         <div class="flex items-center pl-3">
                                             <input id="horizontal-list-radio-id" type="radio" value="P"
-                                                name="list-radio"
+                                                name="sex"
                                                 class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
                                             <label for="horizontal-list-radio-id"
                                                 class="py-3 ml-2 w-full text-sm font-medium text-gray-90">Perempuan</label>
@@ -195,7 +195,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <select id="select-agama" name="agama"
+                                <select id="select-agama" name="kodeagama"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                                 </select>
                             </div>
@@ -208,7 +208,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <select id="select-gol_darah" name="gol_darah"
+                                <select id="select-gol_darah" name="goldarah"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                                 </select>
                             </div>
@@ -221,7 +221,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <input type="text" name="tempat_lahir"
+                                <input type="text" name="tmplahir"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                             </div>
                         </div>
@@ -233,7 +233,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <input type="date" name="tanggal_lahir"
+                                <input type="date" name="tgllahir"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                             </div>
                         </div>
@@ -251,7 +251,7 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center">
-                                        <input type="text" name="tempat_lahir"
+                                        <input type="text" name="alamat_jalan"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                                     </div>
                                 </div>
@@ -263,10 +263,10 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center pl-4">
-                                        <input type="text" name="tempat_lahir"
+                                        <input type="text" name="alamat_rt"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input mr-2">
                                         <span class="text-center">/</span>
-                                        <input type="text" name="tempat_lahir"
+                                        <input type="text" name="alamat_rw"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-2">
                                     </div>
                                 </div>
@@ -278,7 +278,7 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center">
-                                        <input type="text" name="tempat_lahir"
+                                        <input type="text" name="kelurahan"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                                     </div>
                                 </div>
@@ -290,7 +290,7 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center">
-                                        <input type="text" name="tempat_lahir"
+                                        <input type="text" name="kecamatan"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                                     </div>
                                 </div>
@@ -318,7 +318,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <select id="select-kota" name="kota"
+                                <select id="select-kota" name="kodekota"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                                 </select>
                             </div>
@@ -331,7 +331,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <input type="text" name="kode_pos"
+                                <input type="text" name="kodepos"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                             </div>
                         </div>
@@ -349,7 +349,7 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center">
-                                        <input type="text" name="telp_1"
+                                        <input type="text" name="telp"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                                     </div>
                                 </div>
@@ -362,7 +362,7 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center">
-                                        <input type="text" name="telp_2"
+                                        <input type="text" name="telp2"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                                     </div>
                                 </div>
@@ -382,7 +382,7 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center">
-                                        <input type="text" name="hp_1"
+                                        <input type="text" name="hp"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                                     </div>
                                 </div>
@@ -395,7 +395,7 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center">
-                                        <input type="text" name="hp_2"
+                                        <input type="text" name="hp2"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                                     </div>
                                 </div>
@@ -415,7 +415,7 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center">
-                                        <input type="text" name="email_1"
+                                        <input type="text" name="email"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                                     </div>
                                 </div>
@@ -428,7 +428,7 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center">
-                                        <input type="text" name="email_2"
+                                        <input type="text" name="email2"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                                     </div>
                                 </div>
@@ -443,7 +443,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <select id="select-status_menikah" name="status_menikah"
+                                <select id="select-status_menikah" name="statusnikah"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                                 </select>
                             </div>
@@ -471,7 +471,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <input type="text" name="no_rek"
+                                <input type="text" name="norekening"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                             </div>
                         </div>
@@ -483,7 +483,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <input type="text" name="atas_nama"
+                                <input type="text" name="rekatasnama"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                             </div>
                         </div>
@@ -495,7 +495,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <input type="text" name="nama_bank"
+                                <input type="text" name="namabank"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                             </div>
                         </div>
@@ -507,7 +507,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <input type="text" name="cabang"
+                                <input type="text" name="namacabang"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                             </div>
                         </div>
@@ -521,7 +521,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center pl-4">
-                                <input type="text"
+                                <input type="text" name="tinggibadan" 
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded-l form-input ">
                                 <span
                                     class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border-gray-300 rounded-r py-2 mt-1 font-semibold w-14">
@@ -537,7 +537,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center pl-4">
-                                <input type="text"
+                                <input type="text" name="beratbadan" 
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded-l form-input ">
                                 <span
                                     class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border-gray-300 rounded-r py-2 mt-1 font-semibold w-14">
@@ -604,7 +604,7 @@
                             <div class="basis-1 pt-2">:</div>
                             <div class="basis-2/3 pl-4">
                                 <div class="flex flex-col">
-                                    <textarea name="cacat_tubuh"
+                                    <textarea name="cacattubuh"
                                         class="block w-full my-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input"></textarea>
                                 </div>
                             </div>
@@ -634,7 +634,7 @@
                             <div class="basis-1 pt-2">:</div>
                             <div class="basis-2/3 pl-4">
                                 <div class="flex flex-col">
-                                    <textarea name="catatan"
+                                    <textarea name="catatankhusus"
                                         class="block w-full my-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input"></textarea>
                                 </div>
                             </div>
@@ -656,7 +656,7 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center">
-                                        <input type="text" name="nama_ayah"
+                                        <input type="text" name="namaistrisuami"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                                     </div>
                                 </div>
@@ -666,7 +666,7 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center">
-                                        <input type="date" name="tanggal_lahir_istri_suami"
+                                        <input type="date" name="tgllahiristrisuami"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                                     </div>
                                 </div>
@@ -687,7 +687,7 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center">
-                                        <input type="text" name="nama_anak1"
+                                        <input type="text" name="namaanak1"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                                     </div>
                                 </div>
@@ -702,7 +702,7 @@
                                             <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r">
                                                 <div class="flex items-center pl-3">
                                                     <input id="horizontal-list-radio-license-anak1" type="radio" value="L"
-                                                        name="list-radio"
+                                                        name="jeniskelaminanak1"
                                                         class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
                                                     <label for="horizontal-list-radio-license-anak1"
                                                         class="py-3 ml-2 w-full text-sm font-medium text-gray-90">Laki-Laki</label>
@@ -711,7 +711,7 @@
                                             <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r">
                                                 <div class="flex items-center pl-3">
                                                     <input id="horizontal-list-radio-id-anak1" type="radio" value="P"
-                                                        name="list-radio"
+                                                        name="jeniskelaminanak1"
                                                         class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
                                                     <label for="horizontal-list-radio-id-anak1"
                                                         class="py-3 ml-2 w-full text-sm font-medium text-gray-90">Perempuan</label>
@@ -726,7 +726,7 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center">
-                                        <input type="date" name="tanggal_lahir_anak1"
+                                        <input type="date" name="tgllahiranak1"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                                     </div>
                                 </div>
@@ -747,7 +747,7 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center">
-                                        <input type="text" name="nama_anak1"
+                                        <input type="text" name="namaanak2"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                                     </div>
                                 </div>
@@ -762,7 +762,7 @@
                                             <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r">
                                                 <div class="flex items-center pl-3">
                                                     <input id="horizontal-list-radio-license-anak2" type="radio" value="L"
-                                                        name="list-radio"
+                                                        name="jeniskelaminanak2"
                                                         class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
                                                     <label for="horizontal-list-radio-license-anak2"
                                                         class="py-3 ml-2 w-full text-sm font-medium text-gray-90">Laki-Laki</label>
@@ -771,7 +771,7 @@
                                             <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r">
                                                 <div class="flex items-center pl-3">
                                                     <input id="horizontal-list-radio-id-anak2" type="radio" value="P"
-                                                        name="list-radio"
+                                                        name="jeniskelaminanak2"
                                                         class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
                                                     <label for="horizontal-list-radio-id-anak2"
                                                         class="py-3 ml-2 w-full text-sm font-medium text-gray-90">Perempuan</label>
@@ -786,7 +786,7 @@
                                     </div>
                                     <div class="basis-1 flex items-center">:</div>
                                     <div class="basis-2/3 flex items-center">
-                                        <input type="date" name="tanggal_lahir_anak2"
+                                        <input type="date" name="tgllahiranak2"
                                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                                     </div>
                                 </div>
@@ -804,7 +804,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <select id="select-jabatan-struktural" name="jabatan-struktural"
+                                <select id="select-jabatan-struktural" name="jabstruktural"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                                 </select>
                             </div>
@@ -817,7 +817,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <select id="select-jabatan-akademik" name="jabatan-akademik"
+                                <select id="select-jabatan-akademik" name="jabakademik"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                                 </select>
                             </div>
@@ -845,7 +845,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <input type="text" name="pejabat_kelakuan_baik"
+                                <input type="text" name="pejabatskkelbaik"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                             </div>
                         </div>
@@ -857,7 +857,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <input type="text" name="nomor_kelakuan_baik"
+                                <input type="text" name="noskkelbaik"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                             </div>
                         </div>
@@ -869,7 +869,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <input type="date" name="tanggal_kelakuan_baik"
+                                <input type="date" name="tglskkelbaik"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                             </div>
                         </div>
@@ -883,7 +883,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <input type="text" name="pejabat_sehat"
+                                <input type="text" name="pejabatsksehat"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                             </div>
                         </div>
@@ -895,7 +895,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <input type="text" name="nomor_sehat"
+                                <input type="text" name="nosksehat"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                             </div>
                         </div>
@@ -907,7 +907,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <input type="date" name="tanggal_sehat"
+                                <input type="date" name="tglsksehat"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded form-input ml-4">
                             </div>
                         </div>
@@ -937,8 +937,8 @@
 
                 <div class="mt-4">
                     <x-button as-link={{ true }} href="/perkuliahan/mata-kuliah"
-                        class="bg-gray-500 hover:bg-gray-400 active:bg-gray-400">Kembali</x-button>
-                    <x-button type="submit">Simpan</x-button>
+                        class="bg-gray-500 hover:bg-gray-400 active:bg-gray-400 text-white">Kembali</x-button>
+                    <x-button id="simpan" as-link={{ true }} href="javascript:void(0)" class="text-white">Simpan</x-button>
                 </div>
 
 
@@ -991,7 +991,7 @@
             ],
         }
 
-        new TomSelect('#select-tipekuliah', tipeKuliahSelect)
+        // new TomSelect('#select-tipekuliah', tipeKuliahSelect)
 
         var dosenPengampuSelect = {
             placeholder: "Pilih Dosen Pengampu...",
@@ -1014,9 +1014,68 @@
             ],
         }
 
-        new TomSelect('#select-dosenpengampu', dosenPengampuSelect)
+        // new TomSelect('#select-dosenpengampu', dosenPengampuSelect)
 
 
         $('#nilai_min').mask("9.99")
+
+        $(document).ready(function () {
+            $.ajaxSetup({
+                headers: {
+                    "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+                },
+            });
+
+            $('#simpan').click(function(event) {
+                var form = $('#form_input');
+                var reportValidity = form[0].reportValidity();
+
+                if(reportValidity){
+                    $.ajax({
+                        type: "post",
+                        url: "{{route('dosen.store')}}",
+                        data: $("#form_input").serialize(),
+                        success: function(response) {
+                            for (var key in response) {
+                                var flag = response["success"];
+                                var message = response["message"];
+                            }
+                            if ($.trim(flag) == "true") {
+                                swal({
+                                  title: "Success!",
+                                  text: message, 
+                                  icon: "success",
+                                });
+
+                            } else if ($.trim(flag) == "false") {
+                                swal({
+                                  title: "Warning!",
+                                  text: message, 
+                                  icon: "warning",
+                                });
+                            } else {
+                                swal({
+                                  title: "Warning!",
+                                  text: message, 
+                                  icon: "warning",
+                                });
+                            }
+                        },
+                        error: function(xhr, status, error) {
+                            var errorMessage = xhr.status + ": " + xhr.statusText;
+                            swal({
+                                title: "Error!",
+                                text: errorMessage, 
+                                icon: "error",
+                              });
+                        },
+                    });
+                }else{
+                    form.addClass('was-validated');
+                }
+                
+            });
+
+        });
     </script>
 @endsection

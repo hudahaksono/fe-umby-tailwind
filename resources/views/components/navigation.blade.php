@@ -913,11 +913,11 @@ $data_nav = [
                         'sub_menu' => [
                             [
                                 'title' => 'Master Ruang',
-                                'url' => url('#'),
+                                'url' => url('/referensi/universitas/master-ruang'),
                             ],
                             [
                                 'title' => 'Prioritas Ruang',
-                                'url' => url('#'),
+                                'url' => url('/referensi/universitas/prioritas-ruang'),
                             ]
                         ]
                     ],

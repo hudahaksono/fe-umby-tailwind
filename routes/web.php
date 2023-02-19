@@ -44,13 +44,18 @@ Route::get('/mahasiswa/detail/{nim}', function () {
     return view('portal.mahasiswa.detail');
 });
 
-Route::get('/dosen', function () {
-    return view('portal.dosen.index');
+$router->group(['prefix' => 'dosen'], function() use ($router)
+{
+    Route::get('/', function () {
+        return view('portal.dosen.index');
+    });
+
+    Route::get('/tambah', function () {
+        return view('portal.dosen.form');
+    });
+    Route::post('/store', 'Portal\DosenController@store')->name('dosen.store');
 });
 
-Route::get('/dosen/tambah', function () {
-    return view('portal.dosen.form');
-});
 
 Route::get('/rekap-status-mahasiswa', function () {
     return view('portal.rekap-status-mhs');
@@ -272,6 +277,12 @@ Route::get('/referensi/universitas/kampus', function () {
 });
 Route::get('/referensi/universitas/gedung', function () {
     return view('referensi.universitas.gedung');
+});
+Route::get('/referensi/universitas/master-ruang', function () {
+    return view('referensi.universitas.manajemen-ruang.master-ruang');
+});
+Route::get('/referensi/universitas/prioritas-ruang', function () {
+    return view('referensi.universitas.manajemen-ruang.prioritas-ruang');
 });
 
 /**
