@@ -313,6 +313,81 @@ Route::get('/perkuliahan/target', function () {
     return view('perkuliahan.pdpt.target');
 });
 
+
+/**Keuangan
+ */
+Route::get('/keuangan/jenis-tarif', function () {
+    return view('keuangan.komponen-tarif.jenis-tarif');
+});
+
+Route::get('/keuangan/tarif-umum', function () {
+    return view('keuangan.komponen-tarif.tarif-umum');
+});
+
+Route::get('/keuangan/formulir', function () {
+    return view('keuangan.komponen-tarif.formulir');
+});
+
+Route::get('/keuangan/kategori-potongan', function () {
+    return view('keuangan.komponen-tarif.kategori-potongan');
+});
+
+Route::get('/keuangan/potongan-tagihan', function () {
+    return view('keuangan.komponen-tarif.potongan-tagihan');
+});
+
+Route::get('/keuangan/spa', function () {
+    return view('keuangan.tarif-r1-r2.spa');
+});
+
+Route::get('/keuangan/spp-tetap', function () {
+    return view('keuangan.tarif-r1-r2.spp-tetap');
+});
+
+Route::get('/keuangan/spp-variabel', function () {
+    return view('keuangan.tarif-r1-r2.spp-variabel');
+});
+
+Route::get('/keuangan/bpp-sks-sp', function () {
+    return view('keuangan.tarif-r1-r2.bpp-sks-sp');
+});
+
+Route::get('/keuangan/kemahasiswaan', function () {
+    return view('keuangan.tarif-r1-r2.kemahasiswaan');
+});
+
+Route::get('/keuangan/ujian-susulan', function () {
+    return view('keuangan.tarif-r1-r2.ujian-susulan');
+});
+
+Route::get('/keuangan/sidang-ta', function () {
+    return view('keuangan.tarif-r1-r2.sidang-ta');
+});
+
+Route::get('/keuangan/ijasah-wisuda', function () {
+    return view('keuangan.tarif-r1-r2.ijasah-wisuda');
+});
+
+Route::get('/keuangan/pengajuan-status', function () {
+    return view('keuangan.tarif-r1-r2.pengajuan-status');
+});
+
+Route::get('/keuangan/sks-default', function () {
+    return view('keuangan.tarif-r1-r2.sks-default');
+});
+
+Route::get('/keuangan/spp-variabel-praktek', function () {
+    return view('keuangan.tarif-r1-r2.spp-variabel-praktek');
+});
+
+Route::get('/keuangan/spp-tetap-angsuran', function () {
+    return view('keuangan.tarif-r1-r2.spp-tetap-angsuran');
+});
+
+Route::get('/keuangan/denda-spp-tetap', function () {
+    return view('keuangan.tarif-r1-r2.denda-spp-tetap');
+});
+
 /**
  * Referensi
  */
