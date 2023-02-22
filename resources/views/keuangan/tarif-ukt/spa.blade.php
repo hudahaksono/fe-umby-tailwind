@@ -36,122 +36,91 @@
         </div>
         <x-card class="w-full mx-auto col-span-3">
             <form>
-                <div class="flex flex-col md:flex-row justify-between my-2 py-4 md:py-0">
-                    <div class="basis-1/6">
-                        <div class="flex flex-row justify-between my-2 ">
-                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Prodi</span>
-                            </div>
-                            <div class="basis-1 flex items-center">:</div>
-                            <div class="basis-1/3 flex items-center">
-                                <select id="select-jurusan" name="ststus_mhs" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                <table cellspacing="0" cellpadding="4">
+                    <tbody>
+                        <tr>
+                            <td>Prodi</td>
+                            <td><strong>:</strong></td>
+                            <td width="260px">
+                                <select id="select-prodi" name="select-prodi" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                                 </select>
-                            </div>
-                        </div>
-
-                        <hr />
-
-                        <div class="flex flex-row justify-between my-2 ">
-                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Kampus </span>
-                            </div>
-                            <div class="basis-1 flex items-center">:</div>
-                            <div class="basis-2/3 flex items-center">
-                                <select id="select-kampus" name="ststus_mhs" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                            </td>
+                            <td>Angkatan</td>
+                            <td><strong>:</strong></td>
+                            <td width="100px">
+                                <select id="select-angkatan1" name="select-angkatan1" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                                 </select>
-                            </div>
-                        </div>
-
-                        <div class="flex flex-row justify-between my-2 ">
-                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Salin ke </span>
-                            </div>
-                            <div class="basis-1 flex items-center">:</div>
-                            <div class="basis-2/3 flex items-center">
-                                <select id="select-salin" name="select_salin" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                            </td>
+                            <td>Lulusan</td>
+                            <td><strong>:</strong></td>
+                            <td width="140px">
+                                <select id="select-lulusan1" name="select-lulusan1" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                                 </select>
-                            </div>
-                        </div>                                     
-                    </div>
-                    
-                    <div class="basis-2/6 ml-2">
-                        <div class="flex flex-row justify-between my-2 ">
-                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Angkatan</span>
-                            </div>
-                            <div class="basis-1 flex items-center">:</div>
-                            <div class="basis-2/3 flex items-center">
-                                <select id="select-kelas-mhs" name="ststus_mhs" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                            </td>
+                            <td>D.Degree</td>
+                            <td><strong>:</strong></td>
+                            <td width="210px">
+                                <select id="select-dgree1" name="select-dgree1" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                                 </select>
-                            </div>
-                        </div>
-                        <div class="flex flex-row justify-between my-2 ">
-                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Jenis Kuliah </span>
-                            </div>
-                            <div class="basis-1 flex items-center">:</div>
-                            <div class="basis-2/3 flex items-center">
-                                <select id="select-periode" name="ststus_mhs" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kampus</td>
+                            <td><strong>:</strong></td>
+                            <td width="260px">
+                                <select id="select-kampus" name="select-kampus" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                                 </select>
-                            </div>
-                        </div>
-                        <div class="flex flex-row justify-between my-2 ">
-                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Angkatan</span>
-                            </div>
-                            <div class="basis-1 flex items-center">:</div>
-                            <div class="basis-2/3 flex items-center">
-                                <select id="select-kelas-mhs" name="ststus_mhs" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                            </td>
+                            <td>Jenis Kuliah</td>
+                            <td><strong>:</strong></td>
+                            <td width="90px">
+                                <select id="select-jk" name="select-jk" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                                 </select>
-                            </div>
-                        </div>
-                        <hr />
-                    </div>
-
-                    <div class="basis-2/6 ml-2">
-                        <div class="flex flex-row justify-between my-2 ">
-                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Lulusan</span>
-                            </div>
-                            <div class="basis-1 flex items-center">:</div>
-                            <div class="basis-2/3 flex items-center">
-                                <select id="select-status" name="ststus_mhs" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Salin ke</td>
+                            <td><strong>:</strong></td>
+                            <td width="260px">
+                                <select id="select-salin" name="select-salin" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                                 </select>
-                            </div>
-                        </div>
-
-                        <hr />
-
-                        <div class="flex flex-row justify-between my-2 ">
-                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Tahap </span>
-                            </div>
-                            <div class="basis-1 flex items-center">:</div>
-                            <div class="basis-2/3 flex items-center">
-                                <select id="select-tahap" name="ststus_mhs" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                            </td>
+                            <td>Angkatan</td>
+                            <td><strong>:</strong></td>
+                            <td width="100px">
+                                <select id="select-angkatan2" name="select-angkatan2" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                                 </select>
-                            </div>
-                        </div>
-                        <div class="flex flex-row justify-between my-2 ">
-                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Tahap </span>
-                            </div>
-                            <div class="basis-1 flex items-center">:</div>
-                            <div class="basis-2/3 flex items-center">
-                                <select id="select-tahap" name="ststus_mhs" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                            </td>
+                            <td>Lulusan</td>
+                            <td><strong>:</strong></td>
+                            <td width="140px">
+                                <select id="select-lulusan2" name="select-lulusan2" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                                 </select>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="text-center">
-                    <x-button size="sm" color="white" as-link={{ true }} href="#"
-                    class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="filter"
-                        width="16"></i>&nbsp;Filter</x-button>
-                </div>
+                            </td>
+                            <td>D.Degree</td>
+                            <td><strong>:</strong></td>
+                            <td width="210px">
+                                <div class="flex flex-row justify-between my-2">
+                                    <select id="select-dgree2" name="select-dgree2" required
+                                        class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
+                                    </select>
+                                    <x-button size="sm" color="blue" as-link={{ true }} href="#" class="inline-flex mx-2 text-white"><i data-feather="file" width="16"></i>&nbsp;Salin</x-button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </form>
+            
         </x-card>
         <br>
 
