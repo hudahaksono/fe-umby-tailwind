@@ -39,90 +39,103 @@
 {{-- JS START HERE --}}
 @section('scripts')
     <script>
-        const dataSet = [{
-                id: 1,
-                nip: '910101',
-                nama: 'Sarjono',
-                jenis_kelamin: 'L',
-                unit_kerja: '-',
-            },
-            {
-                id: 2,
-                nip: '960204',
-                nama: 'Rukinah, Dra.',
-                jenis_kelamin: 'P',
-                unit_kerja: 'Peternakan',
-            },
-            {
-                id: 3,
-                nip: '0001',
-                nama: 'Diah Noviyana, M.Pd',
-                jenis_kelamin: 'P',
-                unit_kerja: 'Teknologi Hasil Pertanian',
-            }
-        ]
-
+        // const dataSet = [{
+        //         id: 1,
+        //         nip: '910101',
+        //         nama: 'Sarjono',
+        //         jenis_kelamin: 'L',
+        //         unit_kerja: '-',
+        //     },
+        //     {
+        //         id: 2,
+        //         nip: '960204',
+        //         nama: 'Rukinah, Dra.',
+        //         jenis_kelamin: 'P',
+        //         unit_kerja: 'Peternakan',
+        //     },
+        //     {
+        //         id: 3,
+        //         nip: '0001',
+        //         nama: 'Diah Noviyana, M.Pd',
+        //         jenis_kelamin: 'P',
+        //         unit_kerja: 'Teknologi Hasil Pertanian',
+        //     }
+        // ]
+        
         $(document).ready(function() {
-            $('#view-table').DataTable({
-                data: dataSet,
-                columns: [{
-                        data: 'id',
-                        render: (data, type, row, meta) => meta.row + meta.settings._iDisplayStart + 1,
-                        title: "No."
-                    },
-                    {
-                        data: 'nip',
-                        title: 'NIP'
-                    },
-                    {
-                        data: 'nama',
-                        title: 'Nama Pegawai'
-                    },
-                    {
-                        data: 'jenis_kelamin',
-                        title: 'L/P'
-                    },
-                    {
-                        data: 'unit_kerja',
-                        title: 'Unit Kerja'
-                    },
-                    {
-                        data: 'id',
-                        title: 'Aksi',
-                        // TODO: FIX THIS
-                        render: (data) => {
-                            const btnClass = (color = "gray") =>
-                                `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-500 border border-transparent active:bg-${color}-500 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
-                            const btnClassRed = (color = "red") =>
-                                `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-600 border border-transparent active:bg-${color}-600 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
-                            const btn = `
-                        <div class="flex justify-center">
-                        <a href="#" class="${btnClass()}"><i data-feather="edit" width="16"></i></a>
-                        <a href="#" class="${btnClassRed()}"><i data-feather="trash" width="16"></i></a>
-                        </div>
-                        `
-                            feather.replace()
+            // const dataSet = [];
+            function get_data(id = '') {
+                $.ajax({
+                    url: "/dosen/list",
+                    type: 'GET',
+                    success: function(response) {
+                        // dataSet = response
+                        // console.log(response);
+                        $('#view-table').DataTable({
+                            data: response,
+                            columns: [{
+                                    data: 'id',
+                                    render: (data, type, row, meta) => meta.row + meta.settings._iDisplayStart + 1,
+                                    title: "No."
+                                },
+                                {
+                                    data: 'nip',
+                                    title: 'NIP'
+                                },
+                                {
+                                    data: 'nama',
+                                    title: 'Nama Pegawai'
+                                },
+                                {
+                                    data: 'jenis_kelamin',
+                                    title: 'L/P'
+                                },
+                                {
+                                    data: 'unit_kerja',
+                                    title: 'Unit Kerja'
+                                },
+                                {
+                                    data: 'id',
+                                    title: 'Aksi',
+                                    // TODO: FIX THIS
+                                    render: (data) => {
+                                        const btnClass = (color = "gray") =>
+                                            `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-500 border border-transparent active:bg-${color}-500 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
+                                        const btnClassRed = (color = "red") =>
+                                            `inline-flex items-center px-2 text-xs rounded my-2 font-medium leading-5 text-center text-white transition-colors duration-150 bg-${color}-600 border border-transparent active:bg-${color}-600 hover:bg-${color}-600 focus:outline-none focus:shadow-outline-${color} mx-1`
+                                        const btn = `
+                                    <div class="flex justify-center">
+                                    <a href="#" class="${btnClass()}"><i data-feather="edit" width="16"></i></a>
+                                    <a href="#" class="${btnClassRed()}"><i data-feather="trash" width="16"></i></a>
+                                    </div>
+                                    `
+                                        feather.replace()
 
-                            return btn
-                        }
+                                        return btn
+                                    }
+                                }
+                            ]
+                        })
                     }
-                ]
-            })
+                });
+            }
+            get_data();
+            
         })
 
         var UnitKerjaSelect = {
             placeholder: "Pilih Unit kerja...",
             options: [{
                     value: "1111",
-                    text: "S1 Psikologi"
+                    text: '\xa0'+"S1 Psikologi"
                 },
                 {
                     value: "1121",
-                    text: "S2 Magister Psikologi"
+                    text: '\xa0'+"S2 Magister Psikologi"
                 },
                 {
                     value: "1122",
-                    text: "S2 Magister Psikologi Profesi"
+                    text: '\xa0'+"S2 Magister Psikologi Profesi"
                 },
             ],
         }

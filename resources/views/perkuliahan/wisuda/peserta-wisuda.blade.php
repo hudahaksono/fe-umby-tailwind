@@ -5,24 +5,12 @@
     <!-- <x-card class="mb-6">
         FILTER
     </x-card> -->
-    <x-card title="Pengesahan Nilai Kelas">
-        <div class="flex flex-row mb-2">
-            <div class="flex">
-                <div class="flex items-center"><span class="text-gray-600 font-medium">Filter&nbsp; :</span>
-                    </div>
-                    <div class="mb-1 inline-flex items-center px-2 py-1">
-                        <select id="jurusan" name="jurusan" required
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
-                        </select>
-                        <select id="angkatan" name="angktan" required
-                            class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
-                        </select>
-                    </div>
-            </div>
+    <x-card title="Peserta Wisuda">
+        <div class="flex flex-row mb-2">          
             <div class="flex ml-auto">
                 <x-button size="sm" color="white" as-link={{ true }} href="#"
-                    class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="refresh-cw"
-                        width="16"></i>&nbsp;Reset</x-button>
+                    class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="printer"
+                        width="16"></i>&nbsp;Cetak</x-button>
             </div>
         </div>
         
@@ -30,31 +18,28 @@
         {{-- Periode --}}
         <div class="flex flex-row mb-2 form-input">
             <div class="flex">
-                <div class="flex items-center"><span class="text-gray-600 font-medium">Periode&nbsp; :</span>
+                <div class="flex items-center"><span class="text-gray-600 font-medium">Unit&nbsp; :</span>
                     </div>
                     <div class="mb-1 inline-flex items-center px-2 py-1">
                         <select id="jurusan" name="jurusan" required
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                         </select>
-                        <select id="angkatan" name="angktan" required
+                    </div>
+                    <div class="flex items-center"><span class="text-gray-600 font-medium">Periode&nbsp; :</span>
+                    </div>
+                    <div class="mb-1 inline-flex items-center px-2 py-1">
+                        <select id="tahun" name="tahun" required
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                         </select>
-                    </div>
-                    
-            </div>
-            <div class="flex ml-auto">
-                <div class="flex items-center"><span class="text-gray-600 font-medium">Mata Kuliah&nbsp; :</span>
-                </div>
-                <div class="mb-1 inline-flex items-center px-2 py-1">
-                    <select id="jurusan" name="jurusan" required
-                        class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
-                    </select>
-                </div>
+                    </div>  
             </div>
         </div>
-        <br>
         {{-- ------ --}}
-
+        <div class="mb-1 inline-flex items-center px-2 py-1">
+            <div class="flex flex-row justify-between my-2 ">
+            <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2 text-white"><i width="16"></i>&nbsp;Tambah Peserta Wisuda</x-button>
+            </div>
+        </div>
 
         <div class="flex flex-row mb-2">
             <div class="w-full">
@@ -70,21 +55,24 @@
     <script>
         const dataSet = [{
                 id: 1,
-                nim: '00110001',
-                nama:'FAUZI ISMAIL',
-                status:'',
+                nomor:'158',
+                jurusan: 'Peternakan',
+                nim:'08022031',
+                nama:'SURYADI',
             },
             {
                 id: 2,
-                nim: '00110002',
-                nama:'JOKO KURNIAWAN',
-                status:'',
+                nomor:'001',
+                jurusan: 'Psikologi',
+                nim:'10081001',
+                nama:'TWENTY DITA LUCIAGA',
             },
             {
                 id: 3,
-                nim: '00110003',
-                nama:'GAMA TRIONO',
-                status:'',
+                nomor:'021',
+                jurusan: 'Informatika',
+                nim:'10111001',
+                nama:'PURNOMO',
             },
         ]
 
@@ -97,16 +85,20 @@
                         title: "No."
                     },
                     {
+                        data: 'nomor',
+                        title: 'Nomor'
+                    },
+                    {
+                        data: 'jurusan',
+                        title: 'Jurusan'
+                    },
+                    {
                         data: 'nim',
                         title: 'NIM'
                     },
                     {
                         data: 'nama',
                         title: 'Nama',
-                    },
-                    {
-                        data: 'status',
-                        title: 'Status'
                     },
                     {
                         data: 'id',
@@ -133,7 +125,7 @@
 
 
         var jurusanSelect = {
-            placeholder: "Jurusan...",
+            placeholder: "Universitas Mercu Buana Yogyakarta...",
             options: [
                 {
                     value: "111",
@@ -222,8 +214,8 @@
             ],
         }
 
-        var angkatanSelect = {
-            placeholder: "Angkatan...",
+        var tahunSelect = {
+            placeholder: "26 - Gasal (2022/2023)...",
             options: [
                 {
                     value: "111",
@@ -264,10 +256,23 @@
             ],
         }
 
+        var kelasSelect = {
+            placeholder: "Semua Kelas...",
+            options: [
+                {
+                    value: "111",
+                    text: "UKT"
+                },
+                {
+                    value: "112",
+                    text: "SPP Tetap"
+                },
+            ],
+        }
 
         new TomSelect('#jurusan', jurusanSelect)
-        new TomSelect('#angkatan', angkatanSelect)
-
+        new TomSelect('#tahun', tahunSelect)
+        new TomSelect('#kelas', kelasSelect)
 
     </script>
 @endsection

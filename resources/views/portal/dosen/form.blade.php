@@ -77,7 +77,7 @@
                     </div>
                     <div class="basis-1 flex items-center">:</div>
                     <div class="basis-2/3 flex items-center">
-                        <select id="select-jenismk" name="kodeunit" required
+                        <select id="select-unit" name="kodeunit" required
                             class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                         </select>
                     </div>
@@ -208,7 +208,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <select id="select-gol_darah" name="goldarah"
+                                <select id="select-gol-darah" name="goldarah"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                                 </select>
                             </div>
@@ -456,7 +456,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <select id="select-kewarganegaraan" name="kewarganegaraan"
+                                <select id="select-kewarganegaraan" name="kodewn"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                                 </select>
                             </div>
@@ -830,7 +830,7 @@
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
-                                <select id="select-pendidikan-terakhir" name="pendidikan-terakhir"
+                                <select id="select-pendidikan-terakhir" name="penddosen"
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                                 </select>
                             </div>
@@ -936,7 +936,7 @@
 
 
                 <div class="mt-4">
-                    <x-button as-link={{ true }} href="/perkuliahan/mata-kuliah"
+                    <x-button as-link={{ true }} href="/dosen"
                         class="bg-gray-500 hover:bg-gray-400 active:bg-gray-400 text-white">Kembali</x-button>
                     <x-button id="simpan" as-link={{ true }} href="javascript:void(0)" class="text-white">Simpan</x-button>
                 </div>
@@ -951,24 +951,12 @@
 @section('scripts')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script>
-        var jenisMkSelect = {
-            placeholder: "Pilih Pegawai...",
-            options: [{
-                    value: "1111",
-                    text: "Matakuliah Pengembangan Kepribadian - 1111"
-                },
-                {
-                    value: "1121",
-                    text: "Matakuliah Keilmuan Ketrampilan - 1121"
-                },
-                {
-                    value: "1122",
-                    text: "Matakuliah Keilmuan KB - 1122"
-                },
-            ],
-        }
 
-        new TomSelect('#select-jenismk', jenisMkSelect)
+        
+        
+        
+
+        
 
         var tipeKuliahSelect = {
             placeholder: "Pilih Tipe Perkuliahan...",
@@ -993,28 +981,86 @@
 
         // new TomSelect('#select-tipekuliah', tipeKuliahSelect)
 
-        var dosenPengampuSelect = {
-            placeholder: "Pilih Dosen Pengampu...",
+        var golSelect = {
+            placeholder: "Pilih Golongan Darah...",
             options: [{
-                    value: "910101",
-                    text: "910101 - Sarjono"
+                    value: "A",
+                    text: "A"
                 },
                 {
-                    value: "960204",
-                    text: "960204 - Rukinah Dra."
+                    value: "B",
+                    text: "B"
                 },
                 {
-                    value: "002084801",
-                    text: "002084801 - Sri Luwihana D. Ir,S"
+                    value: "AB",
+                    text: "AB"
                 },
                 {
-                    value: "002086101",
-                    text: "002086101 - Ir. Sonita Rosningsih MS."
+                    value: "O",
+                    text: "O"
                 },
             ],
         }
 
-        // new TomSelect('#select-dosenpengampu', dosenPengampuSelect)
+        var kewarganegaraanSelect = {
+            placeholder: "Pilih Kewarganegaraan...",
+            options: [{
+                    value: "WNA",
+                    text: "Warga Negara Asing"
+                },
+                {
+                    value: "WNI",
+                    text: "Warga Negara Indonesia"
+                },
+            ],
+        }
+
+        var statusSelect = {
+            placeholder: "Pilih Status Nikah...",
+            options: [{
+                    value: "0",
+                    text: ""
+                },
+                {
+                    value: "1",
+                    text: "Menikah"
+                },
+                {
+                    value: "2",
+                    text: "Belum Menikah"
+                },
+                {
+                    value: "3",
+                    text: "Janda"
+                },
+                {
+                    value: "4",
+                    text: "Duda"
+                },
+            ],
+        }
+
+        var pendSelect = {
+            placeholder: "Pilih Jenjang Pendidikan...",
+            options: [{
+                    value: "S1",
+                    text: "S-1"
+                },
+                {
+                    value: "S2",
+                    text: "S-2"
+                },
+                {
+                    value: "S3",
+                    text: "S-3"
+                },
+            ],
+        }
+
+        new TomSelect('#select-gol-darah', golSelect)
+        new TomSelect('#select-kewarganegaraan', kewarganegaraanSelect)
+        new TomSelect('#select-status_menikah', statusSelect)
+        new TomSelect('#select-pendidikan-terakhir', pendSelect)
 
 
         $('#nilai_min').mask("9.99")
@@ -1026,6 +1072,37 @@
                 },
             });
 
+            function get_unit(id = '') {
+                $.ajax({
+                    url: "/referensi/universitas/unit/list",
+                    type: 'GET',
+                    success: function(response) {
+                        var unitSelect = {
+                            placeholder: "Pilih Unit Kerja...",
+                            options: response,
+                        }
+                        new TomSelect('#select-unit', unitSelect)
+                    }
+                });
+            }
+// \xa0 = spasi untuk jquery .text()
+            function get_agama(id = '') {
+                $.ajax({
+                    url: "/dosen/agama/list",
+                    type: 'GET',
+                    success: function(response) {
+                        var unitSelect = {
+                            placeholder: "Pilih Agama...",
+                            options: response,
+                        }
+                        new TomSelect('#select-agama', unitSelect)
+                    }
+                });
+            }
+
+            get_unit();
+            get_agama();
+
             $('#simpan').click(function(event) {
                 var form = $('#form_input');
                 var reportValidity = form[0].reportValidity();
@@ -1034,6 +1111,7 @@
                     $.ajax({
                         type: "post",
                         url: "{{route('dosen.store')}}",
+                        // url: "http://localhost:8080/v1/dosen/posts",
                         data: $("#form_input").serialize(),
                         success: function(response) {
                             for (var key in response) {

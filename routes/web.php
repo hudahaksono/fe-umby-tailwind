@@ -49,11 +49,13 @@ $router->group(['prefix' => 'dosen'], function() use ($router)
     Route::get('/', function () {
         return view('portal.dosen.index');
     });
-
+    Route::get('/list', 'Portal\DosenController@list_data')->name('dosen.list');
     Route::get('/tambah', function () {
         return view('portal.dosen.form');
     });
     Route::post('/store', 'Portal\DosenController@store')->name('dosen.store');
+
+    Route::get('/agama/list', 'Portal\DosenController@list_agama')->name('dosen.list.agama');
 });
 
 
@@ -266,12 +268,74 @@ Route::get('/perkuliahan/monitoring-tugas-akhir', function () {
     return view('perkuliahan.tugas-akhir.monitoring-tugas-akhir');
 });
 
+Route::get('/perkuliahan/monitoring-kerja-praktek', function () {
+    return view('perkuliahan.kerja-praktek.monitoring-kerja-praktek');
+});
+
+Route::get('/perkuliahan/realisasi-perkuliahan', function () {
+    return view('perkuliahan.realisasi-barcode-read.realisasi-perkuliahan');
+});
+
+Route::get('/perkuliahan/realisasi-ujian', function () {
+    return view('perkuliahan.realisasi-barcode-read.realisasi-ujian');
+});
+
+Route::get('/perkuliahan/periode-yudisium', function () {
+    return view('perkuliahan.yudisium.periode-yudisium');
+});
+
+Route::get('/perkuliahan/syarat-yudisium', function () {
+    return view('perkuliahan.yudisium.syarat-yudisium');
+});
+
+Route::get('/perkuliahan/syarat-mhs-yudisium', function () {
+    return view('perkuliahan.yudisium.syarat-mhs-yudisium');
+});
+
+Route::get('/perkuliahan/peserta-yudisium', function () {
+    return view('perkuliahan.yudisium.peserta-yudisium');
+});
+
+Route::get('/perkuliahan/periode-wisuda', function () {
+    return view('perkuliahan.wisuda.periode-wisuda');
+});
+
+Route::get('/perkuliahan/syarat-wisuda', function () {
+    return view('perkuliahan.wisuda.syarat-wisuda');
+});
+
+Route::get('/perkuliahan/syarat-mahasiswa', function () {
+    return view('perkuliahan.wisuda.syarat-mahasiswa');
+});
+
+Route::get('/perkuliahan/peserta-wisuda', function () {
+    return view('perkuliahan.wisuda.peserta-wisuda');
+});
+
+Route::get('/perkuliahan/setting', function () {
+    return view('perkuliahan.pdpt.setting');
+});
+
+Route::get('/perkuliahan/target', function () {
+    return view('perkuliahan.pdpt.target');
+});
+
 /**
  * Referensi
  */
-Route::get('/referensi/universitas/unit', function () {
-    return view('referensi.universitas.unit');
+$router->group(['prefix' => 'referensi'], function() use ($router)
+{
+    Route::get('/universitas/unit', 'Referensi\Universitas\UnitController@index')->name('unit');
+    Route::get('/universitas/unit/list', 'Referensi\Universitas\UnitController@list')->name('unit.list');
+
+    // Route::get('/tambah', function () {
+    //     return view('portal.dosen.form');
+    // });
+    // Route::post('/store', 'Portal\DosenController@store')->name('dosen.store');
 });
+// Route::get('/referensi/universitas/unit', function () {
+//     return view('referensi.universitas.unit');
+// });
 Route::get('/referensi/universitas/kampus', function () {
     return view('referensi.universitas.kampus');
 });
