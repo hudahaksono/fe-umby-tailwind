@@ -379,7 +379,7 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'SPA',
-                        'url' => url('/keuangan/spa')
+                        'url' => url('/keuangan/spa1')
                     ],
                     [
                         'title' => 'SPP Tetap',
@@ -441,7 +441,7 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'SPA',
-                        'url' => '#',
+                        'url' => url('/keuangan/spa')
                     ],
                     [
                         'title' => 'Tridarma',
@@ -449,7 +449,7 @@ $data_nav = [
                     ],
                     [
                         'title' => 'SKS Kuliah',
-                        'url' => '#',
+                        'url' => url('/keuangan/sks-kuliah')
                     ],
                     [
                         'title' => 'Tarif KKN',
@@ -469,15 +469,15 @@ $data_nav = [
                     ],
                     [
                         'title' => 'Her Registrasi',
-                        'url' => '#',
+                        'url' => url('/keuangan/her-registrasi')
                     ],
                     [
                         'title' => 'Sidang TA',
-                        'url' => '#',
+                        'url' => url('/keuangan/sidang-ta-ukt')
                     ],
                     [
                         'title' => 'Denda SKS Kuliah',
-                        'url' => '#',
+                        'url' => url('/keuangan/denda-sks-kuliah')
                     ],
                 ],
             ],

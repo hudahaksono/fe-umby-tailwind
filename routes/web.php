@@ -336,8 +336,8 @@ Route::get('/keuangan/potongan-tagihan', function () {
     return view('keuangan.komponen-tarif.potongan-tagihan');
 });
 
-Route::get('/keuangan/spa', function () {
-    return view('keuangan.tarif-r1-r2.spa');
+Route::get('/keuangan/spa1', function () {
+    return view('keuangan.tarif-r1-r2.spa1');
 });
 
 Route::get('/keuangan/spp-tetap', function () {
@@ -386,6 +386,26 @@ Route::get('/keuangan/spp-tetap-angsuran', function () {
 
 Route::get('/keuangan/denda-spp-tetap', function () {
     return view('keuangan.tarif-r1-r2.denda-spp-tetap');
+});
+
+Route::get('/keuangan/spa', function () {
+    return view('keuangan.tarif-ukt.spa');
+});
+
+Route::get('/keuangan/sks-kuliah', function () {
+    return view('keuangan.tarif-ukt.sks-kuliah');
+});
+
+Route::get('/keuangan/her-registrasi', function () {
+    return view('keuangan.tarif-ukt.her-registrasi');
+});
+
+Route::get('/keuangan/sidang-ta-ukt', function () {
+    return view('keuangan.tarif-ukt.sidang-ta-ukt');
+});
+
+Route::get('/keuangan/denda-sks-kuliah', function () {
+    return view('keuangan.tarif-ukt.denda-sks-kuliah');
 });
 
 /**
