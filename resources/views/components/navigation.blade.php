@@ -353,23 +353,23 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Jenis Tarif',
-                        'url' => '#',
+                        'url' => url('/keuangan/jenis-tarif')
                     ],
                     [
                         'title' => 'Tarif Umum',
-                        'url' => '#',
+                        'url' => url('/keuangan/tarif-umum')
                     ],
                     [
                         'title' => 'Formulir',
-                        'url' => '#',
+                        'url' => url('/keuangan/formulir')
                     ],
                     [
                         'title' => 'Kategori Potongan',
-                        'url' => '#',
+                        'url' => url('/keuangan/kategori-potongan')
                     ],
                     [
                         'title' => 'Potongan Tagihan',
-                        'url' => '#',
+                        'url' => url('/keuangan/potongan-tagihan')
                     ],
                 ],
             ],
@@ -379,15 +379,15 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'SPA',
-                        'url' => '#',
+                        'url' => url('/keuangan/spa1')
                     ],
                     [
                         'title' => 'SPP Tetap',
-                        'url' => '#',
+                        'url' => url('/keuangan/spp-tetap')
                     ],
                     [
                         'title' => 'SPP Variabel',
-                        'url' => '#',
+                        'url' => url('/keuangan/spp-variabel')
                     ],
                     [
                         'title' => 'SKS Praktikum',
@@ -395,43 +395,43 @@ $data_nav = [
                     ],
                     [
                         'title' => 'BPP SKS SP',
-                        'url' => '#',
+                        'url' => url('/keuangan/bpp-sks-sp')
                     ],
                     [
                         'title' => 'Kemahasiswaan',
-                        'url' => '#',
+                        'url' => url('/keuangan/kemahasiswaan')
                     ],
                     [
                         'title' => 'Ujian Susulan',
-                        'url' => '#',
+                        'url' => url('/keuangan/ujian-susulan')
                     ],
                     [
                         'title' => 'Sidang TA',
-                        'url' => '#',
+                        'url' => url('/keuangan/sidang-ta')
                     ],
                     [
                         'title' => 'Ijasah dan Wisuda',
-                        'url' => '#',
+                        'url' => url('/keuangan/ijasah-wisuda')
                     ],
                     [
                         'title' => 'Pengajuan Status',
-                        'url' => '#',
+                        'url' => url('/keuangan/pengajuan-status')
                     ],
                     [
                         'title' => 'SKS Default',
-                        'url' => '#',
+                        'url' => url('/keuangan/sks-default')
                     ],
                     [
                         'title' => 'SPP Variabel Praktek',
-                        'url' => '#',
+                        'url' => url('/keuangan/spp-variabel-praktek')
                     ],
                     [
                         'title' => 'SPP Tetap Angsuran',
-                        'url' => '#',
+                        'url' => url('/keuangan/spp-tetap-angsuran')
                     ],
                     [
                         'title' => 'Denda SPP Tetap',
-                        'url' => '#',
+                        'url' => url('/keuangan/denda-spp-tetap')
                     ],
                 ],
             ],
@@ -441,7 +441,7 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'SPA',
-                        'url' => '#',
+                        'url' => url('/keuangan/spa')
                     ],
                     [
                         'title' => 'Tridarma',
@@ -449,7 +449,7 @@ $data_nav = [
                     ],
                     [
                         'title' => 'SKS Kuliah',
-                        'url' => '#',
+                        'url' => url('/keuangan/sks-kuliah')
                     ],
                     [
                         'title' => 'Tarif KKN',
@@ -469,15 +469,15 @@ $data_nav = [
                     ],
                     [
                         'title' => 'Her Registrasi',
-                        'url' => '#',
+                        'url' => url('/keuangan/her-registrasi')
                     ],
                     [
                         'title' => 'Sidang TA',
-                        'url' => '#',
+                        'url' => url('/keuangan/sidang-ta-ukt')
                     ],
                     [
                         'title' => 'Denda SKS Kuliah',
-                        'url' => '#',
+                        'url' => url('/keuangan/denda-sks-kuliah')
                     ],
                 ],
             ],
