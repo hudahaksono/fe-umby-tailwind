@@ -423,6 +423,14 @@ $router->group(['prefix' => 'referensi'], function() use ($router)
     Route::get('/universitas/unit', 'Referensi\Universitas\UnitController@index')->name('unit');
     Route::get('/universitas/unit/list', 'Referensi\Universitas\UnitController@list')->name('unit.list');
 
+    Route::get('/akademik/provinsi/get', 'Referensi\Akademik\ProvinsiController@GetProvinsi')->name('provinsi.get');
+
+    Route::get('/akademik/kota/get', 'Referensi\Akademik\KotaController@GetKota')->name('kota.get');
+
+    Route::get('/pegawai/jabatan-akademik/get', 'Referensi\Pegawai\JabAkademikController@getData')->name('jabakademik.get');
+
+    Route::get('/pegawai/jabatan-struktural/get', 'Referensi\Pegawai\JabStrukturalController@getData')->name('jabstruktural.get');
+
     // Route::get('/tambah', function () {
     //     return view('portal.dosen.form');
     // });

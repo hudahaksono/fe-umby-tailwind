@@ -35,7 +35,11 @@
                     Email</x-button>
             </div>
         </div>
-        <table id="mahasiswa-table" class="hover cell-border stripe  order-column"></table>
+        <table id="mahasiswa-table" class="hover stripe order-column">
+            <thead class="text-sm text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                
+            </thead>
+        </table>
 
     </x-card>
 @endsection
@@ -79,6 +83,12 @@
 
         $(document).ready(function() {
             $('#mahasiswa-table').DataTable({
+                language: {
+                        paginate: {
+                            previous: '<i class="material-icons">chevron_left</i>',
+                            next: '<i class="material-icons">chevron_right</i>'
+                            }
+                    },
                 data: dataSet,
                 columns: [{
                         data: 'id',
