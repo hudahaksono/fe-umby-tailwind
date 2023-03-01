@@ -445,7 +445,7 @@ $data_nav = [
                     ],
                     [
                         'title' => 'Tridarma',
-                        'url' => '#',
+                        'url' => url('/keuangan/tridarma')
                     ],
                     [
                         'title' => 'SKS Kuliah',
@@ -453,19 +453,19 @@ $data_nav = [
                     ],
                     [
                         'title' => 'Tarif KKN',
-                        'url' => '#',
+                        'url' => url('/keuangan/tarif-kkn')
                     ],
                     [
                         'title' => 'Tarif Wisuda',
-                        'url' => '#',
+                        'url' => url('/keuangan/tarif-wisuda')
                     ],
                     [
                         'title' => 'Tarif LSP',
-                        'url' => '#',
+                        'url' => url('/keuangan/tarif-lsp')
                     ],
                     [
                         'title' => 'Tarif PKPP',
-                        'url' => '#',
+                        'url' => url('/keuangan/tarif-pkpp')
                     ],
                     [
                         'title' => 'Her Registrasi',
@@ -487,47 +487,47 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Cari Tagihan',
-                        'url' => '#',
+                        'url' => url('/keuangan/cari-tagihan')
                     ],
                     [
                         'title' => 'Buat Tagihan Mahasiswa',
-                        'url' => '#',
+                        'url' => url('/keuangan/buat-tagihan-mahasiswa')
                     ],
                     [
                         'title' => 'Buat Tagihan Calon Mhs',
-                        'url' => '#',
+                        'url' => url('/keuangan/buat-tagihan-calon-mhs')
                     ],
                     [
                         'title' => 'Dispensasi Tagihan',
-                        'url' => '#',
+                        'url' => url('/keuangan/dispensasi-tagihan')
                     ],
                     [
                         'title' => 'Buat Tagihan Denda',
-                        'url' => '#',
+                        'url' => url('/keuangan/buat-tagihan-denda')
                     ],
                     [
                         'title' => 'Buat Tagihan Her Registrasi',
-                        'url' => '#',
+                        'url' => url('/keuangan/buat-tagihan-her-registrasi')
                     ],
                     [
                         'title' => 'Buat Tagihan KKN',
-                        'url' => '#',
+                        'url' => url('/keuangan/buat-tagihan-kkn')
                     ],
                     [
                         'title' => 'Buat Tagihan Tridarma',
-                        'url' => '#',
+                        'url' => url('/keuangan/buat-tagihan-tridarma')
                     ],
                     [
                         'title' => 'Buat Tagihan Wisuda',
-                        'url' => '#',
+                        'url' => url('/keuangan/buat-tagihan-wisuda')
                     ],
                     [
                         'title' => 'Buat Tagihan LSP',
-                        'url' => '#',
+                        'url' => url('/keuangan/buat-tagihan-lsp')
                     ],
                     [
                         'title' => 'Buat Tagihan PKPP',
-                        'url' => '#',
+                        'url' => url('/keuangan/buat-tagihan-pkpp')
                     ],
                 ],
             ],
@@ -537,31 +537,31 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Bayar Tagihan',
-                        'url' => '#',
+                        'url' => url('/keuangan/bayar-tagihan')
                     ],
                     [
                         'title' => 'Beli Formulir',
-                        'url' => '#',
+                        'url' => url('/keuangan/beli-formulir')
                     ],
                     [
                         'title' => 'Cari Pembayaran',
-                        'url' => '#',
+                        'url' => url('/keuangan/cari-pembayaran')
                     ],
                     [
                         'title' => 'Cari Pembayaran Periode',
-                        'url' => '#',
+                        'url' => url('/keuangan/cari-pembayaran-periode')
                     ],
                     [
                         'title' => 'Pembayaran Formulir',
-                        'url' => '#',
+                        'url' => url('/keuangan/pembayaran-formulir')
                     ],
                     [
                         'title' => 'Laporan Keuangan',
-                        'url' => '#',
+                        'url' => url('/keuangan/laporan-keuangan')
                     ],
                     [
                         'title' => 'Rekap Keuangan',
-                        'url' => '#',
+                        'url' => url('/keuangan/rekap-keuangan')
                     ],
                 ],
             ],
@@ -571,11 +571,11 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'VA BNI',
-                        'url' => '#',
+                        'url' => url('/keuangan/va-bni')
                     ],
                     [
                         'title' => 'Tagihan VA BNI',
-                        'url' => '#',
+                        'url' => url('/keuangan/tagihan-va-bni')
                     ],
                 ]
             ],
@@ -585,19 +585,19 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Setting',
-                        'url' => '#',
+                        'url' => url('/keuangan/setting')
                     ],
                     [
                         'title' => 'Log Transaksi',
-                        'url' => '#',
+                        'url' => url('/keuangan/log-transaksi')
                     ],
                     [
                         'title' => 'Bank',
-                        'url' => '#',
+                        'url' => url('/keuangan/bank')
                     ],
                     [
                         'title' => 'Rekonsiliasi',
-                        'url' => '#',
+                        'url' => url('/keuangan/rekonsiliasi')
                     ],
                     [
                         'title' => 'Rekonsiliasi BNI',
@@ -605,11 +605,11 @@ $data_nav = [
                     ],
                     [
                         'title' => 'Rekanan Bank',
-                        'url' => '#',
+                        'url' => url('/keuangan/rekanan-bank')
                     ],
                     [
                         'title' => 'Jenis Tagihan',
-                        'url' => '#',
+                        'url' =>  url('/keuangan/jenis-tagihan')
                     ],
                 ]
             ],

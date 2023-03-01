@@ -399,8 +399,28 @@ Route::get('/keuangan/spa', function () {
     return view('keuangan.tarif-ukt.spa');
 });
 
+Route::get('/keuangan/tridarma', function () {
+    return view('keuangan.tarif-ukt.tridarma');
+});
+
 Route::get('/keuangan/sks-kuliah', function () {
     return view('keuangan.tarif-ukt.sks-kuliah');
+});
+
+Route::get('/keuangan/tarif-kkn', function () {
+    return view('keuangan.tarif-ukt.tarif-kkn');
+});
+
+Route::get('/keuangan/tarif-wisuda', function () {
+    return view('keuangan.tarif-ukt.tarif-wisuda');
+});
+
+Route::get('/keuangan/tarif-lsp', function () {
+    return view('keuangan.tarif-ukt.tarif-lsp');
+});
+
+Route::get('/keuangan/tarif-pkpp', function () {
+    return view('keuangan.tarif-ukt.tarif-pkpp');
 });
 
 Route::get('/keuangan/her-registrasi', function () {
@@ -414,6 +434,111 @@ Route::get('/keuangan/sidang-ta-ukt', function () {
 Route::get('/keuangan/denda-sks-kuliah', function () {
     return view('keuangan.tarif-ukt.denda-sks-kuliah');
 });
+
+Route::get('/keuangan/cari-tagihan', function () {
+    return view('keuangan.tagihan.cari-tagihan');
+});
+
+Route::get('/keuangan/buat-tagihan-mahasiswa', function () {
+    return view('keuangan.tagihan.buat-tagihan-mahasiswa');
+});
+
+Route::get('/keuangan/buat-tagihan-calon-mhs', function () {
+    return view('keuangan.tagihan.buat-tagihan-calon-mhs');
+});
+
+Route::get('/keuangan/dispensasi-tagihan', function () {
+    return view('keuangan.tagihan.dispensasi-tagihan');
+});
+
+Route::get('/keuangan/buat-tagihan-denda', function () {
+    return view('keuangan.tagihan.buat-tagihan-denda');
+});
+
+Route::get('/keuangan/buat-tagihan-her-registrasi', function () {
+    return view('keuangan.tagihan.buat-tagihan-her-registrasi');
+});
+
+Route::get('/keuangan/buat-tagihan-kkn', function () {
+    return view('keuangan.tagihan.buat-tagihan-kkn');
+});
+
+Route::get('/keuangan/buat-tagihan-tridarma', function () {
+    return view('keuangan.tagihan.buat-tagihan-tridarma');
+});
+
+Route::get('/keuangan/buat-tagihan-wisuda', function () {
+    return view('keuangan.tagihan.buat-tagihan-wisuda');
+});
+
+Route::get('/keuangan/buat-tagihan-lsp', function () {
+    return view('keuangan.tagihan.buat-tagihan-lsp');
+});
+
+Route::get('/keuangan/buat-tagihan-pkpp', function () {
+    return view('keuangan.tagihan.buat-tagihan-pkpp');
+});
+
+Route::get('/keuangan/bayar-tagihan', function () {
+    return view('keuangan.pembayaran.bayar-tagihan');
+});
+
+Route::get('/keuangan/beli-formulir', function () {
+    return view('keuangan.pembayaran.beli-formulir');
+});
+
+Route::get('/keuangan/cari-pembayaran', function () {
+    return view('keuangan.pembayaran.cari-pembayaran');
+});
+
+Route::get('/keuangan/cari-pembayaran-periode', function () {
+    return view('keuangan.pembayaran.cari-pembayaran-periode');
+});
+
+Route::get('/keuangan/pembayaran-formulir', function () {
+    return view('keuangan.pembayaran.pembayaran-formulir');
+});
+
+Route::get('/keuangan/laporan-keuangan', function () {
+    return view('keuangan.pembayaran.laporan-keuangan');
+});
+
+Route::get('/keuangan/rekap-keuangan', function () {
+    return view('keuangan.pembayaran.rekap-keuangan');
+});
+
+Route::get('/keuangan/va-bni', function () {
+    return view('keuangan.bank-bni.va-bni');
+});
+
+Route::get('/keuangan/tagihan-va-bni', function () {
+    return view('keuangan.bank-bni.tagihan-va-bni');
+});
+
+Route::get('/keuangan/setting', function () {
+    return view('keuangan.h2h.setting');
+});
+
+Route::get('/keuangan/log-transaksi', function () {
+    return view('keuangan.h2h.log-transaksi');
+});
+
+Route::get('/keuangan/bank', function () {
+    return view('keuangan.h2h.bank');
+});
+
+Route::get('/keuangan/rekonsiliasi', function () {
+    return view('keuangan.h2h.rekonsiliasi');
+});
+
+Route::get('/keuangan/rekanan-bank', function () {
+    return view('keuangan.h2h.rekanan-bank');
+});
+
+Route::get('/keuangan/jenis-tagihan', function () {
+    return view('keuangan.h2h.jenis-tagihan');
+});
+
 
 /**
  * Referensi

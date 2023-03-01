@@ -5,7 +5,7 @@
     <!-- <x-card class="mb-6">
         FILTER
     </x-card> -->
-    <x-card title="Tarif Uang Kuliah Tetap">
+    <x-card title="Tarif PKPP">
         <div class="flex flex-row">
             <!-- <div class="flex">
                 <div class="flex items-center"><span class="text-gray-600 font-medium">Periode&nbsp; :</span>
