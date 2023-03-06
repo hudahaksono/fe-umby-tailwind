@@ -5,7 +5,7 @@
     <!-- <x-card class="mb-6">
         FILTER
     </x-card> -->
-    <x-card title="Tarif Uang Kuliah Tetap">
+    <x-card title="Tarif LSP">
         <div class="flex flex-row">
             <!-- <div class="flex">
                 <div class="flex items-center"><span class="text-gray-600 font-medium">Periode&nbsp; :</span>
@@ -113,7 +113,7 @@
                                     <select id="select-dgree2" name="select-dgree2" required
                                         class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded">
                                     </select>
-                                    <x-button size="sm" color="blue" as-link={{ true }} href="#" class="inline-flex mx-2 text-white"><i data-feather="file" width="16"></i>&nbsp;Salin</x-button>
+                                
                                 </div>
                             </td>
                         </tr>
