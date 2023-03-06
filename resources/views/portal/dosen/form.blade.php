@@ -1100,8 +1100,68 @@
                 });
             }
 
+            function get_provinsi(id = '') {
+                $.ajax({
+                    url: "/referensi/akademik/provinsi/get",
+                    type: 'GET',
+                    success: function(response) {
+                        var provinsiSelect = {
+                            placeholder: "Pilih Provinsi...",
+                            options: response,
+                        }
+                        new TomSelect('#select-provinsi', provinsiSelect)
+                    }
+                });
+            }
+
+            function get_kota(id = '') {
+                $.ajax({
+                    url: "/referensi/akademik/kota/get",
+                    type: 'GET',
+                    success: function(response) {
+                        var kotaSelect = {
+                            placeholder: "Pilih Kota...",
+                            options: response,
+                        }
+                        new TomSelect('#select-kota', kotaSelect)
+                    }
+                });
+            }
+
+            function get_jab_akademik(id = '') {
+                $.ajax({
+                    url: "/referensi/pegawai/jabatan-akademik/get",
+                    type: 'GET',
+                    success: function(response) {
+                        var kotaSelect = {
+                            placeholder: "Pilih Jabatan Akademik...",
+                            options: response,
+                        }
+                        new TomSelect('#select-jabatan-akademik', kotaSelect)
+                    }
+                });
+            }
+
+            function get_jab_struktural(id = '') {
+                $.ajax({
+                    url: "/referensi/pegawai/jabatan-struktural/get",
+                    type: 'GET',
+                    success: function(response) {
+                        var kotaSelect = {
+                            placeholder: "Pilih Jabatan Struktural...",
+                            options: response,
+                        }
+                        new TomSelect('#select-jabatan-struktural', kotaSelect)
+                    }
+                });
+            }
+
             get_unit();
             get_agama();
+            get_provinsi()
+            get_kota()
+            get_jab_akademik()
+            get_jab_struktural()
 
             $('#simpan').click(function(event) {
                 var form = $('#form_input');

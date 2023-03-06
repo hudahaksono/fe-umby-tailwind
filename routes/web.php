@@ -13,22 +13,33 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/dashboard', function () {
     return view('portal.index');
 });
 
-Route::get('/dashboard', function () {
-    return view('index');
-});
+// Route::get('/dashboard', function () {
+//     return view('index');
+// });
 
 
 
 /**
  * Login Pages
  */
-Route::get('/login', function () {
-    return view('auth.login');
-});
+// Route::get('/login', function () {
+//     return view('auth.login');
+// });
+// Route::get('/', function () {
+//     return view('auth.login');
+// });
+Route::get('/', 'Auth\LoginController@index');
+Route::post('/postlogin', 'Auth\LoginController@postlogin')->name('postlogin');
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+
+// Route::get('/menu', function () {
+//     return view('auth.menu');
+// });
+Route::get('/modul', 'Auth\ModulController@index');
 
 /**
  * Portal
@@ -576,6 +587,14 @@ $router->group(['prefix' => 'referensi'], function() use ($router)
 {
     Route::get('/universitas/unit', 'Referensi\Universitas\UnitController@index')->name('unit');
     Route::get('/universitas/unit/list', 'Referensi\Universitas\UnitController@list')->name('unit.list');
+
+    Route::get('/akademik/provinsi/get', 'Referensi\Akademik\ProvinsiController@GetProvinsi')->name('provinsi.get');
+
+    Route::get('/akademik/kota/get', 'Referensi\Akademik\KotaController@GetKota')->name('kota.get');
+
+    Route::get('/pegawai/jabatan-akademik/get', 'Referensi\Pegawai\JabAkademikController@getData')->name('jabakademik.get');
+
+    Route::get('/pegawai/jabatan-struktural/get', 'Referensi\Pegawai\JabStrukturalController@getData')->name('jabstruktural.get');
 
     // Route::get('/tambah', function () {
     //     return view('portal.dosen.form');

@@ -63,6 +63,20 @@
         // ]
         
         $(document).ready(function() {
+            function get_unit(id = '') {
+                $.ajax({
+                    url: "/referensi/universitas/unit/list",
+                    type: 'GET',
+                    success: function(response) {
+                        var unitSelect = {
+                            placeholder: "Pilih Unit Kerja...",
+                            options: response,
+                        }
+                        new TomSelect('#select-unitkerja', unitSelect)
+                    }
+                });
+            }
+
             // const dataSet = [];
             function get_data(id = '') {
                 $.ajax({
@@ -120,25 +134,26 @@
                 });
             }
             get_data();
+            get_unit();
             
         })
 
-        var UnitKerjaSelect = {
-            placeholder: "Pilih Unit kerja...",
-            options: [{
-                    value: "1111",
-                    text: '\xa0'+"S1 Psikologi"
-                },
-                {
-                    value: "1121",
-                    text: '\xa0'+"S2 Magister Psikologi"
-                },
-                {
-                    value: "1122",
-                    text: '\xa0'+"S2 Magister Psikologi Profesi"
-                },
-            ],
-        }
+        // var UnitKerjaSelect = {
+        //     placeholder: "Pilih Unit kerja...",
+        //     options: [{
+        //             value: "1111",
+        //             text: '\xa0'+"S1 Psikologi"
+        //         },
+        //         {
+        //             value: "1121",
+        //             text: '\xa0'+"S2 Magister Psikologi"
+        //         },
+        //         {
+        //             value: "1122",
+        //             text: '\xa0'+"S2 Magister Psikologi Profesi"
+        //         },
+        //     ],
+        // }
 
         var JKSelect = {
             placeholder: "Pilih Jenis Kelamin...",
@@ -154,7 +169,7 @@
             ],
         }
 
-        new TomSelect('#select-unitkerja', UnitKerjaSelect)
+        // new TomSelect('#select-unitkerja', UnitKerjaSelect)
 
         new TomSelect('#select-jk', JKSelect)
     </script>
