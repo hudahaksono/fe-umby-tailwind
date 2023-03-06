@@ -1,4 +1,4 @@
-<div class="min-w-0 p-4 bg-white rounded-lg shadow-lg {{ $class }}">
+<div class="min-w-0 p-4 bg-white rounded-lg shadow-lg {{ $class }}" style="{{ $style }}" id="{{$id}}">
     <div class="flex items-center mb-4">
         @if (isset($title))
             <h4 class="text-lg font-semibold text-gray-600">

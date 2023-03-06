@@ -12,16 +12,22 @@ class Card extends Component
 
     public $button;
 
+    public $style;
+
+    public $id;
+
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($title = null, $class = null, $button = null)
+    public function __construct($title = null, $class = null, $button = null, $style = null, $id=null)
     {
         $this->title = $title;
         $this->class = $class;
         $this->button = $button;
+        $this->style = $style;
+        $this->id = $id;
     }
 
     /**

@@ -3,7 +3,7 @@
 $data_nav = [
     [
         'title' => 'Home',
-        'url' => url('/'),
+        'url' => url('/dashboard'),
     ],
     [
         'title' => 'Portal',

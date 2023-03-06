@@ -21,9 +21,29 @@
                         <img class="w-[180px] mx-auto mb-6" src="{{ URL('assets/img/logo-umby.png') }}" />
                         <h1 class="mb-2 text-2xl md:text-3xl text-gray-600">Masuk ke <span class="font-semibold">SIA</span></h1>
                         <p class="mb-4 text-cool-gray-400 text-sm md:text-base">Sistem Informasi Akademik <span class="font-semibold">Univeritas Mercubuana Yogyakarta</span></p>
-
+                        @if(\Session::has('alert-validasi'))
+                            <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+                                <span class="font-medium">{{ Session::get('alert-validasi') }}</span>
+                            </div>
+                        @endif
+                        @if(\Session::has('alert-success'))
+                            <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+                                <span class="font-medium">{{ Session::get('alert-success') }}</span>
+                            </div>
+                        @endif
+                        @if(\Session::has('alert-noaccount'))
+                            <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+                                <span class="font-medium">{{ Session::get('alert-noaccount') }}</span>
+                            </div>
+                        @endif
+                        @if(\Session::has('alert-logout'))
+                            <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+                                <span class="font-medium">{{ Session::get('alert-logout') }}</span>
+                            </div>
+                        @endif
                         <!-- Form section -->
-                        <form>
+                        <form method="POST" action="{{ route('postlogin') }}">
+                            {{ csrf_field() }}
                             <label class="block">
                                 <input type="text" name="username" placeholder="Username" class="form-input rounded block w-full mt-1 focus:border-blue-400 focus:outline-none focus:shadow-outline-blue my-4 border-cool-gray-100 text-gray-600 py-4" />
                             </label>
