@@ -201,6 +201,35 @@ Route::get('/perkuliahan/monitoring-kelas', function () {
     return view('perkuliahan.kelas-kuliah.monitoring-kelas');
 });
 
+Route::get('/perkuliahan/kelas-perkuliahan', function () {
+    return view('perkuliahan.kelas-kuliah.kelas-perkuliahan');
+});
+
+Route::get('/perkuliahan/monitoring-dosen-pengajar', function () {
+    return view('perkuliahan.kelas-kuliah.monitoring-dosen-pengajar');
+});
+
+Route::get('/perkuliahan/presensi-mahasiswa', function () {
+    return view('perkuliahan.kelas-kuliah.presensi-mahasiswa');
+});
+
+Route::get('/perkuliahan/nilai-kuliah', function () {
+    return view('perkuliahan.kelas-kuliah.nilai-kuliah');
+});
+
+Route::get('/perkuliahan/pengesahan-nilai', function () {
+    return view('perkuliahan.kelas-kuliah.pengesahan-nilai');
+});
+
+Route::get('/perkuliahan/distribusi-peserta-kelas', function () {
+    return view('perkuliahan.kelas-kuliah.distribusi-peserta-kelas');
+});
+
+Route::get('/perkuliahan/pengajuan-soal-ujian', function () {
+    return view('perkuliahan.kelas-kuliah.pengajuan-soal-ujian');
+});
+
+
 Route::get('/perkuliahan/dosen-pa', function () {
     return view('perkuliahan.administrasi.dosen-pa');
 });

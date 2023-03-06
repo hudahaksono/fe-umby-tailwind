@@ -107,7 +107,7 @@ $data_nav = [
                     ],
                     [
                         'title' => 'Kelas Perkuliahan',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/kelas-perkuliahan'),
                     ],
                     [
                         'title' => 'Penjadwalan Kelas Perkuliahan',
@@ -119,23 +119,23 @@ $data_nav = [
                     ],
                     [
                         'title' => 'Monitoring Dosen Pengajar',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/monitoring-dosen-pengajar'),
                     ],
                     [
                         'title' => 'Presensi Mahasiswa',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/presensi-mahasiswa'),
                     ],
                     [
                         'title' => 'Nilai Kuliah',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/nilai-kuliah'),
                     ],
                     [
                         'title' => 'Pengesahan Nilai',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/pengesahan-nilai'),
                     ],
                     [
                         'title' => 'Distribusi Peserta Kelas',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/distribusi-peserta-kelas'),
                     ],
                     [
                         'title' => 'Matrix Jadwal Kuliah',
@@ -147,7 +147,7 @@ $data_nav = [
                     ],
                     [
                         'title' => 'Pengajuan Soal Ujian',
-                        'url' => '#',
+                        'url' => url('/perkuliahan/pengajuan-soal-ujian'),
                     ],
                 ],
             ],

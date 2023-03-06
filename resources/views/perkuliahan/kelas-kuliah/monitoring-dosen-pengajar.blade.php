@@ -1,9 +1,9 @@
 @extends('layouts.default')
-@section('title', 'Monitoring Kelas')
+@section('title', 'Monitoring Pengajar')
 
 {{-- YOUR CONTENT START HERE --}}
 @section('contents')
-    <x-card title="Monitoring Kelas">
+    <x-card title="Monitoring Pengajar">
         <div class="flex flex-row">     
             <div class="flex ml-auto">
                 <x-button size="sm" color="blue" as-link={{ true }} href="#" class="mx-2 text-white"><i
@@ -18,7 +18,7 @@
                 <div class="flex flex-col md:flex-row justify-between my-2 py-4 md:py-0">
                     <div class="basis-5/6">
                         <div class="flex flex-row justify-between my-2 ">
-                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Jurusan</span>
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Jurusan </span>
                             </div>
                             <div class="basis-1 flex items-center">:</div>
                             <div class="basis-2/3 flex items-center">
@@ -29,17 +29,6 @@
                         </div>
 
                         <hr />
-
-                        <div class="flex flex-row justify-between my-2 ">
-                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Kelas Mhs </span>
-                            </div>
-                            <div class="basis-1 flex items-center">:</div>
-                            <div class="basis-2/3 flex items-center">
-                                <select id="select-kelasmhs" name="select-kelasmhs" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </div>
-                        </div>
 
                         <div class="flex flex-row justify-between my-2 ">
                             <div class="basis-1/3 flex items-center"><span class="text-gray-600">Periode </span>
@@ -81,6 +70,28 @@
                         <hr />
 
                         <div class="flex flex-row justify-between my-2 ">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Kelas </span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <select id="select-kelas" name="select-kelas" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-between my-2 ">
+                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Pengajar </span>
+                            </div>
+                            <div class="basis-1 flex items-center">:</div>
+                            <div class="basis-2/3 flex items-center">
+                                <select id="select-pengajar" name="select-pengajar" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basis-5/6 ml-2">
+                        <div class="flex flex-row justify-between my-2 ">
                             <div class="basis-1/3 flex items-center"><span class="text-gray-600">Hari </span>
                             </div>
                             <div class="basis-1 flex items-center">:</div>
@@ -90,34 +101,6 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="flex flex-row justify-between my-2 ">
-                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Ruang/Jam </span>
-                            </div>
-                            <div class="basis-1 flex items-center">:</div>
-                            <div class="basis-2/3 flex items-center">
-                                <select id="select-ruang" name="select-ruang" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                                <select id="select-ruang2" name="select-ruang2" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                                <select id="select-ruang3" name="select-ruang3" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </div>
-                        </div>
-                        <div class="flex flex-row justify-between my-2 ">
-                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Jenis Kuliah </span>
-                            </div>
-                            <div class="basis-1 flex items-center">:</div>
-                            <div class="basis-2/3 flex items-center">
-                                <select id="select-jeniskuliah" name="select-jnskuliah" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="basis-5/6 ml-2">
                         <div class="flex flex-row justify-between my-2 ">
                             <div class="basis-1/3 flex items-center"><span class="text-gray-600">Mata Kuliah</span>
                             </div>
@@ -141,25 +124,13 @@
                                 </select>
                             </div>
                         </div>
-
-                        <div class="flex flex-row justify-between my-2 ">
-                            <div class="basis-1/3 flex items-center"><span class="text-gray-600">Pengajar </span>
-                            </div>
-                            <div class="basis-1 flex items-center">:</div>
-                            <div class="basis-2/3 flex items-center">
-                                <select id="select-pengajar" name="select-pengajar" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <x-button size="sm" color="white" as-link={{ true }} href="#"
-                            class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="filter"
-                                width="16"></i>&nbsp;Filter Data Kelas</x-button>
-                        </div>
                     </div>
                 </div>
-                
+                <div class="text-center">
+                    <x-button size="sm" color="white" as-link={{ true }} href="#"
+                    class="mx-2 text-cool-gray-800 border-cool-gray-400"><i data-feather="filter"
+                        width="16"></i>&nbsp;Filter Data Kelas</x-button>
+                </div>
             </form>
         </x-card>
         <br>
@@ -173,43 +144,34 @@
     <script>
         const dataSet = [{
                 id: 1,
-                ubah: 'kulaih Ujian Sepadan',
-                jurusan: 'Magister Ilmu Pangan (S2) Kampus Gejayan 2146974148',
-                periode: 'Gasal (22)',
-                nama_mk: 'MIP2130 (3) Metodologi Penelitian dan Statistik Ilmu Pangan (0509037001 - Dr., Chatarina Lilis Suryani, S.TP., M.P.; 0526096502 - Dr. Ir., Siti Tamaroh Cahyono Murti, M.P.)',
+                jurusan:'Magister Ilmu Pangan (S2) Kampus Gejayan 2146974148',
+                periode:'Gasal (22)',
+                nama_mk:'MIP2130 (3) Metodologi Penelitian dan Statistik Ilmu Pangan (0509037001 - Dr., Chatarina Lilis Suryani, S.TP., M.P.; 0526096502 - Dr. Ir., Siti Tamaroh Cahyono Murti, M.P.)',
                 kelas:'12D UKT',
                 jadwal:'Kamis 16:31-18:30 @ D-102',
                 pengajar:'2',
-                pes:'3',
-                kap:'50',
-                sap:'RPS Presensi Nilai Nilai OBE',
+                peserta:'3',
 
             },
             {
                 id: 2,
-                ubah: 'kulaih Ujian Sepadan',
-                jurusan: 'Magister Ilmu Pangan (S2) Kampus Gejayan 2146974153',
-                periode: 'Gasal (22)',
-                nama_mk: 'MIP2131 (3) Penanganan Pasca Panen (0013126402 - Prof. Dr. Ir., Dwiyati Pujimulyani, M.P.)',
+                jurusan:'Magister Ilmu Pangan (S2) Kampus Gejayan 2146974153',
+                periode:'Gasal (22)',
+                nama_mk:'MIP2131 (3) Penanganan Pasca Panen (0013126402 - Prof. Dr. Ir., Dwiyati Pujimulyani, M.P.)',
                 kelas:'12D UKT',
                 jadwal:'Jumat 16:31-18:30 @ D-102',
                 pengajar:'1',
-                pes:'3',
-                kap:'50',
-                sap:'RPS Presensi Nilai Nilai OBE',
+                peserta:'3',
             },
             {
                 id: 3,
-                ubah: 'kulaih Ujian Sepadan',
-                jurusan: 'Magister Ilmu Pangan (S2) Kampus Gejayan 2146974150',
-                periode: 'Gasal (22)',
-                nama_mk: 'MIP2132 (3) Bioteknologi Industri Pangan (0528076302 - Dr. Ir., Wisnu Adi Yulianto, M.P.)',
+                jurusan:'Magister Ilmu Pangan (S2) Kampus Gejayan 2146974150',
+                periode:'Gasal (22)',
+                nama_mk:'MIP2132 (3) Bioteknologi Industri Pangan (0528076302 - Dr. Ir., Wisnu Adi Yulianto, M.P.)',
                 kelas:'12D UKT',
                 jadwal:'Kamis 18:31-20:30 @ D-102',
                 pengajar:'1',
-                pes:'3',
-                kap:'50',
-                sap:'RPS Presensi Nilai Nilai OBE',
+                peserta:'3',
             }
         ]
 
@@ -220,10 +182,6 @@
                         data: 'id',
                         render: (data, type, row, meta) => meta.row + meta.settings._iDisplayStart + 1,
                         title: "No."
-                    },
-                    {
-                        data: 'ubah',
-                        title: 'Ubah'
                     },
                     {
                         data: 'jurusan',
@@ -250,20 +208,12 @@
                         title: 'Pengajar'
                     },
                     {
-                        data: 'pes',
-                        title: 'Pes.'
-                    },
-                    {
-                        data: 'kap',
-                        title: 'Kap.'
-                    },
-                    {
-                        data: 'sap',
-                        title: 'SAP'
+                        data: 'peserta',
+                        title: 'Peseserta'
                     },
                     {
                         data: 'id',
-                        title: 'Soal',
+                        title: 'Aksi',
                         // TODO: FIX THIS
                         render: (data) => {
                             const btnClass = (color = "gray") =>
@@ -287,7 +237,8 @@
 
         var jurusanSelect = {
             placeholder: "Universitar Mercu Buana Yogyakarta...",
-            options: [{
+            options: [
+                {
                     value: "1111",
                     text: "S1 Psikologi"
                 },
@@ -298,20 +249,6 @@
                 {
                     value: "1122",
                     text: "S2 Magister Psikologi Profesi"
-                },
-            ],
-        }
-
-        var kelasmhsSelect = {
-            placeholder: "Semua Kelas Mahasiswa...",
-            options: [
-                {
-                    value: "1",
-                    text: "UKT"
-                },
-                {
-                    value: "2",
-                    text: "SPP Tetap"
                 },
             ],
         }
@@ -388,6 +325,34 @@
             ],
         }
 
+        var kelasSelect = {
+            placeholder: "Semua Sistem Kuliah...",
+            options: [
+                {
+                    value: "1",
+                    text: "UKT"
+                },
+                {
+                    value: "2",
+                    text: "SPP Tetap"
+                },
+            ],
+        }
+
+        var pengajarSelect = {
+            placeholder: "Semua Kelas...",
+            options: [
+                {
+                    value: "1",
+                    text: "Ada Pengajar"
+                },
+                {
+                    value: "2",
+                    text: "Tidak Ada Pengajar"
+                },
+            ],
+        }
+
         var hariSelect = {
             placeholder: "Semua Hari...",
             options: [
@@ -406,77 +371,6 @@
             ],
         }
 
-        var ruangSelect = {
-            placeholder: "Semua...",
-            options: [
-                {
-                    value: "1",
-                    text: "Full EL AGR 1"
-                },
-                {
-                    value: "2",
-                    text: "Full EL AGR 2"
-                },
-                {
-                    value: "3",
-                    text: "Full EL Akt 207"
-                },
-            ],
-        }
-
-        var ruang2Select = {
-            placeholder: "",
-            options: [
-                {
-                    value: "1",
-                    text: ""
-                },
-                {
-                    value: "2",
-                    text: ""
-                },
-                {
-                    value: "3",
-                    text: ""
-                },
-            ],
-        }
-
-        var ruang3Select = {
-            placeholder: "",
-            options: [
-                {
-                    value: "1",
-                    text: ""
-                },
-                {
-                    value: "2",
-                    text: ""
-                },
-                {
-                    value: "3",
-                    text: ""
-                },
-            ],
-        }
-
-        var jnskuliahSelect = {
-            placeholder: "Jenis Kuliah...",
-            options: [
-                {
-                    value: "1",
-                    text: "Reguler Pagi [R1]"
-                },
-                {
-                    value: "2",
-                    text: "Reguler Malam [R2]"
-                },
-                {
-                    value: "3",
-                    text: "Kelas Karyawan [R3]"
-                },
-            ],
-        }
 
         var matkulSelect = {
             placeholder: "Semua Mata Kuliah...",
@@ -502,37 +396,19 @@
             ],
         }
 
-        var pengajarSelect = {
-            placeholder: "Semua Kelas...",
-            options: [
-                {
-                    value: "1",
-                    text: "Ada Pengajar"
-                },
-                {
-                    value: "2",
-                    text: "Tidak Ada Pengajar"
-                },
-                
-            ],
-        }
-
 
         new TomSelect('#select-jurusan', jurusanSelect)
-        new TomSelect('#select-kelasmhs', kelasmhsSelect)
         new TomSelect('#select-periode', periodeSelect)
         new TomSelect('#select-periode-thn', periodethnSelect)
         new TomSelect('#select-bentrok', bentrokSelect)
-        
+
         new TomSelect('#select-kampus', kampusSelect)
+        new TomSelect('#select-kelas', kelasSelect)
+        new TomSelect('#select-pengajar', pengajarSelect)
         new TomSelect('#select-hari', hariSelect)
-        new TomSelect('#select-ruang', ruangSelect)
-        new TomSelect('#select-ruang2', ruang2Select)
-        new TomSelect('#select-ruang3', ruang3Select)
-        new TomSelect('#select-jeniskuliah', jnskuliahSelect)
         new TomSelect('#select-matakuliah', matkulSelect)
         new TomSelect('#select-dosen', dosenSelect)
-        new TomSelect('#select-pengajar', pengajarSelect)
-
+        
+    
     </script>
 @endsection

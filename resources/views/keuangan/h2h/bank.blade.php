@@ -1,5 +1,5 @@
 @extends('layouts.default')
-@section('title', 'Portal Mahasiswa')
+@section('title', 'Bank')
 
 @section('contents')
     <!-- <x-card class="mb-6">
