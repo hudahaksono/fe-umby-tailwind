@@ -579,6 +579,17 @@ Route::get('/keuangan/jenis-tagihan', function () {
     return view('keuangan.h2h.jenis-tagihan');
 });
 
+/**
+ * Laporan
+ */
+Route::get('/laporan/status-mahasiswa-per-semester', function () {
+    return view('laporan.mahasiswa.status-mahasiswa-per-semester');
+});
+
+Route::get('/laporan/ipk-mahasiswa-persemester', function () {
+    return view('laporan.mahasiswa.ipk-mahasiswa-persemester');
+});
+
 
 /**
  * Referensi

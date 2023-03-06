@@ -629,11 +629,11 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Status Mahasiswa Per Semester',
-                        'url' => '#',
+                        'url' => url('/laporan/status-mahasiswa-per-semester')
                     ],
                     [
                         'title' => 'IPK Mahasiswa Per Semester',
-                        'url' => '#',
+                        'url' => url('/laporan/ipk-mahasiswa-persemester')
                     ],
                     [
                         'title' => 'IPS Mahasiswa Per Semester',
