@@ -1,11 +1,11 @@
 @extends('layouts.default')
-@section('title', 'Laporan Ipk Mahasiswa Per Semester')
+@section('title', 'Laporan Jadwal Kuliah Per Semester')
 
 @section('contents')
     <!-- <x-card class="mb-6">
         FILTER
     </x-card> -->
-    <x-card title="LAPORAN IPK MAHASISWA PER SEMESTER">
+    <x-card title="LAPORAN JADWAL KULIAH PER SEMESTER">
         
         
         <div class="flex flex-row">
@@ -22,38 +22,6 @@
 							<td class="px-6 py-4">Unit</td>
 							<td class="px-6 py-4" colspan="2">
 								<select id="select-unit" name="select-unit" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </td>
-						</tr>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-							<td class="px-6 py-4">Kelas</td>
-							<td class="px-6 py-4" colspan="2">
-								<select id="select-kelas" name="select-kelas" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </td>
-						</tr>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-							<td class="px-6 py-4">Status</td>
-							<td class="px-6 py-4" colspan="2">
-								<select id="select-status" name="select-status" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </td>
-						</tr>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-							<td class="px-6 py-4">Kampus</td>
-							<td class="px-6 py-4" colspan="2">
-								<select id="select-kampus" name="select-kampus" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </td>
-						</tr>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-							<td class="px-6 py-4">Angkatan</td>
-							<td class="px-6 py-4" colspan="2">
-								<select id="select-angkatan" name="select-angkatan" required
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                                 </select>
                             </td>
@@ -128,73 +96,6 @@ var unitSelect = {
     ],
 }
 
-var kelasSelect = {
-    placeholder: "--Semua Kelas--",
-    options: [
-        {
-            value: "111",
-            text: "UKT"
-        },
-        {
-            value: "112",
-            text: "SPP Tetap"
-        },
-    ],
-}
-
-var statusSelect = {
-    placeholder: "--Semua Status--",
-    options: [
-        {
-            value: "111",
-            text: "Aktif"
-        },
-        {
-            value: "112",
-            text: "Cuti"
-        },
-        {
-            value: "112",
-            text: "Drop Out"
-        },
-    ],
-}
-
-var kampusSelect = {
-    placeholder: "--Semua Kampus--",
-    options: [
-        {
-            value: "111",
-            text: "Kampus Pusat"
-        },
-        {
-            value: "112",
-            text: "Kampus Gejayaan"
-        },
-        {
-            value: "113",
-            text: "Kampus Gejayaan Ring Road"
-        },
-    ],
-}
-
-var angkatanSelect = {
-    placeholder: "--Semua Angkatan--",
-    options: [
-        {
-            value: "111",
-            text: "2022"
-        },
-        {
-            value: "112",
-            text: "2021"
-        },
-        {
-            value: "113",
-            text: "2019"
-        },
-    ],
-}
 
 var periodeSelect = {
     placeholder: "Gasal...",
@@ -251,10 +152,6 @@ var formatSelect = {
 }
 
 new TomSelect('#select-unit', unitSelect)
-new TomSelect('#select-kelas', kelasSelect)
-new TomSelect('#select-status', statusSelect)
-new TomSelect('#select-kampus', kampusSelect)
-new TomSelect('#select-angkatan', angkatanSelect)
 new TomSelect('#select-periode', periodeSelect)
 new TomSelect('#select-tahun', tahunSelect)
 new TomSelect('#select-format', formatSelect)

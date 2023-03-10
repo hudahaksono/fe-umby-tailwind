@@ -1,5 +1,5 @@
 @extends('layouts.default')
-@section('title', 'LAPORAN STATUS MAHASISWA PER SEMESTER')
+@section('title', 'Laporan Status Mahasiswa Per Semester')
 
 @section('contents')
     <!-- <x-card class="mb-6">
@@ -12,7 +12,7 @@
 			<!-- <div class="relative overflow-x-auto shadow-md sm:rounded-lg"> -->
 			<div class="basis-2/3 md:basis-1/2">
 				<table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-					<thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+					<thead class="text-xs text-white uppercase bg-umby dark:bg-gray-700 dark:text-gray-400">
 						<tr>
 							<th scope="col" class="px-6 py-3" colspan="3">Parameter Laporan</th>
 						</tr>
@@ -84,7 +84,7 @@
 			</div>
 			<div class="basis-1/3 md:basis-1/2 ml-1">
 				<table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-					<thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+					<thead class="text-xs text-white uppercase bg-umby dark:bg-gray-700 dark:text-gray-400">
 						<tr>
 							<th scope="col" class="px-6 py-3" colspan="2">Preview</th>
 						</tr>

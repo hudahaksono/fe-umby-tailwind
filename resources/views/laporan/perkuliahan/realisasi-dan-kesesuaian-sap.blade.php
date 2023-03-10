@@ -1,11 +1,11 @@
 @extends('layouts.default')
-@section('title', 'Laporan Ipk Mahasiswa Per Semester')
+@section('title', 'Realisasi Perkuliahan dan Kesesuaian SAP dan Ketersediaan Modul')
 
 @section('contents')
     <!-- <x-card class="mb-6">
         FILTER
     </x-card> -->
-    <x-card title="LAPORAN IPK MAHASISWA PER SEMESTER">
+    <x-card title="Realisasi Perkuliahan dan Kesesuaian SAP dan Ketersediaan Modul">
         
         
         <div class="flex flex-row">
@@ -19,9 +19,9 @@
 					</thead>
 					<tbody>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-							<td class="px-6 py-4">Unit</td>
+							<td class="px-6 py-4">Prodi</td>
 							<td class="px-6 py-4" colspan="2">
-								<select id="select-unit" name="select-unit" required
+								<select id="select-prodi" name="select-prodi" required
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                                 </select>
                             </td>
@@ -35,25 +35,9 @@
                             </td>
 						</tr>
                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-							<td class="px-6 py-4">Status</td>
-							<td class="px-6 py-4" colspan="2">
-								<select id="select-status" name="select-status" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </td>
-						</tr>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
 							<td class="px-6 py-4">Kampus</td>
 							<td class="px-6 py-4" colspan="2">
 								<select id="select-kampus" name="select-kampus" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </td>
-						</tr>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-							<td class="px-6 py-4">Angkatan</td>
-							<td class="px-6 py-4" colspan="2">
-								<select id="select-angkatan" name="select-angkatan" required
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                                 </select>
                             </td>
@@ -110,7 +94,7 @@
 @section('scripts')
 <script>
 
-var unitSelect = {
+var prodiSelect = {
     placeholder: "Universitas Mercu Buana Yogyakarta...",
     options: [
         {
@@ -142,24 +126,6 @@ var kelasSelect = {
     ],
 }
 
-var statusSelect = {
-    placeholder: "--Semua Status--",
-    options: [
-        {
-            value: "111",
-            text: "Aktif"
-        },
-        {
-            value: "112",
-            text: "Cuti"
-        },
-        {
-            value: "112",
-            text: "Drop Out"
-        },
-    ],
-}
-
 var kampusSelect = {
     placeholder: "--Semua Kampus--",
     options: [
@@ -174,24 +140,6 @@ var kampusSelect = {
         {
             value: "113",
             text: "Kampus Gejayaan Ring Road"
-        },
-    ],
-}
-
-var angkatanSelect = {
-    placeholder: "--Semua Angkatan--",
-    options: [
-        {
-            value: "111",
-            text: "2022"
-        },
-        {
-            value: "112",
-            text: "2021"
-        },
-        {
-            value: "113",
-            text: "2019"
         },
     ],
 }
@@ -250,11 +198,9 @@ var formatSelect = {
     ],
 }
 
-new TomSelect('#select-unit', unitSelect)
+new TomSelect('#select-prodi', prodiSelect)
 new TomSelect('#select-kelas', kelasSelect)
-new TomSelect('#select-status', statusSelect)
 new TomSelect('#select-kampus', kampusSelect)
-new TomSelect('#select-angkatan', angkatanSelect)
 new TomSelect('#select-periode', periodeSelect)
 new TomSelect('#select-tahun', tahunSelect)
 new TomSelect('#select-format', formatSelect)

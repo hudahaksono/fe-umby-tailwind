@@ -1,11 +1,11 @@
 @extends('layouts.default')
-@section('title', 'Laporan Ipk Mahasiswa Per Semester')
+@section('title', 'Ijazah')
 
 @section('contents')
     <!-- <x-card class="mb-6">
         FILTER
     </x-card> -->
-    <x-card title="LAPORAN IPK MAHASISWA PER SEMESTER">
+    <x-card title="IJAZAH">
         
         
         <div class="flex flex-row">
@@ -27,22 +27,6 @@
                             </td>
 						</tr>
                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-							<td class="px-6 py-4">Kelas</td>
-							<td class="px-6 py-4" colspan="2">
-								<select id="select-kelas" name="select-kelas" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </td>
-						</tr>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-							<td class="px-6 py-4">Status</td>
-							<td class="px-6 py-4" colspan="2">
-								<select id="select-status" name="select-status" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </td>
-						</tr>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
 							<td class="px-6 py-4">Kampus</td>
 							<td class="px-6 py-4" colspan="2">
 								<select id="select-kampus" name="select-kampus" required
@@ -58,7 +42,7 @@
                                 </select>
                             </td>
 						</tr>
-						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
 							<td class="px-6 py-4">Periode</td>
 							<td class="px-6 py-4">
 								<select id="select-periode" name="select-periode" required
@@ -67,6 +51,22 @@
                             </td>
                             <td class="px-6 py-4">
 								<select id="select-tahun" name="select-tahun" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+							<td class="px-6 py-4">Program Pend.</td>
+							<td class="px-6 py-4">
+								<select id="select-prog-pend" name="select-progpend" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </td>
+						</tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+							<td class="px-6 py-4">Mahasiswa</td>
+							<td class="px-6 py-4" colspan="2">
+								<select id="select-mahasiswa" name="select-mahasiswa" required
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                                 </select>
                             </td>
@@ -128,34 +128,46 @@ var unitSelect = {
     ],
 }
 
-var kelasSelect = {
-    placeholder: "--Semua Kelas--",
+
+var mahasiswaSelect = {
+    placeholder: "",
+    options: [
+       
+    ],
+}
+
+var periodeSelect = {
+    placeholder: "Gasal...",
     options: [
         {
             value: "111",
-            text: "UKT"
+            text: "Gasal Pendek"
         },
         {
             value: "112",
-            text: "SPP Tetap"
+            text: "Genap"
+        },
+        {
+            value: "113",
+            text: "Genap Pendek"
         },
     ],
 }
 
-var statusSelect = {
-    placeholder: "--Semua Status--",
+var tahunSelect = {
+    placeholder: "2024/2025...",
     options: [
         {
-            value: "111",
-            text: "Aktif"
+            value: "1",
+            text: "2023/2024"
         },
         {
-            value: "112",
-            text: "Cuti"
+            value: "2",
+            text: "2022/2023"
         },
         {
-            value: "112",
-            text: "Drop Out"
+            value: "3",
+            text: "2021/2022"
         },
     ],
 }
@@ -196,41 +208,24 @@ var angkatanSelect = {
     ],
 }
 
-var periodeSelect = {
-    placeholder: "Gasal...",
+var progpendSelect = {
+    placeholder: "Diploma",
     options: [
         {
             value: "111",
-            text: "Gasal Pendek"
+            text: "Profesi"
         },
         {
             value: "112",
-            text: "Genap"
+            text: "Sarjana"
         },
         {
-            value: "113",
-            text: "Genap Pendek"
+            value: "112",
+            text: "Pasca Sarjana"
         },
     ],
 }
 
-var tahunSelect = {
-    placeholder: "2024/2025...",
-    options: [
-        {
-            value: "1",
-            text: "2023/2024"
-        },
-        {
-            value: "2",
-            text: "2022/2023"
-        },
-        {
-            value: "3",
-            text: "2021/2022"
-        },
-    ],
-}
 
 var formatSelect = {
     placeholder: "HTML...",
@@ -251,12 +246,12 @@ var formatSelect = {
 }
 
 new TomSelect('#select-unit', unitSelect)
-new TomSelect('#select-kelas', kelasSelect)
-new TomSelect('#select-status', statusSelect)
-new TomSelect('#select-kampus', kampusSelect)
-new TomSelect('#select-angkatan', angkatanSelect)
 new TomSelect('#select-periode', periodeSelect)
 new TomSelect('#select-tahun', tahunSelect)
+new TomSelect('#select-mahasiswa', mahasiswaSelect)
+new TomSelect('#select-kampus', kampusSelect)
+new TomSelect('#select-angkatan', angkatanSelect)
+new TomSelect('#select-prog-pend', progpendSelect)
 new TomSelect('#select-format', formatSelect)
 
 </script>

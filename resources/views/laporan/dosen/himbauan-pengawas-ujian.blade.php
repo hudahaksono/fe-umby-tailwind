@@ -1,11 +1,11 @@
 @extends('layouts.default')
-@section('title', 'Laporan Ipk Mahasiswa Per Semester')
+@section('title', 'Himbauan Pengawas Ujian')
 
 @section('contents')
     <!-- <x-card class="mb-6">
         FILTER
     </x-card> -->
-    <x-card title="LAPORAN IPK MAHASISWA PER SEMESTER">
+    <x-card title="HIMBAUAN PENGAWAS UJIAN">
         
         
         <div class="flex flex-row">
@@ -27,38 +27,6 @@
                             </td>
 						</tr>
                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-							<td class="px-6 py-4">Kelas</td>
-							<td class="px-6 py-4" colspan="2">
-								<select id="select-kelas" name="select-kelas" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </td>
-						</tr>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-							<td class="px-6 py-4">Status</td>
-							<td class="px-6 py-4" colspan="2">
-								<select id="select-status" name="select-status" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </td>
-						</tr>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-							<td class="px-6 py-4">Kampus</td>
-							<td class="px-6 py-4" colspan="2">
-								<select id="select-kampus" name="select-kampus" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </td>
-						</tr>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-							<td class="px-6 py-4">Angkatan</td>
-							<td class="px-6 py-4" colspan="2">
-								<select id="select-angkatan" name="select-angkatan" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </td>
-						</tr>
-						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
 							<td class="px-6 py-4">Periode</td>
 							<td class="px-6 py-4">
 								<select id="select-periode" name="select-periode" required
@@ -67,6 +35,30 @@
                             </td>
                             <td class="px-6 py-4">
 								<select id="select-tahun" name="select-tahun" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </td>
+						</tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+							<td class="px-6 py-4">Jenis Ujian</td>
+							<td class="px-6 py-4" colspan="2">
+								<select id="select-jenis-ujian" name="select-ujian" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </td>
+						</tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+							<td class="px-6 py-4">Mata Kuliah</td>
+							<td class="px-6 py-4" colspan="2">
+								<select id="select-mata-kuliah" name="select-matkul" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </td>
+						</tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+							<td class="px-6 py-4">Dosen</td>
+							<td class="px-6 py-4" colspan="2">
+								<select id="select-dosen" name="select-dosen" required
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                                 </select>
                             </td>
@@ -128,74 +120,6 @@ var unitSelect = {
     ],
 }
 
-var kelasSelect = {
-    placeholder: "--Semua Kelas--",
-    options: [
-        {
-            value: "111",
-            text: "UKT"
-        },
-        {
-            value: "112",
-            text: "SPP Tetap"
-        },
-    ],
-}
-
-var statusSelect = {
-    placeholder: "--Semua Status--",
-    options: [
-        {
-            value: "111",
-            text: "Aktif"
-        },
-        {
-            value: "112",
-            text: "Cuti"
-        },
-        {
-            value: "112",
-            text: "Drop Out"
-        },
-    ],
-}
-
-var kampusSelect = {
-    placeholder: "--Semua Kampus--",
-    options: [
-        {
-            value: "111",
-            text: "Kampus Pusat"
-        },
-        {
-            value: "112",
-            text: "Kampus Gejayaan"
-        },
-        {
-            value: "113",
-            text: "Kampus Gejayaan Ring Road"
-        },
-    ],
-}
-
-var angkatanSelect = {
-    placeholder: "--Semua Angkatan--",
-    options: [
-        {
-            value: "111",
-            text: "2022"
-        },
-        {
-            value: "112",
-            text: "2021"
-        },
-        {
-            value: "113",
-            text: "2019"
-        },
-    ],
-}
-
 var periodeSelect = {
     placeholder: "Gasal...",
     options: [
@@ -232,6 +156,61 @@ var tahunSelect = {
     ],
 }
 
+var ujianSelect = {
+    placeholder: "UAS",
+    options: [
+        {
+            value: "111",
+            text: "UAS ULANG"
+        },
+        {
+            value: "112",
+            text: "UTS"
+        },
+        {
+            value: "113",
+            text: "UTS ULANG"
+        },
+    ],
+}
+
+var matkulSelect = {
+    placeholder: "-AKT",
+    options: [
+        {
+            value: "111",
+            text: "-AKT"
+        },
+        {
+            value: "112",
+            text: "-EKA4276"
+        },
+        {
+            value: "113",
+            text: "-EKA6226"
+        },
+    ],
+}
+
+var dosenSelect = {
+    placeholder: "910101 - Sarjono",
+    options: [
+        {
+            value: "111",
+            text: "960204 - Rukinah Dra"
+        },
+        {
+            value: "112",
+            text: "-- Nanda Yukina Wulandari S.Psi,"
+        },
+        {
+            value: "112",
+            text: "0001 - Diah Noviyana M.Pd"
+        },
+    ],
+}
+
+
 var formatSelect = {
     placeholder: "HTML...",
     options: [
@@ -251,12 +230,11 @@ var formatSelect = {
 }
 
 new TomSelect('#select-unit', unitSelect)
-new TomSelect('#select-kelas', kelasSelect)
-new TomSelect('#select-status', statusSelect)
-new TomSelect('#select-kampus', kampusSelect)
-new TomSelect('#select-angkatan', angkatanSelect)
 new TomSelect('#select-periode', periodeSelect)
 new TomSelect('#select-tahun', tahunSelect)
+new TomSelect('#select-jenis-ujian', ujianSelect)
+new TomSelect('#select-mata-kuliah', matkulSelect)
+new TomSelect('#select-dosen', dosenSelect)
 new TomSelect('#select-format', formatSelect)
 
 </script>

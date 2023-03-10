@@ -590,6 +590,213 @@ Route::get('/laporan/ipk-mahasiswa-persemester', function () {
     return view('laporan.mahasiswa.ipk-mahasiswa-persemester');
 });
 
+Route::get('/laporan/ips-mahasiswa-persemester', function () {
+    return view('laporan.mahasiswa.ips-mahasiswa-persemester');
+});
+
+Route::get('/laporan/mahasiswa-belum-krs', function () {
+    return view('laporan.mahasiswa.mahasiswa-belum-krs');
+});
+
+Route::get('/laporan/rekapitulasi-mhs-tugas-akhir', function () {
+    return view('laporan.mahasiswa.rekapitulasi-mhs-tugas-akhir');
+});
+
+Route::get('/laporan/peserta-yudisium', function () {
+    return view('laporan.mahasiswa.peserta-yudisium');
+});
+
+Route::get('/laporan/mahasiswa-tidak-hadir-4xberturutan', function () {
+    return view('laporan.mahasiswa.mahasiswa-tidak-hadir-4xberturutan');
+});
+
+Route::get('/laporan/rekap-status-mahasiswa', function () {
+    return view('laporan.mahasiswa.rekap-status-mahasiswa');
+});
+
+Route::get('/laporan/laporan-tes', function () {
+    return view('laporan.mahasiswa.laporan-tes');
+});
+
+Route::get('/laporan/rekap-kehadiran-mengajar', function () {
+    return view('laporan.dosen.rekap-kehadiran-mengajar');
+});
+
+Route::get('/laporan/kinerja-dosen', function () {
+    return view('laporan.dosen.kinerja-dosen');
+});
+
+Route::get('/laporan/rekap-ketepatan-masuk-dosen', function () {
+    return view('laporan.dosen.rekap-ketepatan-masuk-dosen');
+});
+
+Route::get('/laporan/kinerja-jurusan', function () {
+    return view('laporan.dosen.kinerja-jurusan');
+});
+
+Route::get('/laporan/pengawas', function () {
+    return view('laporan.dosen.pengawas');
+});
+
+Route::get('/laporan/himbauan-pengawas-ujian', function () {
+    return view('laporan.dosen.himbauan-pengawas-ujian');
+});
+
+Route::get('/laporan/dosen-pembimbing-akademik', function () {
+    return view('laporan.dosen.dosen-pembimbing-akademik');
+});
+
+Route::get('/laporan/tanggal-entry-nilai-dosen', function () {
+    return view('laporan.dosen.tanggal-entry-nilai-dosen');
+});
+
+Route::get('/laporan/dosen-belum-masukkan-nilai', function () {
+    return view('laporan.dosen.dosen-belum-masukkan-nilai');
+});
+
+Route::get('/laporan/rekapitulasi-pembimbing-ta', function () {
+    return view('laporan.dosen.rekapitulasi-pembimbing-ta');
+});
+
+Route::get('/laporan/rekap-mahasiswa-perstatus', function () {
+    return view('laporan.perkuliahan.rekap-mahasiswa-perstatus');
+});
+
+Route::get('/laporan/rekap-ipk-mhs-persemester', function () {
+    return view('laporan.perkuliahan.rekap-ipk-mhs-persemester');
+});
+
+Route::get('/laporan/jadwal-perkuliahan', function () {
+    return view('laporan.perkuliahan.jadwal-perkuliahan');
+});
+
+Route::get('/laporan/jadwal-ujian-perjurusan', function () {
+    return view('laporan.perkuliahan.jadwal-ujian-perjurusan');
+});
+
+Route::get('/laporan/rekapitulasi-ujian-susulan', function () {
+    return view('laporan.perkuliahan.rekapitulasi-ujian-susulan');
+});
+
+Route::get('/laporan/jumlah-peserta-kelas20mhs', function () {
+    return view('laporan.perkuliahan.jumlah-peserta-kelas20mhs');
+});
+
+Route::get('/laporan/realisasi-dan-kesesuaian-sap', function () {
+    return view('laporan.perkuliahan.realisasi-dan-kesesuaian-sap');
+});
+
+Route::get('/laporan/realisasi-perkuliahan-dan-elearning', function () {
+    return view('laporan.perkuliahan.realisasi-perkuliahan-dan-elearning');
+});
+
+Route::get('/laporan/matrix-jadwal-kuliah', function () {
+    return view('laporan.perkuliahan.matrix-jadwal-kuliah');
+});
+
+Route::get('/laporan/rekap-soal-ujian', function () {
+    return view('laporan.perkuliahan.rekap-soal-ujian');
+});
+
+Route::get('/laporan/transaksi-pembayaran', function () {
+    return view('laporan.keuangan.transaksi-pembayaran');
+});
+
+Route::get('/laporan/biaya-kuliah', function () {
+    return view('laporan.keuangan.biaya-kuliah');
+});
+
+Route::get('/laporan/jurnal-pendapatan-harian', function () {
+    return view('laporan.keuangan.jurnal-pendapatan-harian');
+});
+
+Route::get('/laporan/jurnal-penerimaan-harian', function () {
+    return view('laporan.keuangan.jurnal-penerimaan-harian');
+});
+
+Route::get('/laporan/rekap-kewajiban-pembayaran', function () {
+    return view('laporan.keuangan.rekap-kewajiban-pembayaran');
+});
+
+Route::get('/laporan/jurnal-pendapatan-harian-maba', function () {
+    return view('laporan.keuangan.jurnal-pendapatan-harian-maba');
+});
+
+Route::get('/laporan/jumlah-entrian-pertanggal', function () {
+    return view('laporan.keuangan.jumlah-entrian-pertanggal');
+});
+
+Route::get('/laporan/rekap-jumlah-maba', function () {
+    return view('laporan.keuangan.rekap-jumlah-maba');
+});
+
+Route::get('/laporan/rekap-pembayaran-jumlah-maba', function () {
+    return view('laporan.keuangan.rekap-pembayaran-jumlah-maba');
+});
+
+Route::get('/laporan/rekap-keuangan-semester', function () {
+    return view('laporan.keuangan.rekap-keuangan-semester');
+});
+
+Route::get('/laporan/presensi-kelas', function () {
+    return view('laporan.kelas.presensi-kelas');
+});
+
+Route::get('/laporan/presensi-ujian', function () {
+    return view('laporan.kelas.presensi-ujian');
+});
+
+Route::get('/laporan/kelas-barcode', function () {
+    return view('laporan.kelas.kelas-barcode');
+});
+
+Route::get('/laporan/krs', function () {
+    return view('laporan.kartu-mahasiswa.krs');
+});
+
+Route::get('/laporan/khs', function () {
+    return view('laporan.kartu-mahasiswa.khs');
+});
+
+Route::get('/laporan/transkrip', function () {
+    return view('laporan.kartu-mahasiswa.transkrip');
+});
+
+Route::get('/laporan/ijazah', function () {
+    return view('laporan.kartu-mahasiswa.ijazah');
+});
+
+Route::get('/laporan/kartu-studi-dan-ujian', function () {
+    return view('laporan.kartu-mahasiswa.kartu-studi-dan-ujian');
+});
+
+Route::get('/laporan/kartu-ujian', function () {
+    return view('laporan.kartu-mahasiswa.kartu-ujian');
+});
+
+Route::get('/laporan/buku-alumni', function () {
+    return view('laporan.perangkat-wisuda.buku-alumni');
+});
+
+Route::get('/laporan/buku-induk-ijazah', function () {
+    return view('laporan.perangkat-wisuda.buku-induk-ijazah');
+});
+
+Route::get('/laporan/name-tag', function () {
+    return view('laporan.perangkat-wisuda.name-tag');
+});
+
+Route::get('/laporan/label-bangku', function () {
+    return view('laporan.perangkat-wisuda.label-bangku');
+});
+
+Route::get('/laporan/label-undangan', function () {
+    return view('laporan.perangkat-wisuda.label-undangan');
+});
+
+Route::get('/laporan/data-alumni', function () {
+    return view('laporan.perangkat-wisuda.data-alumni');
+});
 
 /**
  * Referensi

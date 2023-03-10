@@ -637,31 +637,31 @@ $data_nav = [
                     ],
                     [
                         'title' => 'IPS Mahasiswa Per Semester',
-                        'url' => '#',
+                        'url' => url('/laporan/ips-mahasiswa-persemester')
                     ],
                     [
                         'title' => 'Mahasiswa Belum KRS',
-                        'url' => '#',
+                        'url' => url('/laporan/mahasiswa-belum-krs')
                     ],
                     [
                         'title' => 'Rekapitulasi Mhs Tugas Akhir',
-                        'url' => '#',
+                        'url' => url('/laporan/rekapitulasi-mhs-tugas-akhir')
                     ],
                     [
                         'title' => 'Peserta Yudisium',
-                        'url' => '#',
+                        'url' => url('/laporan/peserta-yudisium')
                     ],
                     [
                         'title' => 'Mahasiswa Tidak Hadir 4x Berturutan',
-                        'url' => '#',
+                        'url' => url('/laporan/mahasiswa-tidak-hadir-4xberturutan')
                     ],
                     [
                         'title' => 'Rekap Status Mahasiswa',
-                        'url' => '#',
+                        'url' => url('/laporan/rekap-status-mahasiswa')
                     ],
                     [
                         'title' => 'Laporan Tes',
-                        'url' => '#',
+                        'url' => url('/laporan/laporan-tes')
                     ],
                 ]
             ],
@@ -671,43 +671,43 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Rekap Kehadiran Mengajar',
-                        'url' => '#',
+                        'url' => url('/laporan/rekap-kehadiran-mengajar')
                     ],
                     [
                         'title' => 'Kinerja Dosen',
-                        'url' => '#',
+                        'url' => url('/laporan/kinerja-dosen')
                     ],
                     [
                         'title' => 'Rekap Ketepatan Masuk Dosen',
-                        'url' => '#',
+                        'url' => url('/laporan/rekap-ketepatan-masuk-dosen')
                     ],
                     [
                         'title' => 'Kinerja Jurusan',
-                        'url' => '#',
+                        'url' => url('/laporan/kinerja-jurusan')
                     ],
                     [
                         'title' => 'Pengawas',
-                        'url' => '#',
+                        'url' => url('/laporan/pengawas')
                     ],
                     [
                         'title' => 'Himbauan Pengawas Ujian',
-                        'url' => '#',
+                        'url' => url('/laporan/himbauan-pengawas-ujian')
                     ],
                     [
                         'title' => 'Dosen Pembimbing Akademik',
-                        'url' => '#',
+                        'url' => url('/laporan/dosen-pembimbing-akademik')
                     ],
                     [
                         'title' => 'Tanggal Entry Nilai Dosen',
-                        'url' => '#',
+                        'url' => url('/laporan/tanggal-entry-nilai-dosen')
                     ],
                     [
                         'title' => 'Dosen Belum Masukkan Nilai',
-                        'url' => '#',
+                        'url' => url('/laporan/dosen-belum-masukkan-nilai')
                     ],
                     [
                         'title' => 'Rekapitulasi Pembimbing TA',
-                        'url' => '#',
+                        'url' => url('/laporan/rekapitulasi-pembimbing-ta')
                     ],
                 ]
             ],
@@ -717,43 +717,43 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Rekap Mahasiswa Per Status',
-                        'url' => '#',
+                        'url' => url('/laporan/rekap-mahasiswa-perstatus')
                     ],
                     [
                         'title' => 'Rekap IPK Mhs Per Semester',
-                        'url' => '#',
+                        'url' => url('/laporan/rekap-ipk-mhs-persemester')
                     ],
                     [
                         'title' => 'Jadwal Perkuliahan',
-                        'url' => '#',
+                        'url' => url('/laporan/jadwal-perkuliahan')
                     ],
                     [
                         'title' => 'Jadwal Ujian Per Jurusan',
-                        'url' => '#',
+                        'url' => url('/laporan/jadwal-ujian-perjurusan')
                     ],
                     [
                         'title' => 'Rekapitulasi Ujian Susulan',
-                        'url' => '#',
+                        'url' => url('/laporan/rekapitulasi-ujian-susulan')
                     ],
                     [
                         'title' => 'Jumlah Peserta Kelas <20 Mhs',
-                        'url' => '#',
+                        'url' => url('/laporan/jumlah-peserta-kelas20mhs')
                     ],
                     [
                         'title' => 'Realisasi dan Kesesuaian SAP',
-                        'url' => '#',
+                        'url' => url('/laporan/realisasi-dan-kesesuaian-sap')
                     ],
                     [
                         'title' => 'Realisasi Perkuliahan dan E-Learning',
-                        'url' => '#',
+                        'url' => url('/laporan/realisasi-perkuliahan-dan-elearning')
                     ],
                     [
                         'title' => 'Matrix Jadwal Kuliah',
-                        'url' => '#',
+                        'url' => url('/laporan/matrix-jadwal-kuliah')
                     ],
                     [
                         'title' => 'Rekap Soal Ujian',
-                        'url' => '#',
+                        'url' => url('/laporan/rekap-soal-ujian')
                     ],
                 ]
             ],
@@ -763,39 +763,39 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Transaksi Pembayaran',
-                        'url' => '#',
+                        'url' => url('/laporan/transaksi-pembayaran')
                     ],
                     [
                         'title' => 'Biaya Kuliah',
-                        'url' => '#',
+                        'url' => url('/laporan/biaya-kuliah')
                     ],
                     [
                         'title' => 'Jurnal Pendapatan Harian',
-                        'url' => '#',
+                        'url' => url('/laporan/jurnal-pendapatan-harian')
                     ],
                     [
                         'title' => 'Jurnal Penerimaan Harian',
-                        'url' => '#',
+                        'url' => url('/laporan/jurnal-penerimaan-harian')
                     ],
                     [
                         'title' => 'Rekap Kewajiban Pembayaran',
-                        'url' => '#',
+                        'url' => url('/laporan/rekap-kewajiban-pembayaran')
                     ],
                     [
                         'title' => 'Jurnal Pendapatan Harian Maba',
-                        'url' => '#',
+                        'url' => url('/laporan/jurnal-pendapatan-harian-maba')
                     ],
                     [
                         'title' => 'Jumlah Entry Per Tanggal',
-                        'url' => '#',
+                        'url' => url('/laporan/jumlah-entrian-pertanggal')
                     ],
                     [
                         'title' => 'Rekap Jumlah Maba',
-                        'url' => '#',
+                        'url' => url('/laporan/rekap-jumlah-maba')
                     ],
                     [
                         'title' => 'Rekap Pembayaran & Jumlah Maba',
-                        'url' => '#',
+                        'url' => url('/laporan/rekap-pembayaran-jumlah-maba')
                     ],
                     [
                         'title' => 'Mahasiswa Beasiswa',
@@ -803,7 +803,7 @@ $data_nav = [
                     ],
                     [
                         'title' => 'Rekap Keuangan Semester',
-                        'url' => '#',
+                        'url' => url('/laporan/rekap-keuangan-semester')
                     ],
                 ]
             ],
@@ -813,15 +813,15 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Presensi Kelas',
-                        'url' => '#',
+                        'url' => url('/laporan/presensi-kelas')
                     ],
                     [
                         'title' => 'Presensi Ujian',
-                        'url' => '#',
+                        'url' => url('/laporan/presensi-ujian')
                     ],
                     [
                         'title' => 'Kelas Barcode',
-                        'url' => '#',
+                        'url' => url('/laporan/kelas-barcode')
                     ],
                 ]
             ],
@@ -831,27 +831,27 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'KRS',
-                        'url' => '#',
+                        'url' => url('/laporan/krs')
                     ],
                     [
                         'title' => 'KHS',
-                        'url' => '#',
+                        'url' => url('/laporan/khs')
                     ],
                     [
                         'title' => 'Transkip',
-                        'url' => '#',
+                        'url' => url('/laporan/transkrip')
                     ],
                     [
                         'title' => 'Ijazah',
-                        'url' => '#',
+                        'url' => url('/laporan/ijazah')
                     ],
                     [
                         'title' => 'Kartu Studi Dan Ujian',
-                        'url' => '#',
+                        'url' => url('/laporan/kartu-studi-dan-ujian')
                     ],
                     [
                         'title' => 'Kartu Ujian',
-                        'url' => '#',
+                        'url' => url('/laporan/kartu-ujian')
                     ],
                 ]
             ],
@@ -861,27 +861,27 @@ $data_nav = [
                 'sub_menu' => [
                     [
                         'title' => 'Buku Alumni',
-                        'url' => '#',
+                        'url' => url('/laporan/buku-alumni')
                     ],
                     [
                         'title' => 'Buku Induk Ijazah',
-                        'url' => '#',
+                        'url' => url('/laporan/buku-induk-ijazah')
                     ],
                     [
                         'title' => 'Name Tag',
-                        'url' => '#',
+                        'url' => url('/laporan/name-tag')
                     ],
                     [
                         'title' => 'Label Bangku',
-                        'url' => '#',
+                        'url' => url('/laporan/label-bangku')
                     ],
                     [
                         'title' => 'Label Undangan',
-                        'url' => '#',
+                        'url' => url('/laporan/label-undangan')
                     ],
                     [
                         'title' => 'Data Alumni',
-                        'url' => '#',
+                        'url' => url('/laporan/data-alumni')
                     ],
                 ]
             ],

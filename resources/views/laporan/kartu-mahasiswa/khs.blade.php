@@ -1,11 +1,11 @@
 @extends('layouts.default')
-@section('title', 'Laporan Ipk Mahasiswa Per Semester')
+@section('title', 'Kartu Hasil Studi')
 
 @section('contents')
     <!-- <x-card class="mb-6">
         FILTER
     </x-card> -->
-    <x-card title="LAPORAN IPK MAHASISWA PER SEMESTER">
+    <x-card title="KARTU HASIL STUDI">
         
         
         <div class="flex flex-row">
@@ -35,14 +35,6 @@
                             </td>
 						</tr>
                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-							<td class="px-6 py-4">Status</td>
-							<td class="px-6 py-4" colspan="2">
-								<select id="select-status" name="select-status" required
-                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
-                                </select>
-                            </td>
-						</tr>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
 							<td class="px-6 py-4">Kampus</td>
 							<td class="px-6 py-4" colspan="2">
 								<select id="select-kampus" name="select-kampus" required
@@ -67,6 +59,14 @@
                             </td>
                             <td class="px-6 py-4">
 								<select id="select-tahun" name="select-tahun" required
+                                    class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
+                                </select>
+                            </td>
+						</tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+							<td class="px-6 py-4">Mahasiswa</td>
+							<td class="px-6 py-4" colspan="2">
+								<select id="select-mahasiswa" name="select-mahasiswa" required
                                     class="block w-full mt-1 text-sm focus:border-blue-400 border-gray-200 focus:outline-none focus:shadow-outline-blue rounded ml-4">
                                 </select>
                             </td>
@@ -142,21 +142,10 @@ var kelasSelect = {
     ],
 }
 
-var statusSelect = {
-    placeholder: "--Semua Status--",
+var mahasiswaSelect = {
+    placeholder: "",
     options: [
-        {
-            value: "111",
-            text: "Aktif"
-        },
-        {
-            value: "112",
-            text: "Cuti"
-        },
-        {
-            value: "112",
-            text: "Drop Out"
-        },
+       
     ],
 }
 
@@ -252,7 +241,7 @@ var formatSelect = {
 
 new TomSelect('#select-unit', unitSelect)
 new TomSelect('#select-kelas', kelasSelect)
-new TomSelect('#select-status', statusSelect)
+new TomSelect('#select-mahasiswa', mahasiswaSelect)
 new TomSelect('#select-kampus', kampusSelect)
 new TomSelect('#select-angkatan', angkatanSelect)
 new TomSelect('#select-periode', periodeSelect)
